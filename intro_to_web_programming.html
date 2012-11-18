@@ -1,0 +1,306 @@
+    <!doctype html>
+    <html>
+    <head>
+        <title>Intro to Web Development</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/fathom.js"></script>
+        <script src="js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+                <div class="slide normal">
+                    <h1 class="center">Intro to Web Development</h1>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>What is Web Development</h1></header>
+                    <section class="content">
+                        <p>Web development is any kind of programming that's meant to run on the web.</p>
+                    	<ul>
+                    		<li>Basic pages</li>
+                    		<li>Simple forms</li>
+                    		<li>REST APIs</li>
+                    		<li>Entire applications</li>
+                    		<li>Angry Birds</li>
+                    	</ul>
+                    </section>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>What are Servers?</h1></header>
+                    <slide>
+                    	<p>Servers are a central repository of content that responds to client requests.</p>
+                    	<img class="center" src="img/servers.png">
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>What is a Client?</h1></header>
+                    <slide>
+                    	<p>Clients request content from servers.</p>
+                    	<p>Types of client:</p>
+                    	<ul>
+                    		<li>Browsers(<img style="padding-bottom:-20px" src="img/browsers.png">)</li>
+                    		<li>Robots</li>
+                    		<li>Other Servers</li>
+                    	</ul>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>How does the information get there?</h1></header>
+                    <slide>
+                    	<ul>
+                    		<li>HTTP/HTTPS</li>
+                    		<li>FTP/SFTP</li>
+                    		<li>Telnet</li>
+                            <li><span class="strikethrough">Carrier Pidgeons</span></li>
+                    	</ul>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">explain http and what a protocol is. SYN/SYNACK/ACK</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Server-side Scripting</h1></header>
+                    <slide>
+                    	<p>Scripts that run when a user makes a request, to serve a file. There are many languages, including (but not limited to):<p>
+                    		<ul>
+                    			<li>Ruby</li>
+                    			<li>Python</li>
+                    			<li>JavaScript</li>
+                    			<li>PHP</li>
+                    		</ul>
+                        <img style="float:right; height:400px; width:800px;" src="img/server-side-programing.jpeg">
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">list languages, describe them</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Client-side Scripting</h1></header>
+                    <slide>
+                        <p>While there are fewer mainstream client-side languages, scripting still happens on the client as well. The client-side scripting is part of the file that the server sends to the client.</p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>VBScript</li>
+                            <li>TCL (which I have never even heard of)</li>
+                        </ul>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">explain javascript on the client vs javascript on the server</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Frameworks are Not Languages</h1></header>
+                    <slide>
+                    	<p>You will often hear of a framework alongside a language. They aren't languages, just libraries that are really large and very popular that allow you to work with the web.</p>
+                    	<ul>
+                    		<li>Ruby
+                    			<ul>
+                    				<li>(On )Rails</li>
+                    				<li>Sinatra</li>
+                    			</ul>
+                    		</li>
+                    		<li>Python
+                    			<ul>
+                    				<li>Django</li>
+                    				<li>Twisted</li>
+                    			</ul>
+                    		</li>
+                    		<li>JavaScript
+                    			<ul>
+                    				<li>Node.js</li>
+                    				<li>Other frameworks based on Node.js(Express, Meteor)</li>
+                    			</ul>
+                    		</li>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">explain what frameworks are! Like a phrasebook for a language.</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Node.js is Javascript on the server</h1></header>
+                    <slide>
+                    	<p>Node is a web framework that is very minimal. It provides an API to send data and run a server process in JavaScript. After that, much of it is up to you.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Node.js is programming your own web framework!</h1></header>
+                    <slide>
+                    	<p>Many more mature languages (like Ruby, or C#) hide a lot of what is going on. Node doesn't hide much from you, but this makes you powerful.</p>
+                        <p>"With great power comes great responsibility" -Spiderman</p>
+                        <img class="center" src="img/spiderman.jpg">
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">Who knows more about webs than spiderman?</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Things you have to handle without a framework</h1></header>
+                    <slide>
+                        <p>If you've done web programming before, you probably didn't have to handle your own:</p>
+                        <ul>
+                            <li>Routes</li>
+                            <li>Streams for multipart form data</li>
+                            <li>Actual request events</li>
+                            <li>Server-error handling</li>
+                            <li>HTTP Response codes</li>
+                        </ul>
+                        <p>But because you're handling these things, you get to say how they are done.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Hello World</h1></header>
+                    <slide>
+                    	<p>An example of a node.js server!</p>
+                    	<pre style="border:3px dotted black;" class="prettyprint">
+var http = require('http');
+
+http.createServer(function(request, response){
+response.writeHead(200,{'Content-Type':'text/plain'});
+response.end('Hello World\n');}).listen(8124);
+
+console.log('Server running at http://127.0.0.1:8124/');
+                    	</pre>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Dissecting Hello World</h1></header>
+                    <slide>
+                    	<p>Let's break it down.</p>
+                    	<pre style="border:3px dotted black;" class="prettyprint">
+var http = require('http'); //A Module
+
+//using http's method to create a server that listens on port 8124
+http.createServer(function(request, response) {
+	//Inside a callback, we write the request header
+	response.writeHead(200,{'Content-Type':'text/plain'});
+	//we then end the response, sending along with it a response body.
+	response.end('Hello World\n');
+}).listen(8124);
+
+//Our old friend, console.log
+console.log('Server running at http://127.0.0.1:8124/');
+                    	</pre>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">Mention that the callback responds to "request" events - if you pass the name of the function it will get called, and be give the arguments "request" and "response".</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Ports - What was going on with that colon?</h1></header>
+                    <slide>
+                    	<p>Ports are like sub-addresses on your computer, or a server. A socket is a combination of an IP address and a Port.</p>
+                    	<p>In the previous example, 8124 was the port we were using, on 127.0.0.1.</p>
+                    	<p>Servers "listen" on ports - they tell the OS that if information comes in on that Port, they will handle it.</p>
+                    	<p>80 is the default HTTP port. A further list of ports can be found <a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">here</a></p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">http://ortizonline.com/publications/tcpipsuitetutorial.htm</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Requests</h1></header>
+                    <slide>
+                    	<p>A request is composed of two parts. A Header and a Body. It is sent to the server, and explains what the client is requesting, and how it wants a response.</p>
+                    	<pre style="border:3px dotted black;" class="prettyprint">
+GET /index.html HTTP/1.1
+Host: www.example.com
+
+
+                    	</pre>
+                    	<p>The last two lines are blank on purpose. The server has to send two blank lines (/r/n /r/n) in order to signal that the request has completed.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Request Headers</h1></header>
+                    <slide>
+                    	<p>The request head defines several things:</p>
+                    	<ul>
+                    		<li>The HTTP protocol spec</li>
+                    		<li>The path requested - often this is a file path, but it can just indicate an action.</li>
+                    		<li>The "Verb" - what you're trying to do. (HTTP1.0: GET, POST, HEAD)(HTTP1.1: OPTIONS,PUT,DELETE,TRACE,CONNECT)</li>
+                    		<li>The Host - where you're asking information from.</li>
+                    		<li>What kind of content types you'll accept</li>
+                    		<li>A full list <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields">here</a></li>
+                    	</ul>
+
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">HEAD just asks for the headers, without the body.</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Request Body</h1></header>
+                    <slide>
+                    	<p>Sometimes, you'll have a request body. This is used to send data, like the contents of a form or some authorization data. It is sent with POST.</p>
+
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>GET vs POST</h1></header>
+                    <slide>
+                    	<p>GET is an HTTP Verb that we use to request information. We may optionally pass a "QueryString" with our GET request (or with post requests) in order to send data that we're OK with the user potentially modifying.</p>
+                    	<p>POST is another Verb that we use in order to send a response body with - usually data from a form. The user can't directly modify this data but as you've seen, you can modify the page, so you can get any kind of data from a post. Because the data isn't URL encoded, it is usually easier.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Routes</h1></header>
+                    <slide>
+                    	<p>In node, the "path" is sent along with the request. This path helps us know what the user was trying to access.</p>
+                    	<p>A server can "listen" on a path, but it is better to parse the URL and then respond.</p>
+                    	<code>
+                    		http.createServer
+                    	</code>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Responses</h1></header>
+                    <slide>
+
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Excercise Time!</h1></header>
+                    <slide>
+
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">Set up several routes, interpret a request. Bonus, log each time a user comes to the page</pre>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

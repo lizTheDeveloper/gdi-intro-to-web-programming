@@ -1,0 +1,182 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>Beginning Node.js</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/fathom.js"></script>
+        <script src="js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+
+            <div class="slide normal">
+                <h1 class="center">Beginning Node.js</h1>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Notable Node facts</h1></header>
+                <section class="content">
+                    <ul>
+                        <li>Ain't yo' momma's JavaScript</li>
+                        <li>Non-blocking, event-based web programming</li>
+                        <li>Asyncronous programming for the web</li>
+                        <li>Brand-spanking new</li>
+                        <li>Super popular</li>
+                        <li>Made by someone with no formal CS education.</li>
+                    </ul>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Asyncronous Programming</h1></header>
+                <section class="content">
+                    <p>Allows multiple things to happen at once</p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+sendTwitterUpdate("I just learned Asyncronous Programming!", function(response){
+    console.log("Twitter says:" + response);
+});
+
+sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) {
+    console.log("Facebook says:" + response);
+});
+                    </pre>
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Asyncronous Programming</h1></header>
+                <section class="content">
+                    <p>Multitasking is something computers are good at - using spare miliseconds to do things.</p>
+                    <p>It's something programmers are not always so great at - race conditions can be a problem.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none">Demonstrate what might happen if I counted on twitter being done before facebook, etc.</pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Non-blocking I/O</h1></header>
+                <section class="content">
+                    <p>The reason we can do this is because of non-blocking I/O. We can start a disk read, or some internet activity, and while we're waiting for that to finish, we can do something else.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Events</h1></header>
+                <section class="content">
+                    <p>Responding to events is how we program in node.js. We might respond to a Request event, or a file being loaded into memory, or a timed event.</p>
+                    <p>Running things as the result of an event is how we can manage the flow of control in a node.js web application.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Callbacks</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Callback Chaining</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Race Conditions!</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Be Careful with State</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Syncronous Methods</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Node Conventions</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none">err, response</pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>NPM, Modules</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Globals</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Callback Chaining</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Callback Chaining</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Callback Chaining</h1></header>
+                <section class="content">
+
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
