@@ -80,6 +80,16 @@ sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) 
                 <header><h1>Non-blocking I/O</h1></header>
                 <section class="content">
                     <p>The reason we can do this is because of non-blocking I/O. We can start a disk read, or some internet activity, and while we're waiting for that to finish, we can do something else.</p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+fs.rename('/tmp/hello', '/tmp/world', function (err) {
+  if (err) throw err;
+  console.log('renamed complete');
+});
+fs.stat('/tmp/world', function (err, stats) {
+  if (err) throw err;
+  console.log('stats: ' + JSON.stringify(stats));
+});
+                    </pre>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
@@ -87,8 +97,18 @@ sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) 
             <div class="slide normal">
                 <header><h1>Events</h1></header>
                 <section class="content">
-                    <p>Responding to events is how we program in node.js. We might respond to a Request event, or a file being loaded into memory, or a timed event.</p>
-                    <p>Running things as the result of an event is how we can manage the flow of control in a node.js web application.</p>
+                    <p>Responding to events is how we manage the flow of control in a node.js web application.</p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+var events = require('events');
+
+var actionHero = new events.EventEmitter();
+
+actionHero.addListener('killBadGuys', function (){
+    console.log("I killed all the bad guys!");
+})
+
+actionHero.emit('killBadGuys');
+                    </pre>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
@@ -96,15 +116,58 @@ sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) 
             <div class="slide normal">
                 <header><h1>Callbacks</h1></header>
                 <section class="content">
+                    <p>Callbacks are how we handle a series of events that need to occur in response to an event, but syncronously. A callback is often executed at the end of a statement.</p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+function fightBadGuys(superpower, callback) {
+    console.log("I'll fight the bad guys with my " + superpower);
+    var result = true;
+    var err = null;
+    setTimeout(callback(err, result), 3000);
+}
 
+fightBadGuys('hacker skills', function(err, result) {
+    if (err) {
+        console.log("There was a problem fighting the bad guys. Pick a better superpower next time.");
+        return false;
+    } else {
+        console.log("I fought the bad guys and now they are defeated");
+        return true;
+    }
+});
+                    </pre>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
 
             <div class="slide normal">
+                <header><h1>Node Conventions</h1></header>
+                <section class="content">
+                    <p>Node has many conventions - you can expect a library or module to have certain behaviors and spelling. Some of those are:</p>
+                    <ul>
+                        <li>Functions that have a callback that must return a result return err, response(if warranted) and then result.</li>
+                        <li>Classes start with a capital letter- as in events.EventEmitter. Methods are camelCase.</li>
+                        <li>Constants ARE_IN_ALL_CAPS and use underscores. Constants should not change.</li>
+                        <li>Many more...</li>
+                    </ul>
+                </section>
+                <pre class="speaker-notes" style="display:none">err, response</pre>
+            </div>
+
+            <div class="slide normal">
                 <header><h1>Callback Chaining</h1></header>
                 <section class="content">
-
+                    <p>Callback chains are something that tends to happen when things have to happen syncronously in node.</p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+one(function () {
+    //do stuff
+    two(function () {
+        //more stuff
+        three(function () {
+            //the dreaded callback pyramid
+        });
+    });
+});
+                    </pre>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
@@ -131,14 +194,6 @@ sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) 
 
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
-            </div>
-
-            <div class="slide normal">
-                <header><h1>Node Conventions</h1></header>
-                <section class="content">
-
-                </section>
-                <pre class="speaker-notes" style="display:none">err, response</pre>
             </div>
 
             <div class="slide normal">
