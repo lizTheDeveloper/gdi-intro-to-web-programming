@@ -6,35 +6,38 @@ var http = require('http'),
 var userCount = 0;
 
 //create the server by calling the createServer method on http, which returns a new httpServer.
-var server = http.createServer(function (request,response) {
+http.createServer(function (request,response) {
 	//line 14 is the same as the following three lines :
 	//var rawPath = request.url
 	//var theURL = url.parse(rawPath)
 	//var path = theURL.pathname;
 	var path = url.parse(request.url).pathname;
 
-	body = getBody(path);
-	console.log(body);
-	
-	response.writeHead(200, {
-  	'Content-Length': body.length,
-  	'Content-Type': 'text/html' })
-  	response.end(body);
-
-}).listen(8080);
+	getBody(path, function(err, body) {
+        console.log(body);
+        response.writeHead(200, {
+        'Content-Length': body.length,
+        'Content-Type': 'text/html' })
+        response.end(body);
+	});
 
 
-function getBody(path) {
+}).listen(process.env.PORT);
+
+
+function getBody(path, callback) {
 	userCount++;
+    var body;
 	if (path === '/basic') {
-		return 'usercount : ' + userCount;
+		body = 'usercount : ' + userCount;
 	} else if (path === '/advanced') {
 		body = '<!doctype html><html><head><title>Advanced Page</title></head><body>Hello! The user count is now : ' + userCount + '</body></html>';
-		return body;
+		return;
 	} else if (path === '/favicon.ico') {
 		userCount--;
-		return 'x';
+		body = 'x';
 	} else {
-		body = 'You didn\'t specify a path!';
+		var err = 'You didn\'t specify a path!';
 	}
+    callback(err, body);
 }
