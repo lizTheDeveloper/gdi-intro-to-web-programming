@@ -1,0 +1,189 @@
+    <!doctype html>
+    <html>
+    <head>
+        <title>Intro to Web Development</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/fathom.js"></script>
+        <script src="../js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+                <div class="slide normal">
+                    <h1 class="center">Node, Git and Heroku</h1>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>package.json</h1></header>
+                    <section class="content">
+                        <p>A package.json file is nessecary for any NPM module, or app deployment. It's really just JSON.</p>
+                    	<pre style="border:3px dotted black;" class="prettyprint">
+{
+  "name": "gdi-node-intro",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
+                    	</pre>
+                    </section>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Dependencies</h1></header>
+                    <slide>
+                    	<p>In our basic app, dependencies are blank. Normally, this is a listing of all packages not bundled with node that your app uses.</p>
+                        <pre style="border:3px dotted black;" class="prettyprint">
+{
+  "name": "gdi-node-intro",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": ">= 1.2.0",
+    "optimist": "= 0.1.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
+                        </pre>
+                        <p>when you put an x in the place of any number, NPM assumes you will take any version number in that place.</p>
+                    	<img class="center" src="img/servers.png">
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>NPM</h1></header>
+                    <slide>
+                    	<p>NPM is what's called a "Package Manager". Package managers allow you to simply install modules and entire apps from the command line.</p>
+                    	<p><a href="https://npmjs.org/">https://npmjs.org/</a> is where you can browse code made by others. This is also a great place to find libraries that handle common tasks, or example code you can cannabalize.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Git</h1></header>
+                    <slide>
+                    	<p>A basic understanding of git is required to use Heroku. It's also a great idea to use in order to make sure you don't lose work.</p>
+                        <p>Git has a few basic commands you need to know about.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Git Init</h1></header>
+                    <slide>
+                    	<p><pre class="code">git init</pre> creates a new git repository. Create a new folder, and move your excercises there. Call it "app" or something. Then, type <pre>git init</pre><p>
+                    	<p>When it creates a repository, it creates a .git file in the directory you are currently in. All of the directories underneath that directory, and all of the files can be tracked by this repository. But they aren't yet.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">list languages, describe them</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Git Add</h1></header>
+                    <slide>
+                        <p><pre>git add</pre> Adds files to your repository. It adds metadata to the .git file, and tells it "these files are tracked. Every time you do a commit, check these files against the last commit for changes".
+                        </p>
+                        <p>If you just want to add every file in the repository recursively, simply type <pre>git add *</pre>, which means "git, add everything to this repository."</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>.gitignore</h1></header>
+                    <slide>
+                        <p><pre>.gitignore</pre> is one of those files that starts with a period in the top-level directory of your app. It tells the git repository which files to ignore. You want to put files in here that are going to be different between computers.</p>
+                        <p>Github has pre-filled .gitignore files, but for now we are just going to leave ours blank.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>git commit</h1></header>
+                    <slide>
+                    	<p>Commit is one of the commands you will use the most. After creating a repository with <pre>git init</pre>, you'll want to do an initial commit.</p>
+                        <pre>git commit -am'initial commit'</pre>
+                        <p>This commits all changes (if any), stamps them with your name, and attaches the message "initial commit". the -a part is "all", and the -m part is "message".</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>git remote</h1></header>
+                    <slide>
+                        <p>What would be the point of saving all your work and doing code if you couldn't share it? Don't be selfish. Add a remote!</p>
+                        <p><pre>git remote add liz git@github.com:icyfenix/gdi-intro-to-web-programming.git</pre></p>
+                        <p>The parameters are, git remote add(add a remote), name of the remote you want to add, address of the remote.</p>
+                        <p>Let's head over to github, make an account if nessecary, and then create a repository for node.js. Then, add it as a remote.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>git pull</h1></header>
+                        <p><pre>git pull name branch</pre> is the method for syncing up with the server. This "pulls down" all of the updated files that have updated on the server since your last pull.</p>
+                        <p>You're the only person working on your app, so you won't have any conflicts. Most of the time this won't be the case. You'll have to handle "conflicts", and do merges.</p>
+                    <pre class="speaker-notes" style="display:none">If you want to get fancy, collaborate with a partner instead of just pair programming with them. Use github.</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>git push</h1></header>
+                    <slide>
+                        <p><pre>git push name branch</pre> is finally the way we push files to remotes. You'll want to do this after you commit, because then if your hard drive blows up, your work is saved.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>git Workflow</h1></header>
+                    <slide>
+                    	<p>So, all together now, here's what we follow when we want to make changes. Save your file, then: </p>
+                        <pre style="border:3px dotted black;" class="prettyprint">
+git commit -am'I made some changes, and this message should be descriptive'
+git pull remote_name branch_name
+git push remote_name branch_name
+                        </pre>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">mention intermediate stages, like merges, fancy shit</pre>
+                </div>
+
+                <div class="slide normal">
+                    <header><h1>Heroku</h1></header>
+                    <slide>
+                        <p>Heroku is essentially a git remote. That's all.</p>
+                        <p>Add heroku as a git remote, and then push to heroku when you're ready to "deploy".</p>
+                        <p>Let's walk through setting up an app.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>
