@@ -181,8 +181,45 @@ git push remote_name branch_name
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
-
-
+                <div class="slide normal">
+                    <header><h1>Heroku Accounts</h1></header>
+                    <slide>
+                        <p>If you haven't signed up yet: <a href="https://api.heroku.com/signup">https://api.heroku.com/signup</a></p>
+                        <p>If you have, log in.</p>
+                        <p>We'll create an app through the IDE, so we're logging in to get access to the dashboard.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+                <div class="slide normal">
+                    <header><h1>Heroku Apps</h1></header>
+                    <slide>
+                        <p>Head over to the "balloon" tab, and click "add a deploy server".</p>
+                        <p>Choose Heroku.com</p>
+                        <p>You will see a list of apps if you have any - choose one, or add one by clicking "create new".</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+                <div class="slide normal">
+                    <header><h1>Procfile</h1></header>
+                    <slide>
+                        <p>A Procfile essentially is a file that contains instructions on how to start the node process. It's part of the Celadon Cedar stack, which is what runs your apps on Heroku.</p>
+                        <p>Your procfile should be called simply "Procfile" with no extension, and look something like this:</p>
+                        <pre style="border:3px dotted black;" class="prettyprint">
+web: node app/server.js
+                        </pre>
+                        <p>This tells heroku what your web server (which listens to HTTP requests on heroku) should run in order to start up. It then hands all http requests to that process.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
+                <div class="slide normal">
+                    <header><h1>Deploying to Heroku</h1></header>
+                    <slide>
+                        <p>Head over to the "balloon" tab, and click "add a deploy server".</p>
+                        <p>Choose Heroku.com</p>
+                        <p>You will see a list of apps if you have any - choose one, or add one by clicking "create new".</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
             </div>
         </div>
     </body>
