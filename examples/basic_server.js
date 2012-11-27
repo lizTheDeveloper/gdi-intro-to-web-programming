@@ -14,6 +14,13 @@ http.createServer(function (request,response) {
 	var path = url.parse(request.url).pathname;
 
 	getBody(path, function(err, body) {
+        if (err) {
+            response.writeHead(500, {
+            'Content-Length': err.length,
+            'Content-Type': 'text/html' })
+            response.end(err);
+            return
+        }
         console.log(body);
         response.writeHead(200, {
         'Content-Length': body.length,
@@ -21,10 +28,13 @@ http.createServer(function (request,response) {
         response.end(body);
 	});
 
-
+//Here we use process.env.PORT to access the port given to this process. This is an environment variable available to you that will give you the port that your
+//server is being hosted on.
 }).listen(process.env.PORT);
 
-
+//Here we have a function with standard node.js convention - err and "result".
+//Err returns as undefined if there is no error, which is what is expected.
+//we don't want it to throw any exceptions - if we did, we'd need to be very explicit in the documentation about that.
 function getBody(path, callback) {
 	userCount++;
     var body;
