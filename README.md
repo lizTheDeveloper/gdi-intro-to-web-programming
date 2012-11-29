@@ -1,18 +1,24 @@
-# README for a newly created project.
+# INTRO to Web Programming and Node.js.
 
-There are a couple of things you should do first, before you can use all of Git's power:
+This is an intro course to web programming and Node.js. You should start with intro.html - it leads to the other courses.
+It is intended to be accompanied by a lecture. I'm adding speaker notes, but I have not finished them.
 
-  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
-    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
-  * Create new files inside your project
-  * Add them to to Git by executing the following command
-    `git add [file1, file2, file3, ...]` [Enter]
-  * Create a commit which can be pushed to the remote you just added
-    `git commit -m 'added new files'` [Enter]
-  * Push the commit the remote
-    `git push [remote name] master` [Enter]
-
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
-
-Happy coding!
+The course should cover the following:
+## Section 1
+ Introduction to web programming, how data moves around, what HTTP is
+ * Intro to Web Programming
+ * Beginning Node.js
+ * Excercises
+ * Node, Git & Heroku
+## Section 2
+ Doing useful things, like having a file server, responding to forms.
+ * Files and Preprocessing
+ * Forms, Events
+ * Modules
+ * Excercises
+## Section 3
+ Real webapps use templates. Also, databases.
+ * Templates with Handlebars
+ * Storing Data(a basic overview)
+ * Users, Their Data, and a bit of Modeling.
+ * Excercises
