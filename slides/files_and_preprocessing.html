@@ -1,0 +1,78 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>Beginning Node.js</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/fathom.js"></script>
+        <script src="../js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+
+            <div class="slide normal">
+                <h1 class="center">Files and Preprocessing</h1>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Doing more that serving files</h1></header>
+                <section class="content">
+                    <p>PHP stands for "PHP: Hypertext Preprocessor". Don't believe me? It totally says that <a href="http://us.php.net/manual/en/faq.general.php">in the offical FAQ</a>.</p>
+                    <p>"Preprocessing" here means that when we get a request, we run through a scripted set of behaviors to "process" the output before it is given. This is Dynamic Web Programming, rather than just serving static pages.</p>
+                    <p>PHP, CGI and Python were some of the first languages used to preprocess hypertext.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1 class="center"><a href="../examples/preprocessing_server.js">Preprocessing Example</a></h1></header>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Forms</h1></header>
+                <section class="content">
+                    <p>In order for us to do anything useful, the user must send us data. We've mentioned before GET and POST, and you're familiar with the form tag, here with GET </p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+                        <form method="GET" action="/thanks.html"></form>
+                    </pre>
+                    Or here with POST
+                    <pre style="border:3px dotted black;" class="prettyprint">
+                        <form method="POST" action="/thanks.html"></form>
+                    </pre>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+            <div class="slide normal">
+                <header><h1>GET and POST, again</h1></header>
+                <p>On the server, you handle GET and POST differently.</p>
+                <p>In our preprocessing example, we're handling data from a GET request, which came with the URL in the querystring.</p>
+                <p>Handling POST data is more complex.</p>
+                <pre style="border:3px dotted black;" class="prettyprint">
+                    <form method="POST" action="/thanks.html"></form>
+                </pre>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+        </div>
+    </div>
+</body>
