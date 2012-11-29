@@ -12,7 +12,7 @@ The course should cover the following:
  * Beginning Node.js
  * Excercises
  * Node, Git & Heroku
- *
+
 ## Section 2
 
  Doing useful things, like having a file server, responding to forms.
