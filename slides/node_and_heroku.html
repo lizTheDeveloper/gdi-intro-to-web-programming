@@ -171,12 +171,11 @@ git push remote_name branch_name
                     </slide>
                     <pre class="speaker-notes" style="display:none">mention intermediate stages, like merges, fancy shit</pre>
                 </div>
-
                 <div class="slide normal">
                     <header><h1>Heroku</h1></header>
                     <slide>
                         <p>Heroku is essentially a git remote. That's all.</p>
-                        <p>Add heroku as a git remote, and then push to heroku when you're ready to "deploy".</p>
+                        <p>Pushing to Heroku instead of Github will "deploy" your app.</p>
                         <p>Let's walk through setting up an app.</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
@@ -187,15 +186,6 @@ git push remote_name branch_name
                         <p>If you haven't signed up yet: <a href="https://api.heroku.com/signup">https://api.heroku.com/signup</a></p>
                         <p>If you have, log in.</p>
                         <p>We'll create an app through the IDE, so we're logging in to get access to the dashboard.</p>
-                    </slide>
-                    <pre class="speaker-notes" style="display:none"></pre>
-                </div>
-                <div class="slide normal">
-                    <header><h1>Heroku Apps</h1></header>
-                    <slide>
-                        <p>Head over to the "balloon" tab, and click "add a deploy server".</p>
-                        <p>Choose Heroku.com</p>
-                        <p>You will see a list of apps if you have any - choose one, or add one by clicking "create new".</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
@@ -214,9 +204,13 @@ web: node app/server.js
                 <div class="slide normal">
                     <header><h1>Deploying to Heroku</h1></header>
                     <slide>
-                        <p>Head over to the "balloon" tab, and click "add a deploy server".</p>
-                        <p>Choose Heroku.com</p>
-                        <p>You will see a list of apps if you have any - choose one, or add one by clicking "create new".</p>
+                        <ul>
+                            <li>Head over to the "balloon" tab, and click "add a deploy server".</li>
+                            <li>Choose Heroku.com</li>
+                            <li>You will see a list of apps if you have any - choose one, or add one by clicking "create new".</li>
+                            <li>Commit all changes with a message, and then click "deploy".</li>
+                            <li>If you get strange errors, ensure you have a procfile and a package.json and that they are properly filled out.</li>
+                        </ul>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>

@@ -205,7 +205,7 @@ fs.writeFile(path, newData, 'utf8', function(err) {
             <div class="slide normal">
                 <header><h1>Be Careful with State</h1></header>
                 <section class="content">
-
+                    <p>State is a snapshot of everything the application knows right now. Users can also be said to have state, but HTTP by nature is "stateless". Browsers must authenticate with every request in order to maintain that the server remembers who they are. Doing multiple operations per request is fine, but be sure you keep in mind when and where things happen.</p>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
@@ -213,15 +213,7 @@ fs.writeFile(path, newData, 'utf8', function(err) {
             <div class="slide normal">
                 <header><h1>Syncronous Methods</h1></header>
                 <section class="content">
-
-                </section>
-                <pre class="speaker-notes" style="display:none"></pre>
-            </div>
-
-            <div class="slide normal">
-                <header><h1>NPM, Modules</h1></header>
-                <section class="content">
-
+                    <p>There are several methods that can be performed syncronously - they force the process to halt as long as the are working. This is bad in the practice of something like a webserver, because it cannot respond to additional requests.</p>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
@@ -233,27 +225,5 @@ fs.writeFile(path, newData, 'utf8', function(err) {
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
-
-            <div class="slide normal">
-                <header><h1>Callback Chaining</h1></header>
-                <section class="content">
-
-                </section>
-                <pre class="speaker-notes" style="display:none"></pre>
-            </div>
-
-            <div class="slide normal">
-                <header><h1>Callback Chaining</h1></header>
-                <section class="content">
-
-                </section>
-                <pre class="speaker-notes" style="display:none"></pre>
-            </div>
-
-            <div class="slide normal">
-                <header><h1>Callback Chaining</h1></header>
-                <section class="content">
-
-                </section>
-                <pre class="speaker-notes" style="display:none"></pre>
-            </div>
+        </div>
+    </body>
