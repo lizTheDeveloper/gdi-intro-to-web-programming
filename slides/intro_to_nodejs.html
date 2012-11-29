@@ -40,7 +40,7 @@
                     <ul>
                         <li>Ain't yo' momma's JavaScript</li>
                         <li>Non-blocking, event-based web programming</li>
-                        <li>Asyncronous programming for the web</li>
+                        <li>Asynchronous programming for the web</li>
                         <li>Brand-spanking new</li>
                         <li>Super popular</li>
                         <li>Made by someone with no formal CS education.</li>
@@ -50,15 +50,15 @@
             </div>
 
             <div class="slide normal">
-                <header><h1>Asyncronous Programming</h1></header>
+                <header><h1>Asynchronous Programming</h1></header>
                 <section class="content">
                     <p>Allows multiple things to happen at once</p>
                     <pre style="border:3px dotted black;" class="prettyprint">
-sendTwitterUpdate("I just learned Asyncronous Programming!", function(response){
+sendTwitterUpdate("I just learned Asynchronous Programming!", function(response){
     console.log("Twitter says:" + response);
 });
 
-sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) {
+sendFacebookUpdate("I just learned Asynchronous Programming!" function(response) {
     console.log("Facebook says:" + response);
 });
                     </pre>
@@ -68,9 +68,9 @@ sendFacebookUpdate("I just learned Asyncronous Programming!" function(response) 
             </div>
 
             <div class="slide normal">
-                <header><h1>Asyncronous Programming</h1></header>
+                <header><h1>Asynchronous Programming</h1></header>
                 <section class="content">
-                    <p>Multitasking is something computers are good at - using spare miliseconds to do things.</p>
+                    <p>Multitasking is something computers are good at - using spare milliseconds to do things.</p>
                     <p>It's something programmers are not always so great at - race conditions can be a problem.</p>
                 </section>
                 <pre class="speaker-notes" style="display:none">Demonstrate what might happen if I counted on twitter being done before facebook, etc.</pre>
@@ -116,7 +116,7 @@ actionHero.emit('killBadGuys');
             <div class="slide normal">
                 <header><h1>Callbacks</h1></header>
                 <section class="content">
-                    <p>Callbacks are how we handle a series of events that need to occur in response to an event, but syncronously. A callback is often executed at the end of a statement.</p>
+                    <p>Callbacks are how we handle a series of events that need to occur in response to an event, but synchronously. A callback is often executed at the end of a statement.</p>
                     <pre style="border:3px dotted black;" class="prettyprint">
 function fightBadGuys(superpower, callback) {
     console.log("I'll fight the bad guys with my " + superpower);
@@ -156,7 +156,7 @@ fightBadGuys('hacker skills', function(err, result) {
             <div class="slide normal">
                 <header><h1>Callback Chaining</h1></header>
                 <section class="content">
-                    <p>Callback chains are something that tends to happen when things have to happen syncronously in node.
+                    <p>Callback chains are something that tends to happen when things have to happen synchronously in node.
                     Things like asking the disk for a file, then reading the file, or modifying the file, and then saving the file.</p>
                     <pre style="border:3px dotted black;" class="prettyprint">
 one(function () {
@@ -176,7 +176,7 @@ one(function () {
             <div class="slide normal">
                 <header><h1>Race Conditions!</h1></header>
                 <section class="content">
-                    <p>In asyncronous programming, you have to be careful with "Race Conditions".</p>
+                    <p>In asynchronous programming, you have to be careful with "Race Conditions".</p>
                     <pre style="border:3px dotted black;" class="prettyprint">
 var fs = require('fs');
 var path = 'examples/exampleFile.txt';
@@ -198,7 +198,7 @@ fs.writeFile(path, newData, 'utf8', function(err) {
             </div>
 
             <div class="slide normal">
-                <header><h1 class="center"><a href="../excercises/fileserver.html">Excercise Time!</a></h1></header>
+                <header><h1 class="center"><a href="../excercises/fileserver.html">Exercise Time!</a></h1></header>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
 
@@ -213,7 +213,7 @@ fs.writeFile(path, newData, 'utf8', function(err) {
             <div class="slide normal">
                 <header><h1>Syncronous Methods</h1></header>
                 <section class="content">
-                    <p>There are several methods that can be performed syncronously - they force the process to halt as long as the are working. This is bad in the practice of something like a webserver, because it cannot respond to additional requests.</p>
+                    <p>There are several methods that can be performed synchronously - they force the process to halt as long as they are working. This is bad in the practice of something like a webserver, because it cannot respond to additional requests.</p>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
