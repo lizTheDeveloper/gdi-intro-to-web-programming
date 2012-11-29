@@ -1,8 +1,0 @@
-{"ts":1353987950226,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":true,"ts":1353987944449,"patch":[[{"diffs":[[1,"node "]],"start1":0,"start2":0,"length1":0,"length2":5}]],"length":5,"saved":false}
-{"ts":1353987945082,"patch":[[{"diffs":[[0,"node"],[-1," "]],"start1":0,"start2":0,"length1":5,"length2":4}]],"length":4,"saved":false}
-{"ts":1353987948264,"patch":[[{"diffs":[[0,"node"],[1," app"]],"start1":0,"start2":0,"length1":4,"length2":8}]],"length":8,"saved":false}
-{"ts":1353987951126,"patch":[[{"diffs":[[0,"node app"],[1,"/nod"]],"start1":0,"start2":0,"length1":8,"length2":12}]],"length":12,"saved":false}
-{"ts":1353987953015,"patch":[[{"diffs":[[0,"ode app/"],[-1,"nod"],[1,"ser"]],"start1":1,"start2":1,"length1":11,"length2":11}]],"length":12,"saved":false}
-{"ts":1353987954993,"patch":[[{"diffs":[[0," app/ser"],[1,"ver.js"]],"start1":4,"start2":4,"length1":8,"length2":14}]],"length":18,"saved":false}
-{"ts":1353987964523,"patch":[[{"diffs":[[1,"web: "],[0,"node app"]],"start1":0,"start2":0,"length1":8,"length2":13}]],"length":23,"saved":false}

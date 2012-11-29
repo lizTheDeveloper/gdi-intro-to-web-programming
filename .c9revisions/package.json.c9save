@@ -1,7 +1,0 @@
-{"ts":1353987876195,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":true,"ts":1353987870805,"patch":[[{"diffs":[[1,"{\n  \"name\": \"node-example\",\n  \"version\": \"0.0.1\",\n  \"dependencies\": {\n    \"express\": \"2.5.x\"\n  },\n  \"engines\": {\n    \"node\": \"0.8.x\",\n    \"npm\": \"1.1.x\"\n  }\n}"]],"start1":0,"start2":0,"length1":0,"length2":158}]],"length":158,"saved":false}
-{"ts":1353987876777,"patch":[[{"diffs":[[0,"\": \""],[-1,"node-example"],[1,"gdi"],[0,"\",\n "]],"start1":9,"start2":9,"length1":20,"length2":11}]],"length":149,"saved":false}
-{"ts":1353987878181,"patch":[[{"diffs":[[0,"e\": \"gdi"],[1,"-nod"],[0,"\",\n  \"ve"]],"start1":8,"start2":8,"length1":16,"length2":20}]],"length":153,"saved":false}
-{"ts":1353987879774,"patch":[[{"diffs":[[0,"\"gdi-nod"],[1,"e-in"],[0,"\",\n  \"ve"]],"start1":12,"start2":12,"length1":16,"length2":20}]],"length":157,"saved":false}
-{"ts":1353987881037,"patch":[[{"diffs":[[0,"-node-in"],[1,"tro"],[0,"\",\n  \"ve"]],"start1":16,"start2":16,"length1":16,"length2":19}]],"length":160,"saved":false}
-{"ts":1353987889691,"patch":[[{"diffs":[[0,": {\n"],[-1,"    \"express\": \"2.5.x\"\n"],[0,"  },"]],"start1":68,"start2":68,"length1":31,"length2":8}]],"length":137,"saved":false}

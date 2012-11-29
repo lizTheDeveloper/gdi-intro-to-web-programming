@@ -1,7 +1,0 @@
-{"ts":1353969233524,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":true,"ts":1353969191279,"patch":[[{"diffs":[[1,"An Example!"]],"start1":0,"start2":0,"length1":0,"length2":11}]],"length":11,"saved":false}
-{"contributors":[],"silentsave":false,"ts":1353970238576,"patch":[[{"diffs":[[-1,"An E"],[1,"Look, an e"],[0,"xample!"],[1," Yay examples!"]],"start1":0,"start2":0,"length1":11,"length2":31}]],"length":31,"saved":false}
-{"contributors":[],"silentsave":false,"ts":1353971178591,"patch":[[{"diffs":[[-1,"Look, an example! Yay e"],[1,"An E"],[0,"xample"],[-1,"s"],[0,"!"]],"start1":0,"start2":0,"length1":31,"length2":11}]],"length":11,"saved":false}
-{"contributors":[],"silentsave":false,"ts":1353975195985,"patch":[[{"diffs":[[-1,"An Example"],[1,"This file hasn't been touched by a process"],[0,"!"]],"start1":0,"start2":0,"length1":11,"length2":43}]],"length":43,"saved":false}
-{"contributors":[],"silentsave":true,"ts":1354140913763,"patch":[[{"diffs":[[-1,"This"],[1,"A test"],[0," file"],[1,"- it"],[0," has"]],"start1":0,"start2":0,"length1":13,"length2":19},{"diffs":[[0,"een "],[-1,"touched by a process!"],[1,"overwri"]],"start1":24,"start2":24,"length1":25,"length2":11}]],"length":35,"saved":false}
-{"ts":1354140915824,"patch":[[{"diffs":[[0," overwri"],[1,"tten!"]],"start1":27,"start2":27,"length1":8,"length2":13}]],"length":40,"saved":false}
