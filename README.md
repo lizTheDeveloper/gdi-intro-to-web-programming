@@ -16,7 +16,7 @@ The course should cover the following:
 ## Section 2
 
  Doing useful things, like having a file server, responding to forms.
- * Files and Preprocessing
+ * Preprocessing and Forms
  * Forms, Events
  * Modules
  * Excercises

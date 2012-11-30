@@ -21,9 +21,6 @@ http.createServer(function (request,response) {
     response.end(body);
 }).listen(process.env.PORT);
 
-
-
-
 function makeBody(path, querystring) {
     var body = header;
     var name = querystring.name || 'lady';
