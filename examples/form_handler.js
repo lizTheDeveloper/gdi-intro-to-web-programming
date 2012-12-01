@@ -13,10 +13,6 @@ var footer ='</body>';
 
 //The server herself.
 http.createServer(function (request,response) {
-    console.log('Request received');
-    request.form = '';
-    var responseCode = '';
-
     //Parse querystring, since we have the entire thing immediately.
     request.querystring = url.parse(request.url, true).query;  //return an object from a querystring with raw name-value pairs.
 
@@ -25,7 +21,6 @@ http.createServer(function (request,response) {
 
     //This event is emitted when we get a chunk of request body data.
     request.addListener('data', function(chunk) {
-        console.log('Data');
         //handle a chunk of data, passed in as a buffer.
         //Buffers are easily transformed to strings.
         request.form += chunk.toString();
@@ -35,7 +30,6 @@ http.createServer(function (request,response) {
     //In some cases, we might never reach the end, because the connection is prematurely closed. We want to check for that.
     request.addListener('end', function() {
 
-        console.log('end');
         if (request.method == 'POST') {
             request.form = qs.parse(request.form);
         }
@@ -44,6 +38,7 @@ http.createServer(function (request,response) {
         //This is useful in case a "close" event fires before "end".
         request.ended = true;
         assembleDocument(request, function(document) {
+            document.headers = getHeaders(document);
             response.writeHead(document.statusCode, document.headers);
             response.end(document.body);
         });
@@ -51,7 +46,6 @@ http.createServer(function (request,response) {
     });
 
     request.addListener('close', function() {
-        console.log('close');
         //Checking for an edge case, in this case, we didn't get the entire message.
         if (!request.ended) {
             //Request died midway through. Throw an error.
@@ -66,24 +60,24 @@ http.createServer(function (request,response) {
 //this will return a document object with a body and some headers.
 function assembleDocument(request, callback) {
     var document = {};
+    document.path = url.parse(request.url).pathname;
     if (request.terminated){
         document.statusCode = 500;
         document.body = http.STATUS_CODES[500];
+        callback(document);
     }
 
     var name = request.querystring.name || 'lady';
 
     document.body = header;
-    switch (url.parse(request.url).pathname) {
+    switch (document.path) {
         case '/greeting':
             document.body += "Hello " + name + "!";
             document.body += goBack;
-            document.type = ''
             break;
         case '/farewell':
             document.body += "Goodbye, " + name + ". :(";
             document.body += goBack;
-            document.type = '';
             break;
         case '/form':
             document.body += aForm;
@@ -92,32 +86,76 @@ function assembleDocument(request, callback) {
                 document.body += request.form.last_name +'! <br>';
             }
             document.body += goBack;
-            document.type = '';
             break;
         default:
-            fs.readFile(url.parse(request.url).pathname, function(err, data) {
+            document.readFile = true;
+            fs.readFile('.' + url.parse(request.url).pathname, function(err, data) {
                 if (err) {
                     document.statusCode = 500;
-                    document.body = http.STATUS_CODES[500] + '<br>There was an error getting the requested file: ' + err;
-                    document.type = 'html/text';
-                    console.log(err);
+                    document.body += http.STATUS_CODES[500] + '<br>There was an error getting the requested file: ' + err;
                 } else {
                     document.statusCode = 200;
                     document.body = data.toString();
-                    document.type = getType(something);
-                }
-                document.headers = {
-                    'Content-Length': document.body.length,
-                    'Content-Type': document.type
                 }
                 callback(document);
                 return;
             });
     }
-    document.body += footer;
-    document.headers = {
-        'Content-Length': document.body.length,
-        'Content-Type': document.type
+    if (!document.readFile) {
+        document.statusCode = 200;
+        document.body += footer;
+        callback(document);
     }
-    callback(document);
+}
+
+function getHeaders(document) {
+    var headers = {
+        'Content-Length' : document.body.length,
+        'Content-Type' : getType(document)
+    };
+    return headers;
+}
+
+function getType(document) {
+    //only if the status code is 200 do we need to really find out what we're serving up.
+    var type = 'text/plain';
+    if (document.statusCode == 200) {
+        switch (parseExt(document.path)) {
+
+            case 'html':
+                type = 'text/html';
+                break;
+            case 'js':
+                type = 'text/javascript';
+                break;
+            case 'css':
+                type = 'text/css';
+                break;
+            case 'png':
+                type = 'image/png';
+                break;
+            case 'jpg':
+            case 'jpeg':
+                type = 'image/jpeg';
+                break;
+            case 'gif':
+                type = 'image/gif';
+                break;
+            case 'ico':
+                type = 'image/x-icon';
+                break;
+            default:
+            break;
+        }
+    }
+    return type;
+}
+
+//This function is very nieve, it just grabs the last dot and returns what's after it.
+function parseExt(path) {
+    var dot = path.lastIndexOf('.');
+    var ext = path.substring(dot + 1);
+    //if it's a raw path, assume HTML
+    if (dot == -1) { ext = 'html' }
+    return ext;
 }

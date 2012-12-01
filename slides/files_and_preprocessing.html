@@ -69,10 +69,36 @@
                 <p>In our preprocessing example, we're handling data from a GET request, which came with the URL in the querystring.</p>
                 <p>Handling POST data is more complex.</p>
                 <pre style="border:3px dotted black;" class="prettyprint">
-                    <form method="POST" action="/thanks.html"></form>
+&lt;form method="POST" action="/thanks.html"&gt;
+    First Name: &lt;input name="firstname"&gt;&lt;br&gt;
+    Last Name: &lt;input name="lastname"&gt;&lt;br&gt;
+    Phone: &lt;input name="phone"&gt;&lt;br&gt;
+    Address: &lt;input name="address"&gt;
+&lt;/form&gt;
+                </pre>
+                <p>Is then handled as...</p>
+                <pre style="border:3px dotted black;" class="prettyprint">
+request.addListener('data', function(chunk) {
+    request.form += chunk.toString();
+});
                 </pre>
                 <pre class="speaker-notes" style="display:none"></pre>
             </div>
+            <div class="slide normal">
+                <header><h1>Class: http.ServerRequest</h1></header>
+                <p>The server passes two objects to it's callback - Request and Response.</p>
+                <p>Request is an object, and is an instance of <a href="http://nodejs.org/api/http.html#http_class_http_serverrequest">http.ServerRequest</a>. It emits the following events:</p>
+                <ul>
+                    <li>data - passes a chunk of the request body.</li>
+                    <li>end - we've reached the end of the request.</li>
+                    <li>close - the connection has closed, sometimes occurs before 'end'.</li>
+                </ul>
+            </div>
+            <div class="slide normal">
+                <header><h1>Processing Events</h1></header>
+                <p>Because the request</p>
+            </div>
+
         </div>
     </div>
 </body>
