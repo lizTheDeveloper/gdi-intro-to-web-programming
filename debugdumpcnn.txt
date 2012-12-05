@@ -1,0 +1,1776 @@
+== Info: About to connect() to www.cnn.com port 80 (#0)
+== Info:   Trying 157.166.248.11... == Info: connected
+== Info: Connected to www.cnn.com (157.166.248.11) port 80 (#0)
+=> Send header, 166 bytes (0xa6)
+0000: GET / HTTP/1.1
+0010: User-Agent: curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7
+0050:  NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2
+0084: Host: www.cnn.com
+0097: Accept: */*
+00a4: 
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 15 bytes (0xf)
+0000: Server: nginx
+<= Recv header, 37 bytes (0x25)
+0000: Date: Tue, 04 Dec 2012 23:02:13 GMT
+<= Recv header, 25 bytes (0x19)
+0000: Content-Type: text/html
+<= Recv header, 28 bytes (0x1c)
+0000: Transfer-Encoding: chunked
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 38 bytes (0x26)
+0000: Set-Cookie: CG=US:WA:Seattle; path=/
+<= Recv header, 46 bytes (0x2e)
+0000: Last-Modified: Tue, 04 Dec 2012 23:01:11 GMT
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 36 bytes (0x24)
+0000: Cache-Control: max-age=60, private
+<= Recv header, 40 bytes (0x28)
+0000: Expires: Tue, 04 Dec 2012 23:03:07 GMT
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 2565 bytes (0xa05)
+0000: 19f86
+0007: .<!DOCTYPE HTML>.<html lang="en-US">.<head>.<title>CNN.com - Bre
+0047: aking News, U.S., World, Weather, Entertainment &amp; Video News
+0087: </title>.<meta http-equiv="content-type" content="text/html;char
+00c7: set=utf-8"/>.<meta http-equiv="last-modified" content="2012-12-0
+0107: 4T22:05:00Z"/>.<meta http-equiv="refresh" content="1800;url=http
+0147: ://www.cnn.com/?refresh=1"/>.<meta http-equiv="X-UA-Compatible" 
+0187: content="IE=EmulateIE8"/>.<meta name="robots" content="index,fol
+01c7: low"/>.<meta name="googlebot" content="noarchive"/>.<meta name="
+0207: description" content="CNN.com delivers the latest breaking news 
+0247: and information on the latest top stories, weather, business, en
+0287: tertainment, politics, and more. For in-depth coverage, CNN.com 
+02c7: provides special reports, video, audio, photo galleries, and int
+0307: eractive guides."/>.<meta name="keywords" content="CNN,CNN news,
+0347: CNN.com,CNN TV,news,news online,breaking news,U.S. news,world ne
+0387: ws,weather,business,CNN Money,sports,politics,law,technology,ent
+03c7: ertainment,education,travel,health,special reports,autos,develop
+0407: ing story,news video,CNN Intl"/>.<meta name="application-name" c
+0447: ontent="CNN"/>.<meta name="msapplication-tooltip" content="Break
+0487: ing News, U.S., World, Weather, Entertainment and Video News"/>.
+04c7: <meta name="msapplication-task" content="name=News Pulse;action-
+0507: uri=http://newspulse.cnn.com/;icon-uri=http://www.cnn.com/favico
+0547: n.ie9.ico"/>.<meta name="msapplication-task" content="name=iRepo
+0587: rt;action-uri=http://ireport.cnn.com;icon-uri=http://ireport.cnn
+05c7: .com/favicon.ico"/>.<meta name="viewport" content="width=1024"/>
+0607: .<meta property="fb:app_id" content="80401312489"/>.<meta proper
+0647: ty="fb:page_id" content="129343697106537"/>.<meta name="msapplic
+0687: ation-TileColor" content="#CA0002"/>.<meta name="msapplication-T
+06c7: ileImage" content="http://i.cdn.turner.com/cnn/2012/images/10/15
+0707: /cnn_logo_144_144.png"/>.<link href="http://www.cnn.com/" rel="c
+0747: anonical"/>.<link href="http://www.cnn.com/favicon.ie9.ico" rel=
+0787: "Shortcut Icon" type="image/x-icon"/>.<link href="/tools/search/
+07c7: cnncom.xml" rel="search" title="CNN.com" type="application/opens
+0807: earchdescription+xml"/>.<link href="/tools/search/cnncomvideo.xm
+0847: l" rel="search" title="CNN.com Video" type="application/opensear
+0887: chdescription+xml"/>.<link href="http://i.cdn.turner.com/cnn/.e/
+08c7: img/3.0/global/misc/apple-touch-icon.png" rel="apple-touch-icon"
+0907:  type="image/png"/>.<link href="http://rss.cnn.com/rss/cnn_topst
+0947: ories.rss" rel="alternate" title="CNN - Top Stories [RSS]" type=
+0987: "application/rss+xml"/>.<link href="http://rss.cnn.com/rss/cnn_l
+09c7: atest.rss" rel="alternate" title="CNN - Recent Stories [RSS]" 
+<= Recv data, 2896 bytes (0xb50)
+0000: type="application/rss+xml"/>.<link href="http://edition.cnn.com"
+0040:  hreflang="en-gb" rel="alternate" title="CNN International" type
+0080: ="text/html"/>.<link href="http://arabic.cnn.com" hreflang="ar" 
+00c0: rel="alternate" title="CNN Arabic" type="text/html"/>.<link href
+0100: ="http://mexico.cnn.com" hreflang="es" rel="alternate" title="CN
+0140: N Mexico" type="text/html"/>.<link href="http://z.cdn.turner.com
+0180: /cnn/tmpl_asset/static/www_homepage/1883/css/hplib-min.css" rel=
+01c0: "stylesheet" type="text/css"/>.<script src="http://z.cdn.turner.
+0200: com/cnn/.e/js/libs/jquery-1.7.2.min.js"></script>.<script src="h
+0240: ttp://z.cdn.turner.com/cnn/.e/js/libs/jquery.timeago.min.js"></s
+0280: cript>.<script src="http://z.cdn.turner.com/cnn/.e/js/libs/proto
+02c0: aculous.1.8.2.min.js"></script>.<script src="http://z.cdn.turner
+0300: .com/cnn/tmpl_asset/static/www_homepage/1883/js/hplib-min.js"></
+0340: script>.<script>.var cnnIsHomePage=true,.cnnPageName="CNN Home P
+0380: age",.cnnSectionName="CNN Home Page",.sectionName="homepage",.cn
+03c0: n_edtnswtchver="www",.cnnCurrTime=new Date(1354662011000),.cnnCu
+0400: rrHour=18,.cnnCurrMin=0,.cnnCurrDay='Tue',.weatherTitle='News';.
+0440: </script>.<script>.if ($('cnn_GallerySliderContainer')){cnn_Sect
+0480: ionGallery=new cnn_GallerySlider();}.if ($('cnn_GallerySliderCon
+04c0: tainer')){cnn_SectionGallery=new cnn_GallerySlider();}.cnn_metad
+0500: ata.section=['cnn homepage','cnn:cnn homepage'];.cnn_metadata.fr
+0540: iendly_name='CNN Home Page';.cnn_metadata.template_type='index';
+0580: .var selectedEdition=allCookies['SelectedEdition'],.galleryAdDir
+05c0: ="/cnn_adspaces/3.0/homepage/main/",.CNN_gallery_0_ad_0="/cnn_ad
+0600: spaces/3.0/homepage/main/bot1.120x90.ad",.CNN_gallery_0_ad_1="/c
+0640: nn_adspaces/3.0/homepage/main/bot2.120x90.ad",.CNN_gallery_0_ad_
+0680: 2="/cnn_adspaces/3.0/homepage/main/bot3.120x90.ad",.CNN_gallery_
+06c0: 0_ad_3="/cnn_adspaces/3.0/homepage/main/bot4.120x90.ad",.CNN_gal
+0700: lery_0_ad_4="/cnn_adspaces/3.0/homepage/main/bot5.120x90.ad",.CN
+0740: N_gallery_0_ad_5="/cnn_adspaces/3.0/homepage/main/bot6.120x90.ad
+0780: ",.CNN_gallery_0_ad_6="/cnn_adspaces/3.0/homepage/main/bot7.120x
+07c0: 90.ad",.CNN_gallery_0_ad_7="/cnn_adspaces/3.0/homepage/main/bot8
+0800: .120x90.ad",.CNN_gallery_0_ad_8="/cnn_adspaces/3.0/homepage/main
+0840: /bot9.120x90.ad",.CNN_gallery_1_ad_0="/cnn_adspaces/3.0/homepage
+0880: /main/bot4.120x90.ad",.CNN_gallery_1_ad_1="/cnn_adspaces/3.0/hom
+08c0: epage/main/bot5.120x90.ad",.CNN_gallery_1_ad_2="/cnn_adspaces/3.
+0900: 0/homepage/main/bot6.120x90.ad",.CNN_gallery_2_ad_0="/cnn_adspac
+0940: es/3.0/homepage/main/bot7.120x90.ad",.CNN_gallery_2_ad_1="/cnn_a
+0980: dspaces/3.0/homepage/main/bot8.120x90.ad",.CNN_gallery_2_ad_2="/
+09c0: cnn_adspaces/3.0/homepage/main/bot9.120x90.ad";.</script>.</head
+0a00: >.<body id="cnnMainPage">.<!-- ADSPACE: homepage/main/top.1x1 --
+0a40: ><div align="center" style="padding: 0; margin: 0; border: 0;"><
+0a80: script>
+0a89: cnnad_renderAd("http://ads.cnn.com/js.ng/site=cnn&cnn_pagetype=m
+0ac9: ain&cnn_position=1x1_top&cnn_rollup=homepage&page.allowcompete=n
+0b09: o");</script></div>.<div id="cnn_ipadappbanner"></div>.<div id="
+0b49: cnn_hdr
+<= Recv data, 10136 bytes (0x2798)
+0000: "> <div id="cnn_hdr-prompt" style="display:none"><div class="hdr
+0040: -wrap" id="cnn_hdr-promptcntnt"></div></div> <div id="cnn_hdr-ma
+0080: in"> <div class="hdr-wrap"> <div id="hdr-banner"> <a href="/" id
+00c0: ="hdr-banner-title"><img src="http://i.cdn.turner.com/cnn/.e/img
+0100: /3.0/global/header/hdr-main.gif" alt="CNN" border="0" height="82
+0140: " width="119"/></a> </div> <div id="hdr-editions"> <ul> <li clas
+0180: s="no-pad-left"><span><a href="javascript:cnn_initeditionhtml(3)
+01c0: ;" class="cnn_hdr-editionlnk">SET EDITION</a>: &nbsp;U.S.</span>
+0200: </li> <li><a id="cnn_switchEdition_intl" href="http://edition.cn
+0240: n.com/?hpt=ed_Intl" title="CNN INTERNATIONAL">INTERNATIONAL</a><
+0280: /li> <li><a href="http://mexico.cnn.com/?hpt=ed_Mexico" hreflang
+02c0: ="es" title="CNN M&#201;XICO">M&#201;XICO</a></li> <li class="no
+0300: -border"><a href="http://arabic.cnn.com/?hpt=ed_Arabic" hreflang
+0340: ="ar" title="CNN ARABIC">ARABIC</a></li> </ul> <div class="cnn_c
+0380: lear"></div><div style="padding-top:2px"> <ul> <li class="no-pad
+03c0: -left no-border no-pad-right"><span><a href="/CNN/Programs" clas
+0400: s="cnn_hdr-editionlnk">TV</a>: &nbsp;</span></li> <li class="no-
+0440: pad-left"><a href="/cnn/programs/" title="CNN TV programming sch
+0480: edule">CNN</a></li> <li><a href="/cnni/" title="CNN Internationa
+04c0: l TV programming schedule">CNNi</a></li> <li><a href="http://cnn
+0500: espanol.cnn.com/" hreflang="es" title="CNN in Spanish">CNN en Es
+0540: pa&#241;ol</a></li> <li class="no-border"><a href="http://www.hl
+0580: ntv.com">HLN</a></li> </ul> </div> </div> <div id="hdr-auth"> <u
+05c0: l> <li><a href="javascript:void(0);" onclick="showOverlay('profi
+0600: le_signup_overlay');return false;" title="Sign up">Sign up</a></
+0640: li> <li class="no-border no-pad-right"><a href="javascript:void(
+0680: 0);" onclick="showOverlay('profile_signin_overlay');return false
+06c0: ;" title="Log in">Log in</a></li> </ul> </div> <div id="hdr-sear
+0700: ch"> <form method="get" action="http://www.cnn.com/search/" onsu
+0740: bmit="return cnnSearch(this);"> <div class="ftr-search-datacntr"
+0780: > <div class="ftr-search-tfield"><input id="hdr-search-box" maxl
+07c0: ength="100" name="query" size="12" type="text" value=""/></div> 
+0800: <div class="ftr-search-sicon"><input alt="Search" height="21" sr
+0840: c="http://i.cdn.turner.com/cnn/.e/img/3.0/search/btn_search_hp_t
+0880: ext.gif" type="image" width="55"/></div> </div> <input name="pri
+08c0: maryType" type="hidden" value="mixed"/><input name="sortBy" type
+0900: ="hidden" value="relevance"/><input name="intl" type="hidden" va
+0940: lue="false"/> </form> </div> </div> </div> <div id="cnn_hdr-nav"
+0980: > <ul id="us-menu"> <li class="no-border"><a href="/" class="nav
+09c0: -on" id="nav-home" title="">Home</a></li> <li class="no-border">
+0a00: <a href="/video/" class="nav-media no-border" id="nav-video" tit
+0a40: le="Video Breaking News Videos from CNN.com"><span>TV &amp; Vide
+0a80: o</span></a></li> <li class="no-border"><a href="/trends/" class
+0ac0: ="nav-media" id="nav-trends" title="CNN Trends powered by Zite">
+0b00: <span>CNN Trends</span></a></li> <li class=""><a href="/US/" cla
+0b40: ss="" id="nav-us" title="U.S. News, Headlines, Stories, and Vide
+0b80: o from CNN.com"><span>U.S.</span></a></li> <li class=""><a href=
+0bc0: "/WORLD/" class="" id="nav-world" title="World News Internationa
+0c00: l Headlines Stories and Video from CNN.com"><span>World</span></
+0c40: a></li> <li class=""><a href="/POLITICS/" class="" id="nav-polit
+0c80: ics" title="Election and Politics News from CNN.com"><span>Polit
+0cc0: ics</span></a></li> <li class=""><a href="/JUSTICE/" class="" id
+0d00: ="nav-justice" title="Justice News Courts Celebrity Docket and L
+0d40: aw News from CNN.com"><span>Justice</span></a></li> <li class=""
+0d80: ><a href="/SHOWBIZ/" class="" id="nav-entertainment" title="Ente
+0dc0: rtainment News Celebrities Movies and TV from CNN.com"><span>Ent
+0e00: ertainment</span></a></li> <li class=""><a href="/TECH/" class="
+0e40: " id="nav-tech" title="Technology Computers Internet and Persona
+0e80: l Tech News from CNN.com"><span>Tech</span></a></li> <li class="
+0ec0: "><a href="/HEALTH/" class="" id="nav-health" title="Health News
+0f00:  Medicine Diet Fitness and Parenting from CNN.com"><span>Health<
+0f40: /span></a></li> <li class=""><a href="/LIVING/" class="" id="nav
+0f80: -living" title="Living News Personal Work and Home from CNN.com"
+0fc0: ><span>Living</span></a></li> <li class=""><a href="/TRAVEL/" cl
+1000: ass="" id="nav-travel" title="Travel News Vacations Destinations
+1040:  and Video from CNN.com"><span>Travel</span></a></li> <li class=
+1080: ""><a href="/OPINION/" class="" id="nav-opinion" title="Opinion 
+10c0: Editorial Analysis and Insight from CNN.com"><span>Opinion</span
+1100: ></a></li> <li class=""><a href="http://ireport.cnn.com/" class=
+1140: "" id="nav-ireport" title="CNN iReport &#8211; Share your story,
+1180:  discuss the issues with CNN.com"><span>iReport</span></a></li> 
+11c0: <li class=""><a href="http://money.cnn.com/" class="" id="nav-mo
+1200: ney" title="Business financial personal finance news from CNNMon
+1240: ey"><span>Money</span><img src="http://i.cdn.turner.com/cnn/.e/i
+1280: mg/3.0/global/header/nav-arrow.gif" width="3" height="5" alt="" 
+12c0: /></a></li> <li class=""><a href="http://sportsillustrated.cnn.c
+1300: om/?xid=cnnnav" class="" id="nav-sports" title="Breaking news re
+1340: al-time scores and daily analysis from Sports Illustrated SI.com
+1380: "><span>Sports</span><img src="http://i.cdn.turner.com/cnn/.e/im
+13c0: g/3.0/global/header/nav-arrow.gif" width="3" height="5" alt="" /
+1400: ></a></li> </ul> </div> </div>.<script>cnnad_newTileIDGroup(['97
+1440: 0x66_top','custom_rgt']);</script>.<div class="cnn_adunit970x66"
+1480:  align="center">.<!-- ADSPACE: homepage/main/top.970x66 -->
+14bd: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+14fd: in&cnn_position=970x66_top&cnn_rollup=homepage&page.allowcompete
+153d: =no&params.styles=fs|CALLOUT -->
+155f: <div id="ad-236573" align="center" style="padding: 0; margin: 0;
+159f:  border: 0;"></div><script>cnnad_createAd("236573","http://ads.c
+15df: nn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=970x66_to
+161f: p&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs","66
+165f: ","970");cnnad_registerSpace(236573,970,66);</script>.</div>.<di
+169f: v align="center">.<div id="cnn_maincntnr">.<!-- this is where th
+16df: e breaking news CSI code will go -->.<div id="cnnBannerContainer
+171f: "></div>.<script type="text/javascript">.CSIManager.getInstance(
+175f: ).call('/.element/ssi/www/breaking_news/3.0/banner.html','','cnn
+179f: BannerContainer',cnnRenderDomesticBanner);.</script>.<div id="cn
+17df: nSetEditionContainer"></div>.<div id="cnnMakeHPContainer"></div>
+181f: ..<div class="cnn_contentarea">.<div id="cnn_toptstmparea"><div>
+185f: .<div style="float:left"><span>updated 5:02 PM EST, Tue December
+189f:  4, 2012</span></div>.<div style="float:right"><div class="cnnOp
+18df: in">.<!--[if IE]>.<a href class="realmLink" onclick="this.style.
+191f: behavior='url(#default#homepage)';this.setHomePage(window.locati
+195f: on);" href="Javascript:void();">Make CNN Your Homepage</a>.<styl
+199f: e>#makeHPLink{display:none;}</style>.<![endif]-->.<a class="real
+19df: mLink" href="#" id="makeHPLink" onclick="cnnMakeHP('homepage_set
+1a1f: _overlay');">Make CNN Your Homepage</a>.</div></div>.<script>UAs
+1a5f: tring=navigator.userAgent;if (UAstring.indexOf('iPad')>-1){$('ma
+1a9f: keHPLink').hide();}</script>.</div></div>.</div>.<div class="cnn
+1adf: _pad2top cnn_shdspc"></div>.<div class="cnn_hpinthenews">.<div c
+1b1f: lass="cnn_hpinthenewscntr">.<ul>.<li class="cnn_hpinthenewshdr">
+1b5f: <span>In the news</span></li>.<li class="cnn_hpinthenewsl1"><a h
+1b9f: ref="/2012/12/01/sport/football/nfl-chiefs-shooting/index.html?h
+1bdf: pt=hp_inthenews"><span>Jovan Belcher</span></a></li>.<li class="
+1c1f: cnn_hpinthenewsl2"><a href="/2012/12/03/politics/fiscal-cliff/in
+1c5f: dex.html?hpt=hp_inthenews"><span>Fiscal cliff</span></a></li>.<l
+1c9f: i class="cnn_hpinthenewsl3"><a href="/2012/12/04/world/meast/syr
+1cdf: ia-civil-war/index.html?hpt=hp_inthenews"><span>Syria</span></a>
+1d1f: </li>.<li class="cnn_hpinthenewsl4"><a href="/2012/12/04/world/m
+1d5f: east/iran-us-drone/index.html?hpt=hp_inthenews"><span>Iran drone
+1d9f: </span></a></li>.<li class="cnn_hpinthenewsl5"><a href="/2012/12
+1ddf: /03/justice/california-coast-guard-death/index.html?hpt=hp_inthe
+1e1f: news"><span>Coast Guardsman killed</span></a></li>.<li class="cn
+1e5f: n_hpinthenewsl6"><a href="/2012/12/03/justice/george-zimmerman-p
+1e9f: hoto/index.html?hpt=hp_inthenews"><span>George Zimmerman</span><
+1edf: /a></li>.<li class="cnn_hpinthenewsl7"><a href="/2012/12/04/worl
+1f1f: d/europe/britain-royal-baby-reaction/index.html?hpt=hp_inthenews
+1f5f: "><span>Royal pregnancy</span></a></li>.<li class="cnn_hpinthene
+1f9f: wsl8"><a href="/2012/12/03/tech/social-media/facebook-privacy-vo
+1fdf: te/index.html?hpt=hp_inthenews"><span>Facebook</span></a></li>.<
+201f: li class="cnn_hpinthenewsl9"><a href="/2012/12/02/world/cnnheroe
+205f: s-show/index.html?hpt=hp_inthenews"><span>CNN Heroes</span></a><
+209f: /li>.</ul>.</div>.</div>.<div class="cnn_pad2top cnn_shdspc"></d
+20df: iv>.<div class="cnn_contentarea cnn_shdcamtt1">.<div class="cnn_
+211f: shdcaheader"></div>.<div id="cnn_maintopt1">.<div id="cnn_maint1
+215f: lftf">
+2167: <div id="cnn_maintt1imgbul">.<div class="cnn_relpostn">.<div cla
+21a7: ss="cnn_mtt1img">.<div><a href="/2012/12/03/us/alaska-serial-kil
+21e7: ler/index.html?hpt=hp_t1"><img src="http://i2.cdn.turner.com/cnn
+2227: /dam/assets/121204072958-israel-keyes-t1-main.jpg" alt="" border
+2267: ="0" height="250" hspace="0" vspace="0" width="250"/></a></div>.
+22a7: </div>.<div class="cnn_mtt1imgh">.<div class="cnn_mtt1imghtitle"
+22e7: ><h2><span><a href="/2012/12/03/us/alaska-serial-killer/index.ht
+2327: ml?hpt=hp_t1">Suspected serial killer dead in Alaska; questions 
+2367: remain</a></span></h2></div>.</div>.</div>.<div class="cnn_mtt1c
+23a7: ontent">.<div id="cnn_mtt1lftarea">.<p>.Authorities say Israel K
+23e7: eyes, charged in the slaying of a barista, killed himself while 
+2427: in custody. The FBI said he first confessed to at least seven ot
+2467: her killings..<a href="/2012/12/03/us/alaska-serial-killer/index
+24a7: .html?hpt=hp_t1">FULL STORY</a>.</p>.</div>.<div class="cnn_clea
+24e7: r"></div>.</div>.</div>.<div class="cnn_maint1dline"></div>.<div
+2527:  id="cnn_maintt2bul">.<div class="cnn_mtt1content">.<h4>FISCAL C
+2567: LIFF</h4> <div class="cnn_divline"></div> <ul class="cnn_bulletb
+25a7: in"> <li> <span class="cnnPreWOOL"></span> <a href="/2012/12/04/
+25e7: politics/fiscal-cliff/index.html?hpt=hp_t2">Old issues frame new
+2627:  debate</a> <span class="cnnPostWOOL"></span> </li> <li> <span c
+2667: lass="cnnPreWOOL"></span> <a href="http://politicalticker.blogs.
+26a7: cnn.com/2012/12/04/poll-gop-to-get-more-blame-than-obama-if-fisc
+26e7: al-cliff-talks-fail/?hpt=hp_t2">Poll: If talks fail, GOP gets bl
+2727: ame</a> <span class="cnnPostWOOL"></span> </li> <li> <span class
+2767: ="cnnPreWOOL"></span> <a href="http://finance.for
+<= Recv data, 1448 bytes (0x5a8)
+0000: tune.cnn.com/2012/12/04/alan-simpson-fiscal-cliff/?hpt=hp_t2">Si
+0040: mpson: Congress 'totally confused'</a> <span class="cnnPostWOOL"
+0080: ></span> </li> <li> <span class="cnnPreWOOL"></span> <a href="ht
+00c0: tp://politicalticker.blogs.cnn.com/?hpt=hp_t2">Ticker: GOP senat
+0100: or disses Boehner</a> <span class="cnnPostWOOL"></span> </li> <l
+0140: i> <span class="cnnPreWOOL"></span> <a href="http://politicaltic
+0180: ker.blogs.cnn.com/2012/12/04/palin-apologizes-for-calling-some-r
+01c0: epublicans-wusses/?hpt=hp_t2">Palin apologizes for 'wusses' comm
+0200: ent</a> <span class="cnnPostWOOL"></span> </li> <li> <span class
+0240: ="cnnPreWOOL"></span> <a href="/video/?hpt=hp_t2#/video/showbiz/
+0280: 2012/12/03/early-vo-sot-lohan-jokes.cnn">Leno: How to describe f
+02c0: iscal cliff</a> <span class="cnnPostWOOL"></span> &nbsp;<a href=
+0300: /video/?hpt=hp_t2#/video/showbiz/2012/12/03/early-vo-sot-lohan-j
+0340: okes.cnn target=""><img class="cnnVideoIcon" width="16" height="
+0380: 10" border="0" alt="Leno: How to describe fiscal cliff" src="htt
+03c0: p://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/video_icon.gif"
+0400: /></a> </li> </ul><h4>THIS JUST IN</h4> <div class="cnn_divline"
+0440: ></div> <ul class="cnn_bulletbin"> <li> <span class="cnnPreWOOL"
+0480: ></span> <a href="/2012/12/04/us/new-york-subway-death/index.htm
+04c0: l?hpt=hp_t3">Paper ripped over eerie subway photo</a> <span clas
+0500: s="cnnPostWOOL"></span> </li> <li> <span class="cnnPreWOOL"></sp
+0540: an> <a href="/2012/12/03/sport/football/dutch-linesman-killed-fo
+0580: otball/index.html?hpt=hp_t3">Teens charg
+<= Recv data, 1448 bytes (0x5a8)
+0000: ed in soccer official's killing</a> <span class="cnnPostWOOL"></
+0040: span> </li> <li> <span class="cnnPreWOOL"></span> <a href="/2012
+0080: /12/04/world/meast/syria-civil-war/index.html?hpt=hp_t3">NATO ap
+00c0: proves missiles for Turkey</a> <span class="cnnPostWOOL"></span>
+0100:  </li> <li> <span class="cnnPreWOOL"></span> <a href="/2012/12/0
+0140: 4/world/meast/syria-aleppo-residents/index.html?hpt=hp_t3">Syria
+0180: ns ask: How long can we keep on? </a> <span class="cnnPostWOOL">
+01c0: </span> </li> <li> <span class="cnnPreWOOL"></span> <a href="/vi
+0200: deo/?hpt=hp_t3#/video/international/2012/12/04/syrian-base-under
+0240: -siege-arwa-damon-pkg.cnn">Inside the rebels' siege of base </a>
+0280:  <span class="cnnPostWOOL"></span> &nbsp;<a href=/video/?hpt=hp_
+02c0: t3#/video/international/2012/12/04/syrian-base-under-siege-arwa-
+0300: damon-pkg.cnn target=""><img class="cnnVideoIcon" width="16" hei
+0340: ght="10" border="0" alt="Inside the rebels' siege of base " src=
+0380: "http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/video_icon.
+03c0: gif"/></a> </li> <li> <span class="cnnPreWOOL"></span> <a href="
+0400: /2012/12/04/world/meast/iran-us-drone/index.html?hpt=hp_t3">Iran
+0440:  says it has seized U.S. drone</a> <span class="cnnPostWOOL"></s
+0480: pan> </li> <li> <span class="cnnPreWOOL"></span> <a href="http:/
+04c0: /politicalticker.blogs.cnn.com/2012/12/04/cory-booker-spending-w
+0500: eek-on-food-stamps/?hpt=hp_t3">Booker tries eating on $4 a day</
+0540: a> <span class="cnnPostWOOL"></span> </li> <li> <span class="cnn
+0580: PreWOOL"></span> <a href="http://politic
+<= Recv data, 1448 bytes (0x5a8)
+0000: alticker.blogs.cnn.com/2012/12/03/armey-resigns-from-conservativ
+0040: e-group-freedomworks/?hpt=hp_t3">Tea Party fracture: Armey quits
+0080:  post</a> <span class="cnnPostWOOL"></span> </li> <li> <span cla
+00c0: ss="cnnPreWOOL"></span> <a href="/2012/12/03/justice/california-
+0100: coast-guard-death/index.html?hpt=hp_t3">2 charged in Coast Guard
+0140:  death</a> <span class="cnnPostWOOL"></span> </li> <li> <span cl
+0180: ass="cnnPreWOOL"></span> <a href="/video/?hpt=hp_t3#/video/us/20
+01c0: 12/12/03/dnt-ambulance-booted-during-emergency.wwl">Ambulance 'b
+0200: ooted' during crisis</a> <span class="cnnPostWOOL"></span> &nbsp
+0240: ;<a href=/video/?hpt=hp_t3#/video/us/2012/12/03/dnt-ambulance-bo
+0280: oted-during-emergency.wwl target=""><img class="cnnVideoIcon" wi
+02c0: dth="16" height="10" border="0" alt="Ambulance 'booted' during c
+0300: risis" src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/
+0340: video_icon.gif"/></a> </li> <li> <span class="cnnPreWOOL"></span
+0380: > <a href="/2012/12/04/health/football-brain-disease/index.html?
+03c0: hpt=hp_t3">Brain disease high in football players</a> <span clas
+0400: s="cnnPostWOOL"></span> </li> <li> <span class="cnnPreWOOL"></sp
+0440: an> <a href="/2012/12/04/world/europe/uk-royal-pregnancy/index.h
+0480: tml?hpt=hp_t3">Pregnant Catherine remains in hospital</a> <span 
+04c0: class="cnnPostWOOL"></span> </li> <li> <span class="cnnPreWOOL">
+0500: </span> <a href="/2012/12/04/opinion/uk-royal-catherine-dilemma/
+0540: index.html?hpt=hp_t3">Royal dilemma: Pregnancy vs. privacy</a> <
+0580: span class="cnnPostWOOL"></span> </li> <
+<= Recv data, 1448 bytes (0x5a8)
+0000: li> <span class="cnnPreWOOL"></span> <a href="/2012/12/04/world/
+0040: europe/britain-royal-baby-reaction/index.html?hpt=hp_t3">Odds on
+0080:  the royal baby</a> <span class="cnnPostWOOL"></span> </li> <li>
+00c0:  <span class="cnnPreWOOL"></span> <a href="/2012/12/03/justice/c
+0100: alifornia-dykstra-sentenced/index.html?hpt=hp_t3">Lenny Dykstra 
+0140: sentenced in fraud case</a> <span class="cnnPostWOOL"></span> </
+0180: li> <li> <span class="cnnPreWOOL"></span> <a href="/video/?hpt=h
+01c0: p_t3#/video/crime/2012/12/04/mxp-beer-fight-caught-on-camera.ric
+0200: hland-county-sheriffs-department">Camera catches store beer braw
+0240: l</a> <span class="cnnPostWOOL"></span> &nbsp;<a href=/video/?hp
+0280: t=hp_t3#/video/crime/2012/12/04/mxp-beer-fight-caught-on-camera.
+02c0: richland-county-sheriffs-department target=""><img class="cnnVid
+0300: eoIcon" width="16" height="10" border="0" alt="Camera catches st
+0340: ore beer brawl" src="http://i.cdn.turner.com/cnn/.e/img/3.0/glob
+0380: al/icons/video_icon.gif"/></a> </li> <li> <span class="cnnPreWOO
+03c0: L"></span> <a href="/video/?hpt=hp_t3#/video/us/2012/12/04/dnt-t
+0400: x-thief-caught-stealing-xmas-decorations.ksat">Watch thief steal
+0440:  decorations</a> <span class="cnnPostWOOL"></span> &nbsp;<a href
+0480: =/video/?hpt=hp_t3#/video/us/2012/12/04/dnt-tx-thief-caught-stea
+04c0: ling-xmas-decorations.ksat target=""><img class="cnnVideoIcon" w
+0500: idth="16" height="10" border="0" alt="Watch thief steal decorati
+0540: ons" src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/vi
+0580: deo_icon.gif"/></a> </li> <li> <span cla
+<= Recv data, 2896 bytes (0xb50)
+0000: ss="cnnPreWOOL"></span> <a href="/2012/12/03/tech/social-media/f
+0040: acebook-privacy-vote/index.html?hpt=hp_t3">Facebook fans -- you'
+0080: ve got one week</a> <span class="cnnPostWOOL"></span> </li> <li>
+00c0:  <span class="cnnPreWOOL"></span> <a href="/video/?hpt=hp_t3#/vi
+0100: deo/bestoftv/2012/12/04/pkg-parents-stampede-school.wyff">Compet
+0140: itive parents stir stampede</a> <span class="cnnPostWOOL"></span
+0180: > &nbsp;<a href=/video/?hpt=hp_t3#/video/bestoftv/2012/12/04/pkg
+01c0: -parents-stampede-school.wyff target=""><img class="cnnVideoIcon
+0200: " width="16" height="10" border="0" alt="Competitive parents sti
+0240: r stampede" src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/i
+0280: cons/video_icon.gif"/></a> </li> <li> <span class="cnnPreWOOL"><
+02c0: /span> <a href="/video/?hpt=hp_t3#/video/tech/2012/11/30/tsr-pkg
+0300: -sylvester-nasa-vs-mayan-doomsday.cnn">NASA: Don't buy doomsday 
+0340: theories</a> <span class="cnnPostWOOL"></span> &nbsp;<a href=/vi
+0380: deo/?hpt=hp_t3#/video/tech/2012/11/30/tsr-pkg-sylvester-nasa-vs-
+03c0: mayan-doomsday.cnn target=""><img class="cnnVideoIcon" width="16
+0400: " height="10" border="0" alt="NASA: Don't buy doomsday theories"
+0440:  src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/video_
+0480: icon.gif"/></a> </li> <li> <span class="cnnPreWOOL"></span> <a h
+04c0: ref="/video/?hpt=hp_t3#/video/us/2012/12/04/dnt-ma-sex-toy-givea
+0500: way.whdh">Sex toy giveaway heats up Boston</a> <span class="cnnP
+0540: ostWOOL"></span> &nbsp;<a href=/video/?hpt=hp_t3#/video/us/2012/
+0580: 12/04/dnt-ma-sex-toy-giveaway.whdh target=""><img class="cnnVide
+05c0: oIcon" width="16" height="10" border="0" alt="Sex toy giveaway h
+0600: eats up Boston" src="http://i.cdn.turner.com/cnn/.e/img/3.0/glob
+0640: al/icons/video_icon.gif"/></a> </li> <li> <span class="cnnPreWOO
+0680: L"></span> <a href="/video/?hpt=hp_t3#/video/us/2012/12/04/dnt-m
+06c0: a-flash-mob-for-cancer-patient.whdh">Flash mob dances outside ho
+0700: spital</a> <span class="cnnPostWOOL"></span> &nbsp;<a href=/vide
+0740: o/?hpt=hp_t3#/video/us/2012/12/04/dnt-ma-flash-mob-for-cancer-pa
+0780: tient.whdh target=""><img class="cnnVideoIcon" width="16" height
+07c0: ="10" border="0" alt="Flash mob dances outside hospital" src="ht
+0800: tp://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/video_icon.gif
+0840: "/></a> </li> <li> <span class="cnnPreWOOL"></span> <a href="htt
+0880: p://entertainment.time.com/2012/12/03/new-york-film-critics-a-pe
+08c0: rfect-score-for-zero-dark-thirty/?hpt=hp_t3" target="_blank">'Ze
+0900: ro Dark Thirty' wins NY critics prize</a> <span class="cnnPostWO
+0940: OL"></span> </li> <li> <span class="cnnPreWOOL"></span> <a href=
+0980: "/video/?hpt=hp_t3#/video/us/2012/12/03/evexp-family-captches-sp
+09c0: lash-bandit.hln">'Splash Bandit' dog caught in the act</a> <span
+0a00:  class="cnnPostWOOL"></span> &nbsp;<a href=/video/?hpt=hp_t3#/vi
+0a40: deo/us/2012/12/03/evexp-family-captches-splash-bandit.hln target
+0a80: =""><img class="cnnVideoIcon" width="16" height="10" border="0" 
+0ac0: alt="'Splash Bandit' dog caught in the act" src="http://i.cdn.tu
+0b00: rner.com/cnn/.e/img/3.0/global/icons/video_icon.gif"/></a> </li>
+0b40:  <li> <span clas
+<= Recv data, 4344 bytes (0x10f8)
+0000: s="cnnPreWOOL"></span> <a href="http://newsfeed.time.com/2012/12
+0040: /04/top-10-news-lists/slide/floridas-voting-fiasco/?hpt=hp_t3" t
+0080: arget="_blank">Top 10 underreported stories</a> <span class="cnn
+00c0: PostWOOL">Time</span> </li> <li> <span class="cnnPreWOOL"></span
+0100: > <a href="http://news.blogs.cnn.com/?hpt=hp_t3">This Just In: C
+0140: NN's News Blog</a> <span class="cnnPostWOOL"></span> </li> </ul>
+0180: <h4>SPORTS ROUNDUP</h4> <div class="cnn_divline"></div> <ul clas
+01c0: s="cnn_bulletbin"> <li> <span class="cnnPreWOOL"></span> <a href
+0200: ="http://sportsillustrated.cnn.com/2012/writers/zac_ellis/heisma
+0240: n-watch/?hpt=hp_t4">Will freshman finally win Heisman?</a> <span
+0280:  class="cnnPostWOOL">SI</span> </li> <li> <span class="cnnPreWOO
+02c0: L"></span> <a href="http://us.cnn.com/2012/11/29/worldsport/gall
+0300: ery/2012-sports-moments/index.html?hpt=hp_t4">Photos: 75 amazing
+0340:  sports moments</a> <span class="cnnPostWOOL"></span> </li> <li>
+0380:  <span class="cnnPreWOOL"></span> <a href="http://www.golf.com/p
+03c0: hotos/tiger-woods-2012-season-review/robert-rock-tiger-woods-abu
+0400: -dhabi?hpt=hp_t4" target="_blank">How did Tiger do in 2012?</a> 
+0440: <span class="cnnPostWOOL">Golf</span> </li> </ul> <div class="cn
+0480: n_mtt1more"><a href="http://www.cnn.com/trends?hpt=hp_t4" class=
+04c0: "cnn_mtpvmsbtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0
+0500: /1px.gif" alt="" border="0"/></a></div>.</div>.</div>.</div>
+053e: <div id="cnn_maintoplive">
+055a: <div class="cnn_maintoplivepad">.<!-- C1 -->.<div class="cnn_rel
+059a: postn">.<div class="cnn_mtt1img"><a href="/2012/12/04/opinion/gh
+05da: itis-homeless/index.html?hpt=hp_c1" target=""><img src="http://i
+061a: 2.cdn.turner.com/cnn/dam/assets/121130020517-point-nypd-deprimo-
+065a: boots-for-homeless-man-00013116-c1-main.jpg" alt="" border="0" h
+069a: eight="234" hspace="0" vspace="0" width="416"/></a></div>.<div c
+06da: lass="cnn_mtt1imgh">.<div class="cnn_mtt1imghtitle">.<h1><span><
+071a: a href="/2012/12/04/opinion/ghitis-homeless/index.html?hpt=hp_c1
+075a: " target="">Opinion: Homeless need more from us</a></span></h1>.
+079a: </div>.</div>.</div>.<p>.A homeless man, given a pair of boots b
+07da: y a New York cop, is barefoot again. The man's family says homel
+081a: essness is "his choice." Frida Ghitis asks if Americans can let 
+085a: that stand..<a href="/2012/12/04/opinion/ghitis-homeless/index.h
+089a: tml?hpt=hp_c1" target="">FULL STORY</a>.|.<span class="cnnPreWOO
+08da: L"></span>.<a href="/video/?hpt=hp_c1#/video/us/2012/12/04/tsr-p
+091a: kg-snow-nyc-homeless-man-shoes.cnn">WHY HE'S SHOELESS AGAIN</a>.
+095a: <span class="cnnPostWOOL"></span>.&nbsp;<a href=/video/?hpt=hp_c
+099a: 1#/video/us/2012/12/04/tsr-pkg-snow-nyc-homeless-man-shoes.cnn t
+09da: arget=""><img class="cnnVideoIcon" width="16" height="10" border
+0a1a: ="0" alt="WHY HE'S SHOELESS AGAIN" src="http://i.cdn.turner.com/
+0a5a: cnn/.e/img/3.0/global/icons/video_icon.gif"/></a>.</p>.<!-- C2s 
+0a9a: -->.<div class="cnn_mc2cntr">.<div class="cnn_mc23x1cnntr"> <div
+0ada:  class="cnn_mc2hdrcntr cnn_mc2numhdr1"> <div class="cnn_mc2hdr2"
+0b1a:  style="width:100%">NFL murder-suicide</div> <div class="cnn_div
+0b5a: line"></div> </div> <div class="cnn_mc2nodecntr"> <div class="cn
+0b9a: n_mc2node"> <div class="cnn_mtlplnimg"> <div><a href="http://spo
+0bda: rtsillustrated.cnn.com/2012/football/nfl/12/03/jovan-belcher-cas
+0c1a: e-new-information/index.html?sct=hp_t2_a3&eref=sihp&hpt=hp_c2"><
+0c5a: img src="http://i2.cdn.turner.com/cnn/dam/assets/121202111317-06
+0c9a: -belcher-video-tease.jpg" alt="" border="0" height="68" width="1
+0cda: 20"/></a></div> </div> <a href="http://sportsillustrated.cnn.com
+0d1a: /2012/football/nfl/12/03/jovan-belcher-case-new-information/inde
+0d5a: x.html?sct=hp_t2_a3&eref=sihp&hpt=hp_c2">New details of night be
+0d9a: fore</a> <span class="cnnWOOL">SI</span> </div> <div class="cnn_
+0dda: mc2node"> <div class="cnn_mtlplnimg"> <div><a href="/2012/12/04/
+0e1a: opinion/powell-jovan-belcher/index.html?hpt=hp_c2"><img src="htt
+0e5a: p://i2.cdn.turner.com/cnn/dam/assets/121203123352-kevin-powell-v
+0e9a: ideo-tease.jpg" alt="" border="0" height="68" width="120"/></a><
+0eda: /div> </div> <a href="/2012/12/04/opinion/powell-jovan-belcher/i
+0f1a: ndex.html?hpt=hp_c2">Readers react: 'Warped manhood'</a> </div> 
+0f5a: <div class="cnn_mc2node cnn_mc2lastnode"> <div class="cnn_mtlpln
+0f9a: img"> <div><a href="/video/?hpt=hp_c2#/video/sports/2012/12/03/e
+0fda: arly-vo-sot-belcher-barber.cnn"><img src="http://i2.cdn.turner.c
+101a: om/cnn/dam/assets/121203010903-01-chiefs-1202-video-tease.jpg" a
+105a: lt="" border="0" height="68" width="120"/></a></div> <div class=
+109a: "cnn_vidplyb38x38"><a href="/video/?hpt=hp_c2#/video/sports/2012
+10da: /12/03/early-vo-sot-belcher-ba
+<= Recv data, 5792 bytes (0x16a0)
+0000: rber.cnn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.g
+0040: if" border="0"/></a></div> </div> <a href="/video/?hpt=hp_c2#/vi
+0080: deo/sports/2012/12/03/early-vo-sot-belcher-barber.cnn">Barber: C
+00c0: hiefs seeking 'normalcy'</a> <span> 2:16 </span> </div> <div cla
+0100: ss="cnn_hpclear"></div> </div> </div>.<div class="cnn_mc23x1cnnt
+0140: r"> <div class="cnn_mc2hdrcntr cnn_mc2numhdr1"> <div class="cnn_
+0180: mc2hdr2" style="width:100%">FEATURED</div> <div class="cnn_divli
+01c0: ne"></div> </div> <div class="cnn_mc2nodecntr"> <div class="cnn_
+0200: mc2node"> <div class="cnn_mtlplnimg"> <div><a href="/2012/12/04/
+0240: health/child-weight-loss-bond/index.html?hpt=hp_c3"><img src="ht
+0280: tp://i2.cdn.turner.com/cnn/dam/assets/121114063829-bond-weight-l
+02c0: oss-before-after-video-tease.jpg" alt="" border="0" height="68" 
+0300: width="120"/></a></div> </div> <a href="/2012/12/04/health/child
+0340: -weight-loss-bond/index.html?hpt=hp_c3">Girl, 9, fights obesity,
+0380:  loses 65 pounds</a> </div> <div class="cnn_mc2node"> <div class
+03c0: ="cnn_mtlplnimg"> <div><a href="/video/?hpt=hp_c3#/video/showbiz
+0400: /2012/12/04/sbt-magician-head-set-on-fire.hln"><img src="http://
+0440: i2.cdn.turner.com/cnn/dam/assets/121204063646-sbt-magician-head-
+0480: set-on-fire-00001108-video-tease.jpg" alt="" border="0" height="
+04c0: 68" width="120"/></a></div> <div class="cnn_vidplyb38x38"><a hre
+0500: f="/video/?hpt=hp_c3#/video/showbiz/2012/12/04/sbt-magician-head
+0540: -set-on-fire.hln"><img src="http://i.cdn.turner.com/cnn/.e/img/3
+0580: .0/1px.gif" border="0"/></a></div> </div> <a href="/video/?hpt=h
+05c0: p_c3#/video/showbiz/2012/12/04/sbt-magician-head-set-on-fire.hln
+0600: ">Magician's hair catches fire on TV</a> <span> :50 </span> </di
+0640: v> <div class="cnn_mc2node cnn_mc2lastnode"> <div class="cnn_mtl
+0680: plnimg"> <div><a href="/video/?hpt=hp_c3#/video/world/2012/12/04
+06c0: /jamjoom-amnesty-yemen-abuse.cnn"><img src="http://i2.cdn.turner
+0700: .com/cnn/dam/assets/121204090354-jamjoom-amnesty-yemen-abuse-000
+0740: 05212-video-tease.jpg" alt="" border="0" height="68" width="120"
+0780: /></a></div> <div class="cnn_vidplyb38x38"><a href="/video/?hpt=
+07c0: hp_c3#/video/world/2012/12/04/jamjoom-amnesty-yemen-abuse.cnn"><
+0800: img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" border=
+0840: "0"/></a></div> </div> <a href="/video/?hpt=hp_c3#/video/world/2
+0880: 012/12/04/jamjoom-amnesty-yemen-abuse.cnn">Video captures 'horri
+08c0: fic abuses'</a> <span> 3:40 </span> </div> <div class="cnn_hpcle
+0900: ar"></div> <div class="cnn_mc2node"> <div class="cnn_mtlplnimg">
+0940:  <div><a href="/video/?hpt=hp_c3#/video/crime/2012/12/01/dnt-tra
+0980: ffic-stop-illegal-immigrants.koco"><img src="http://i2.cdn.turne
+09c0: r.com/cnn/dam/assets/121201033209-dnt-traffic-stop-illegal-immig
+0a00: rants-00010825-video-tease.jpg" alt="" border="0" height="68" wi
+0a40: dth="120"/></a></div> <div class="cnn_vidplyb38x38"><a href="/vi
+0a80: deo/?hpt=hp_c3#/video/crime/2012/12/01/dnt-traffic-stop-illegal-
+0ac0: immigrants.koco"><img src="http://i.cdn.turner.com/cnn/.e/img/3.
+0b00: 0/1px.gif" border="0"/></a></div> </div> <a href="/video/?hpt=hp
+0b40: _c3#/video/crime/2012/12/01/dnt-traffic-stop-illegal-immigrants.
+0b80: koco">Watch 14 flee after cop stops SUV</a> <span> 1:37 </span> 
+0bc0: </div> <div class="cnn_mc2node"> <div class="cnn_mtlplnimg"> <di
+0c00: v><a href="/2012/12/03/us/space-voyager-solar-system/index.html?
+0c40: hpt=hp_c3"><img src="http://i2.cdn.turner.com/cnn/dam/assets/121
+0c80: 203101408-1203-voyager-1-video-tease.jpg" alt="" border="0" heig
+0cc0: ht="68" width="120"/></a></div> </div> <a href="/2012/12/03/us/s
+0d00: pace-voyager-solar-system/index.html?hpt=hp_c3">Solar system is 
+0d40: bigger than thought</a> </div> <div class="cnn_mc2node cnn_mc2la
+0d80: stnode"> <div class="cnn_mtlplnimg"> <div><a href="/video/?hpt=h
+0dc0: p_c3#/video/us/2012/12/02/dnt-sea-world-dolphin-bite.wkmg"><img 
+0e00: src="http://i2.cdn.turner.com/cnn/dam/assets/121202114057-dnt-se
+0e40: a-world-dolphin-bite-00003110-video-tease.jpg" alt="" border="0"
+0e80:  height="68" width="120"/></a></div> <div class="cnn_vidplyb38x3
+0ec0: 8"><a href="/video/?hpt=hp_c3#/video/us/2012/12/02/dnt-sea-world
+0f00: -dolphin-bite.wkmg"><img src="http://i.cdn.turner.com/cnn/.e/img
+0f40: /3.0/1px.gif" border="0"/></a></div> </div> <a href="/video/?hpt
+0f80: =hp_c3#/video/us/2012/12/02/dnt-sea-world-dolphin-bite.wkmg">Gir
+0fc0: l bitten by dolphin at Sea World</a> <span> 1:37 </span> </div> 
+1000: <div class="cnn_hpclear"></div> <div class="cnn_mc2node"> <div c
+1040: lass="cnn_mtlplnimg"> <div><a href="/2012/12/04/business/global-
+1080: city-quality-life/index.html?hpt=hp_c3"><img src="http://i2.cdn.
+10c0: turner.com/cnn/dam/assets/121204071839-vienna-video-tease.jpg" a
+1100: lt="" border="0" height="68" width="120"/></a></div> </div> <a h
+1140: ref="/2012/12/04/business/global-city-quality-life/index.html?hp
+1180: t=hp_c3">This city has world's best quality of life</a> </div> <
+11c0: div class="cnn_mc2node"> <div class="cnn_mtlplnimg"> <div><a hre
+1200: f="http://life.time.com/history/guadalcanal-world-war-ii-rare-ph
+1240: otos/?hpt=hp_c3#1" target="_blank"><img src="http://i2.cdn.turne
+1280: r.com/cnn/dam/assets/121204030337-japanese-skull-tank-video-teas
+12c0: e.jpg" alt="" border="0" height="68" width="120"/></a></div> </d
+1300: iv> <a href="http://life.time.com/history/guadalcanal-world-war-
+1340: ii-rare-photos/?hpt=hp_c3#1" target="_blank">Skull on a tank: Th
+1380: e real story</a> <span class="cnnWOOL">Life</span> </div> <div c
+13c0: lass="cnn_mc2node cnn_mc2lastnode"> <div class="cnn_mtlplnimg"> 
+1400: <div><a href="/2012/12/04/business/sara-blakely-spanx-underwear/
+1440: index.html?hpt=hp_c3"><img src="http://i2.cdn.turner.com/cnn/dam
+1480: /assets/121203031432-sara-blakely-white-blouse-video-tease.jpg" 
+14c0: alt="" border="0" height="68" width="120"/></a></div> </div> <a 
+1500: href="/2012/12/04/business/sara-blakely-spanx-underwear/index.ht
+1540: ml?hpt=hp_c3">Turning $5,000 into $1 billion with panties </a> <
+1580: /div> <div class="cnn_hpclear"></div> <div class="cnn_mc2node"> 
+15c0: <div class="cnn_mtlplnimg"> <div><a href="http://eatocracy.cnn.c
+1600: om/2012/12/04/ireport-the-devil-dog-is-in-the-details/?hpt=hp_c3
+1640: "><img src="http://i2.cdn.turner.com/cnn/dam/assets/121204053716
+1680: -ireport-homemade-hostess-cakes-
+<= Recv data, 5792 bytes (0x16a0)
+0000: video-tease.jpg" alt="" border="0" height="68" width="120"/></a>
+0040: </div> </div> <a href="http://eatocracy.cnn.com/2012/12/04/irepo
+0080: rt-the-devil-dog-is-in-the-details/?hpt=hp_c3">Your best faux-Ho
+00c0: stess recipes </a> </div> <div class="cnn_mc2node"> <div class="
+0100: cnn_mtlplnimg"> <div><a href="/video/?hpt=hp_c3#/video/us/2012/1
+0140: 2/04/dnt-giraffe-spooked-xmas-celebration.wciv"><img src="http:/
+0180: /i2.cdn.turner.com/cnn/dam/assets/121204052822-dnt-giraffe-spook
+01c0: ed-xmas-celebration-00000308-video-tease.jpg" alt="" border="0" 
+0200: height="68" width="120"/></a></div> <div class="cnn_vidplyb38x38
+0240: "><a href="/video/?hpt=hp_c3#/video/us/2012/12/04/dnt-giraffe-sp
+0280: ooked-xmas-celebration.wciv"><img src="http://i.cdn.turner.com/c
+02c0: nn/.e/img/3.0/1px.gif" border="0"/></a></div> </div> <a href="/v
+0300: ideo/?hpt=hp_c3#/video/us/2012/12/04/dnt-giraffe-spooked-xmas-ce
+0340: lebration.wciv">Confetti cannon spooks giraffe</a> <span> 1:50 <
+0380: /span> </div> <div class="cnn_mc2node cnn_mc2lastnode"> <div cla
+03c0: ss="cnn_mtlplnimg"> <div><a href="/video/?hpt=hp_c3#/video/livin
+0400: g/2012/11/22/orig-jtb-distraction-orca-dog.cnn"><img src="http:/
+0440: /i2.cdn.turner.com/cnn/dam/assets/121122012946-orig-jtb-distract
+0480: ion-orca-dog-00002008-video-tease.jpg" alt="" border="0" height=
+04c0: "68" width="120"/></a></div> <div class="cnn_vidplyb38x38"><a hr
+0500: ef="/video/?hpt=hp_c3#/video/living/2012/11/22/orig-jtb-distract
+0540: ion-orca-dog.cnn"><img src="http://i.cdn.turner.com/cnn/.e/img/3
+0580: .0/1px.gif" border="0"/></a></div> </div> <a href="/video/?hpt=h
+05c0: p_c3#/video/living/2012/11/22/orig-jtb-distraction-orca-dog.cnn"
+0600: >Distraction: Killer whale chases dog</a> <span> 1:00 </span> </
+0640: div> <div class="cnn_hpclear"></div> </div> </div>.<!--content.b
+0680: ins.C4 is empty-->.<!--content.bins.C5 is empty-->.</div>.</div>
+06c0: .</div>
+06c9: <div id="cnn_maintoplive_border"></div>
+06f2: <div class="cnn_pad18top"></div>.<div class="cnn_clearmt1t2"></d
+0732: iv>.</div>.<div id="cnn_maintopprofile">.<div class="cnn_shdcont
+0772: ent">.<script>cnnad_newTileIDGroup(['300x250_rgt','120x90_bot1',
+07b2: '120x90_bot2','120x90_bot3','120x90_bot4','120x90_bot5','120x90_
+07f2: bot6','120x90_bot7','120x90_bot8','120x90_bot9']);</script>.<div
+0832: >.<span class="_fwph" id="medium_rectangle">.<form id="_fw_form_
+0872: medium_rectangle" style="display:none">.<input id="_fw_input_med
+08b2: ium_rectangle" name="_fw_input_medium_rectangle" type="hidden" v
+08f2: alue="w=300&amp;h=250&amp;envp=g_js&amp;sflg=-nrpl;"/>.</form>.<
+0932: span class="_fwac" id="_fw_container_medium_rectangle">.<!-- ADS
+0972: PACE: homepage/main/custom_rgt -->
+0996: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+09d6: in&cnn_position=custom_rgt&cnn_rollup=homepage&page.allowcompete
+0a16: =no&params.styles=fs|CALLOUT -->
+0a38: <div id="ad-125242" align="center" style="padding: 0; margin: 0;
+0a78:  border: 0;"></div><script>cnnad_createAd("125242","http://ads.c
+0ab8: nn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=custom_rg
+0af8: t&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs","0"
+0b38: ,"0");cnnad_registerSpace(125242,0,0);</script>.</span>.</span>.
+0b78: </div>.<div class="cnn_adtitle"><img src="http://i.cdn.turner.co
+0bb8: m/cnn/.e/img/3.0/global/misc/advertisement.gif" alt="" border="0
+0bf8: " height="5" width="58"/></div>.</div>.<div class="cnn_hppersona
+0c38: l">.<div id="cnn_pmtvmodule">.<div class="cnn_hppersonalhdr">.<s
+0c78: cript type="text/html" id="nowplayingTVmod-template">.<div class
+0cb8: ="header">.<span class="sponsor-entitlement"></span>.<h4 class="
+0cf8: mainHeader"><a href="/video/?hpt=hp_livenow">TV & Video</a></h4>
+0d38: .</div>.<h5 class="subtitle">ON LIVE TV NOW</h5>.<div data-bind=
+0d78: "click:function(){document.location=$data.link()+'?hpt=hp_liveno
+0db8: w'},attr:{title:link()+'?hpt=hp_livenow'}" class="cnn_column cnn
+0df8: NowPlaying">.<img data-bind="attr:{src:thumbnail()}" class="thum
+0e38: b cnn_column"/>.<div class="cnnTVinfoBox cnn_column">.<span data
+0e78: -bind="text:title()" class="showTitle"></span>&nbsp;<span data-b
+0eb8: ind="text:((description().length<=80)?description():description(
+0ef8: ).substring(0,description().lastIndexOf(' ',77))+'...'),visible:
+0f38: (isTVE())" class="description"></span>.<a data-bind="attr:{href:
+0f78:  $data.link()+'?hpt=hp_livenow'}" class="cnn_hpTVdomvmodlnks2"><
+0fb8: /a>.</div>.</div>.<h5 class="subtitle">FEATURED TV</h5>.</script
+0ff8: >.<span.class="cnn_widget cnntvModTempWrapper".type="nowplaying"
+1038: .version="1.0.2".channel="CNN".video="cvptve/cvpstream1".templat
+1078: es="".data-bind="template: { name: 'nowplayingTVmod-template'}">
+10b8: </span>.<div id="fb-root"></div>.</div>.<div id="cnn_pmtvmodcntr
+10f8: " class="cnn_pmtvmoddisabled">.<div class="cnn_pmtvmodnavlft"><a
+1138:  href="javascript:void(0);" id="cnn_pmtvmodnlft"></a></div>.<div
+1178:  id="cnn_pmtvmodslidecntr">.<div class="cnn_relpostn">.<div id="
+11b8: cnn_pmtvmodslidecntnt">.<div class="cnn_pmtvmodslide">.<div clas
+11f8: s="cnn_relpostn">.<div class="cnn_pmtvmodslide1"><img width="214
+1238: " height="122" border="0" src="http://i2.cdn.turner.com/cnn/dam/
+1278: assets/121203103557-obama-syria-1203-left-tease.jpg" alt=""></di
+12b8: v>.<div class="cnn_pmtvmodslide1b"><a href="http://outfront.blog
+12f8: s.cnn.com/2012/12/03/president-issues-stern-warning-to-assad-ove
+1338: r-reported-chemical-weapon-preparations-in-syria/?hpt=hp_tvbx"><
+1378: img width="214" height="122" border="0" src="http://i.cdn.turner
+13b8: .com/cnn/.e/img/3.0/1px.gif"></a></div>.<div class="cnn_pmtvmods
+13f8: lide2"></div>.<div class="cnn_pmtvmodslide3">.<div class="cnn_pm
+1438: tvmodslide3a">.'OutFront' has the details.</div>.<div class="cnn
+1478: _pmtvmodslide3b">Pres. Obama warns Assad</div>.</div>.</div>.</d
+14b8: iv>.<div class="cnn_pmtvmodslide">.<div class="cnn_relpostn">.<d
+14f8: iv class="cnn_pmtvmodslide1"><img width="214" height="122" borde
+1538: r="0" src="http://i2.cdn.turner.com/cnn/dam/assets/121203102832-
+1578: intv-cnn-heroes-pushpa-basnet-00000701-left-tease.jpg" alt=""></
+15b8: div>.<div class="cnn_pmtvmodslide1b"><a href="http://www.cnn.com
+15f8: /2012/12/02/world/cnnheroes-show/?hpt=hp_tvbx"><img width="214" 
+1638: height="122" border="0" src="http://i.cdn.turner.com/cnn/.e/img/
+1678: 3.0/1px.gif"></a></div>.<div class="cnn_
+<= Recv data, 2896 bytes (0xb50)
+0000: pmtvmodslide2"></div>.<div class="cnn_pmtvmodslide3">.<div class
+0040: ="cnn_pmtvmodslide3a">.Find out her cause and her story.</div>.<
+0080: div class="cnn_pmtvmodslide3b">CNN's Hero of the Year</div>.</di
+00c0: v>.</div>.</div>.<div class="cnn_pmtvmodslide">.<div class="cnn_
+0100: relpostn">.<div class="cnn_pmtvmodslide1"><img width="214" heigh
+0140: t="122" border="0" src="http://i2.cdn.turner.com/cnn/dam/assets/
+0180: 121127023518-ac-pkg-lah-police-chief-corruption-00040320-left-te
+01c0: ase.jpg" alt=""></div>.<div class="cnn_pmtvmodslide1b"><a href="
+0200: http://ac360.blogs.cnn.com/2012/11/26/police-chief-earned-457000
+0240: -a-year/?hpt=hp_tvbx"><img width="214" height="122" border="0" s
+0280: rc="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif"></a></div>.<
+02c0: div class="cnn_pmtvmodslide2"></div>.<div class="cnn_pmtvmodslid
+0300: e3">.<div class="cnn_pmtvmodslide3a">.Investigation on 'AC360'.<
+0340: /div>.<div class="cnn_pmtvmodslide3b">Police chief makes $457K?<
+0380: /div>.</div>.</div>.</div>.<div class="cnn_pmtvmodslide">.<div c
+03c0: lass="cnn_relpostn">.<div class="cnn_pmtvmodslide1"><img width="
+0400: 214" height="122" border="0" src="http://i2.cdn.turner.com/cnn/d
+0440: am/assets/121130125202-pmt-sharon-osbourne-00011223-left-tease.j
+0480: pg" alt=""></div>.<div class="cnn_pmtvmodslide1b"><a href="http:
+04c0: //piersmorgan.blogs.cnn.com/2012/12/03/clips-from-friday-sharon-
+0500: osbourne-of-her-double-mastectomy-bill-obrien-on-paterno-sandusk
+0540: y/?hpt=pm_mid&hpt=hp_tvbx"><img width="214" height="122" border=
+0580: "0" src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif"></a></d
+05c0: iv>.<div class="cnn_pmtvmodslide2"></div>.<div class="cnn_pmtvmo
+0600: dslide3">.<div class="cnn_pmtvmodslide3a">.First interview since
+0640:  her surgery.</div>.<div class="cnn_pmtvmodslide3b">Sharon Osbou
+0680: rne and Piers</div>.</div>.</div>.</div>.<div class="cnn_pmtvmod
+06c0: slide">.<div class="cnn_relpostn">.<div class="cnn_pmtvmodslide1
+0700: "><img width="214" height="122" border="0" src="http://i2.cdn.tu
+0740: rner.com/cnn/dam/assets/121203083453-zimmerman-blood-left-tease.
+0780: jpg" alt=""></div>.<div class="cnn_pmtvmodslide1b"><a href="http
+07c0: ://ac360.blogs.cnn.com/2012/12/03/zimmerman-lawyer-speaks-out-on
+0800: -bloody-photo/?hpt=hp_tvbx"><img width="214" height="122" border
+0840: ="0" src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif"></a></
+0880: div>.<div class="cnn_pmtvmodslide2"></div>.<div class="cnn_pmtvm
+08c0: odslide3">.<div class="cnn_pmtvmodslide3a">.His lawyer on what i
+0900: t means for case.</div>.<div class="cnn_pmtvmodslide3b">New Zimm
+0940: erman photo</div>.</div>.</div>.</div>.<div class="cnn_pmtvmodsl
+0980: ide">.<div class="cnn_relpostn">.<div class="cnn_pmtvmodslide1">
+09c0: <img width="214" height="122" border="0" src="http://i2.cdn.turn
+0a00: er.com/cnn/dam/assets/121204014007-exp-point-jennings-00022504-l
+0a40: eft-tease.jpg" alt=""></div>.<div class="cnn_pmtvmodslide1b"><a 
+0a80: href="http://startingpoint.blogs.cnn.com/2012/12/04/fact-or-fict
+0ac0: ion-jeopardy-champ-ken-jennings-busts-popular-myths-parents-tell
+0b00: -their-children-in-his-new-book-because-i-said-so/?hpt=hp_tvbx">
+0b40: <img width="214"
+<= Recv data, 5792 bytes (0x16a0)
+0000:  height="122" border="0" src="http://i.cdn.turner.com/cnn/.e/img
+0040: /3.0/1px.gif"></a></div>.<div class="cnn_pmtvmodslide2"></div>.<
+0080: div class="cnn_pmtvmodslide3">.<div class="cnn_pmtvmodslide3a">.
+00c0: What lies parents tell kids.</div>.<div class="cnn_pmtvmodslide3
+0100: b">Jeopardy champ on myths</div>.</div>.</div>.</div>.<div class
+0140: ="cnn_pmtvmodslide">.<div class="cnn_relpostn">.<div class="cnn_
+0180: pmtvmodslide1"><img width="214" height="122" border="0" src="htt
+01c0: p://i2.cdn.turner.com/cnn/dam/assets/121204124438-exp-erin-susan
+0200: -rice-rwanda-00012329-left-tease.jpg" alt=""></div>.<div class="
+0240: cnn_pmtvmodslide1b"><a href="http://outfront.blogs.cnn.com/2012/
+0280: 12/03/susan-rice-faces-new-round-of-criticism-over-role-in-clint
+02c0: on-administration-during-rwandan-genocide/?hpt=hp_tvbx"><img wid
+0300: th="214" height="122" border="0" src="http://i.cdn.turner.com/cn
+0340: n/.e/img/3.0/1px.gif"></a></div>.<div class="cnn_pmtvmodslide2">
+0380: </div>.<div class="cnn_pmtvmodslide3">.<div class="cnn_pmtvmodsl
+03c0: ide3a">.Tough questions on another story?.</div>.<div class="cnn
+0400: _pmtvmodslide3b">Susan Rice and Rwanda</div>.</div>.</div>.</div
+0440: >.<div class="cnn_pmtvmodslide">.<div class="cnn_relpostn">.<div
+0480:  class="cnn_pmtvmodslide1"><img width="214" height="122" border=
+04c0: "0" src="http://i2.cdn.turner.com/cnn/dam/assets/121204011623-pm
+0500: t-joe-namath-kansas-city-suicide-brain-not-made-for-football-000
+0540: 11027-left-tease.jpg" alt=""></div>.<div class="cnn_pmtvmodslide
+0580: 1b"><a href="http://piersmorgan.blogs.cnn.com/2012/12/03/joe-nam
+05c0: ath-on-nfl-injury-risk-the-brain-is-not-designed-to-take-the-kin
+0600: d-of-trauma-that-football-players-suffer/?hpt=hp_tvbx"><img widt
+0640: h="214" height="122" border="0" src="http://i.cdn.turner.com/cnn
+0680: /.e/img/3.0/1px.gif"></a></div>.<div class="cnn_pmtvmodslide2"><
+06c0: /div>.<div class="cnn_pmtvmodslide3">.<div class="cnn_pmtvmodsli
+0700: de3a">.Talks to Piers Morgan about injuries.</div>.<div class="c
+0740: nn_pmtvmodslide3b">Joe Namath on concussions</div>.</div>.</div>
+0780: .</div>.<div class="cnn_pmtvmodslide">.<div class="cnn_relpostn"
+07c0: >.<div class="cnn_pmtvmodslide1"><img width="214" height="122" b
+0800: order="0" src="http://i2.cdn.turner.com/cnn/dam/assets/121204020
+0840: 932-exp-gupta-and-brain-damage-and-football-00020201-left-tease.
+0880: jpg" alt=""></div>.<div class="cnn_pmtvmodslide1b"><a href="http
+08c0: ://piersmorgan.blogs.cnn.com/2012/12/03/sanjya-gupta-of-the-duch
+0900: ess-on-cambridges-pregnancy-sickness-as-well-as-jovan-belchers-m
+0940: urder-suicide/?hpt=hp_tvbx"><img width="214" height="122" border
+0980: ="0" src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif"></a></
+09c0: div>.<div class="cnn_pmtvmodslide2"></div>.<div class="cnn_pmtvm
+0a00: odslide3">.<div class="cnn_pmtvmodslide3a">.What's ailing pregna
+0a40: nt duchess.</div>.<div class="cnn_pmtvmodslide3b">Gupta on Kate'
+0a80: s illness</div>.</div>.</div>.</div>.</div>.<div class="cnn_load
+0ac0: ingicon"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/
+0b00: global/misc/loading.gif"></div>.</div>.</div>.<div class="cnn_pm
+0b40: tvmodnavrgt"><a href="javascript:void(0);" id="cnn_pmtvmodnrgt">
+0b80: </a></div>.</div>.<div class="cnn_tsbnav cnn_pmtvmodddown">.<for
+0bc0: m>.<select onchange="if(this.options[selectedIndex].value!=''){l
+0c00: ocation.href=this.options[selectedIndex].value;}">.<option value
+0c40: ="/Programs/?hpt=hp_livenow">Shows and Schedules.<option value="
+0c80: " disabled="disabled" class="disabledProgram">------------------
+0cc0: ----------------------.<option value="/CNN/Programs/?hpt=hp_live
+0d00: now">Today's schedule.<option value="" disabled="disabled" class
+0d40: ="disabledProgram">----- CNN Weekdays -----.<option value="http:
+0d80: //outfront.blogs.cnn.com/?hpt=hp_livenow">Erin Burnett OutFront.
+0dc0: <option value="http://ac360.blogs.cnn.com/?hpt=hp_livenow">Ander
+0e00: son Cooper 360.<option value="http://piersmorgan.blogs.cnn.com/?
+0e40: hpt=hp_livenow">Piers Morgan Tonight.<option value="http://early
+0e80: start.blogs.cnn.com/?hpt=hp_livenow">Early Start.<option value="
+0ec0: http://startingpoint.blogs.cnn.com/?hpt=hp_livenow">Starting Poi
+0f00: nt.<option value="http://newsroom.blogs.cnn.com/?hpt=hp_livenow"
+0f40: >CNN Newsroom.<option value="http://situationroom.blogs.cnn.com/
+0f80: ?hpt=hp_livenow">The Situation Room.<option value="" disabled="d
+0fc0: isabled" class="disabledProgram">----- CNN Weekends -----.<optio
+1000: n value="http://sanjayguptamd.blogs.cnn.com/?hpt=hp_livenow">San
+1040: jay Gupta MD.<option value="http://yourbottomline.blogs.cnn.com/
+1080: ?hpt=hp_livenow">Your Bottom Line.<option value="http://yourmone
+10c0: y.blogs.cnn.com/?hpt=hp_livenow">Your Money.<option value="http:
+1100: //sotu.blogs.cnn.com/?hpt=hp_livenow">State of the Union.<option
+1140:  value="http://globalpublicsquare.blogs.cnn.com/?hpt=hp_livenow"
+1180: >Fareed Zakaria GPS.<option value="http://reliablesources.blogs.
+11c0: cnn.com/?hpt=hp_livenow">Reliable Sources.<option value="http://
+1200: whatsnext.blogs.cnn.com/category/the-next-list/?hpt=hp_livenow">
+1240: The Next List.<option value="" disabled="disabled" class="disabl
+1280: edProgram">----- Other CNN -----.<option value="http://inamerica
+12c0: .blogs.cnn.com/?hpt=hp_livenow">In America.<option value="/SPECI
+1300: ALS/cnn.heroes/?hpt=hp_livenow">CNN Heroes.<option value="http:/
+1340: /cnnpresents.blogs.cnn.com/?hpt=hp_livenow">CNN Presents.<option
+1380:  value="http://cnnpresents.blogs.cnn.com/?hpt=hp_livenow">Spec. 
+13c0: Investigations Unit.<option value="/studentnews/?hpt=hp_livenow"
+1400: >CNN Student News.<option value="" disabled="disabled" class="di
+1440: sabledProgram">----- HLN -----.<option value="http://www.hlntv.c
+1480: om/shows/morning-express-robin-meade/?hpt=hp_livenow">Morning Ex
+14c0: press with Robin Meade.<option value="/CNN/Programs/prime.news/?
+1500: hpt=hp_livenow">Prime News.<option value="http://www.hlntv.com/s
+1540: hows/jane-velez-mitchell/?hpt=hp_livenow">Jane Velez-Mitchell.<o
+1580: ption value="http://www.hlntv.com/shows/nancy-grace/?hpt=hp_live
+15c0: now">Nancy Grace.<option value="http://www.hlntv.com/shows/dr-dr
+1600: ew/?hpt=hp_livenow">Dr. Drew.<option value="http://www.hlntv.com
+1640: /shows/clark-howard/?hpt=hp_livenow">Clark Howard.<option value=
+1680: "/CNN/Programs/showbiz.tonight/?
+<= Recv data, 5792 bytes (0x16a0)
+0000: hpt=hp_livenow">Showbiz Tonight.</select>.</form>.</div>.<div cl
+0040: ass="cnn_pmtvmodlnks">.<div class="cnn_pmtvmodlnks1"><a href="ht
+0080: tp://cnnradio.cnn.com/?hpt=hp_livenow">CNN Radio</a> | <a href="
+00c0: http://www.hlntv.com/?hpt=hp_livenow">HLN</a> | <a href="http://
+0100: www.cnn.com/CNN/Programs/?hpt=hp_livenow">Full Schedule</a></div
+0140: >.<div class="cnn_clear"></div>.</div>.</div>.</div>.<script>./*
+0180:  start up cnntv slider */.$j(document).ready(function() {.'use s
+01c0: trict';.CNNHMPAGE.pmod.cnntv.init((5 * 1000));.$j('#cnn_pmtvmodu
+0200: le').parent().addClass('tve');.});.</script>.<div class="cnn_hpp
+0240: ersonal">
+024b: <div class="cnn_pad12top"></div>
+026d: <div class="rrHeader rrHeaderM"><a href="http://money.cnn.com/da
+02ad: ta/markets/">Markets</a></div>.<div class="cnn_divline"></div>.<
+02ed: div id="pmMarkets" style="display:none;">.<div class="pmSectHead
+032d: ">.<span id="marketStatus">Markets Closed</span>.<a id="cnnMoney
+036d: " href="http://money.cnn.com/data/markets">CNNMoney.com &#187;</
+03ad: a>.</div>.<div id="pmIndecies">.<div class="pmWrapper">.<div cla
+03ed: ss="marketTime">.<span>Updated&nbsp;</span>.<span id="indexUpdat
+042d: ed">5:16 pm ET Dec 4</span>.</div>.<a id="myQuotesBtn" class="to
+046d: ggle togOff"><span>My quotes</span></a>.<a id="defIndexBtn" clas
+04ad: s="toggle togOn"><span>Indexes</span></a>.</div>.<div id="pmDefa
+04ed: ultIndecies" class="tab pmOn">.<ul>.<li class="market-0">.<div c
+052d: lass="marketInfo-left"> <!-- left side -->.<span class="marketNa
+056d: me">.<a href="http://money.cnn.com/data/markets/dow/">Dow</a>.</
+05ad: span>.<span class="marketIndex">12,951.78</span>.</div>.<div cla
+05ed: ss="marketNums-right down">.<div class="percentDiff">.<span>(<sp
+062d: an class="plusMinus">-</span>0.11 &#37;)</span>.</div>.<div clas
+066d: s="numDiff">.<span><span class="plusMinus">-</span>13.82</span>.
+06ad: </div>.</div>.</li>.<li class="market-1">.<div class="marketInfo
+06ed: -left"> <!-- left side -->.<span class="marketName">.<a href="ht
+072d: tp://money.cnn.com/data/markets/nasdaq/">Nasdaq</a>.</span>.<spa
+076d: n class="marketIndex">2,996.69</span>.</div>.<div class="marketN
+07ad: ums-right down">.<div class="percentDiff">.<span>(<span class="p
+07ed: lusMinus">-</span>0.18 &#37;)</span>.</div>.<div class="numDiff"
+082d: >.<span><span class="plusMinus">-</span>5.51</span>.</div>.</div
+086d: >.</li>.<li class="market-2">.<div class="marketInfo-left"> <!--
+08ad:  left side -->.<span class="marketName">.<a href="http://money.c
+08ed: nn.com/data/markets/sandp/">S&amp;P</a>.</span>.<span class="mar
+092d: ketIndex">1,407.05</span>.</div>.<div class="marketNums-right do
+096d: wn">.<div class="percentDiff">.<span>(<span class="plusMinus">-<
+09ad: /span>0.17 &#37;)</span>.</div>.<div class="numDiff">.<span><spa
+09ed: n class="plusMinus">-</span>2.41</span>.</div>.</div>.</li>.</ul
+0a2d: >.</div>.<div id="pmMyQuotes" class="tab pmOff"></div>......<for
+0a6d: m id="symbolSearch" action="" onsubmit="MainLocalObj.Markets.loo
+0aad: kupStockSymbol(); return false">.                    <div id="se
+0aed: archLine">.                        <input name="symb" id="search
+0b2d: Quote" type="text" class="formInput" AUTOCOMPLETE="OFF" /><a id=
+0b6d: "getSymbolBtn" href="javascript: MainLocalObj.Markets.lookupStoc
+0bad: kSymbol();"><span>Get Quotes</span></a>.......<div id="myContain
+0bed: er"></div>......</div>.                </form>.....<div id="mone
+0c2d: ySponsor"></div>..</div>.<div class="cnn_clear"></div>.</div>.<d
+0c6d: iv id="cnn_personalloading" style="padding:15px;text-align:cente
+0cad: r;"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/globa
+0ced: l/misc/loading.gif"></div>
+0d09: </div>
+0d11: <div class="cnn_hppersonal">
+0d2f: <div class="cnn_pad12top"></div>
+0d51: <div class="rrHeader rrHeaderW"><a href="http://weather.cnn.com/
+0d91: weather/forecast.jsp">Weather</a></div>.<div class="cnn_divline"
+0dd1: ></div>.<div id="pmWeather">.<div id="cnnGetLocalBox" style="dis
+0e11: play:none;">.<form onsubmit="MainLocalObj.Weather.checkInput('we
+0e51: ather',this.inputField.value);return false;" id="pmWeatherLocati
+0e91: on" name="localAllLookupForm" action="">.<fieldset>.<div class="
+0ed1: pmWrapper">.<label for="weatherLoc">Edit location</label>.<input
+0f11:  type="text" id="weatherLoc" class="pmWeatherHollow" name="input
+0f51: Field" value="Enter a U.S. Zip or Intl city" onfocus="MainLocalO
+0f91: bj.Weather.inputFocus(this);" onblur="MainLocalObj.Weather.input
+0fd1: Blur(this);"/><a id="weatherLocBtn" href="javascript:MainLocalOb
+1011: j.Weather.checkInput('weather',document.localAllLookupForm.input
+1051: Field.value);"><span>Go</span></a>.</div>.<div id="pmLocResultsC
+1091: ontainer"></div>.</fieldset>.</form>.</div>.<div class="pmWrappe
+10d1: r" id="pmWeatherTab"></div>.</div>
+10f5: </div>
+10fd: <div class="cnn_pad10top"></div>.</div>.<div class="cnn_clear"><
+113d: /div>.<div class="cnn_shdcafooter"></div>.</div>.<div class="cnn
+117d: _pad2top cnn_shdspc"></div>.<div class="cnn_contentarea cnn_shds
+11bd: ectbin">.<div class="cnn_shdcaheader"></div>.<div class="cnn_sec
+11fd: tbin1">.<div class="cnn_sectbincntnt_full">.<div class="cnn_sect
+123d: bincntnt2">.<h4><a href='http://www.cnn.com/US?hpt=hp_bn1'>U.S.<
+127d: /a></h4>.<div class="cnn_clear"></div>.<div class="cnn_divline">
+12bd: </div>.<ul class="cnn_bulletbin">.<ul class="cnn_bulletbin">.<li
+12fd: > <a href=/2012/12/04/us/california-gay-therapy-ban/index.html?h
+133d: pt=hp_bn1 target="_self">Gay 'conversion therapy' ban on hold</a
+137d: >.</li>.<li> <a href=/2012/12/03/us/alaska-serial-killer/index.h
+13bd: tml?hpt=hp_bn1 target="_self">Alaska suspect tied to other killi
+13fd: ngs</a>.</li>.<li> <a href=/2012/12/03/justice/california-coast-
+143d: guard-death/index.html?hpt=hp_bn1 target="_self">2 charged in Co
+147d: ast Guardsman death</a>.</li>.<li> <a href=http://ireport.cnn.co
+14bd: m/docs/DOC-889747?hpt=hp_bn1 target="_self">Sandy victims rally 
+14fd: to save beach </a>.</li>.<li> <a href=http://ireport.cnn.com/doc
+153d: s/DOC-889611?hpt=hp_bn1 target="_self">Daring Santa rappels down
+157d:  building</a>.</li>.<li> <a href=/video/?hpt=hp_bn1#/video/us/20
+15bd: 12/12/02/sandy-rapid-repairs.cnn target="_self">Some see rapid r
+15fd: epairs after Sandy</a>.&nbsp;<a href=/video/?hpt=hp_bn1#/video/u
+163d: s/2012/12/02/sandy-rapid-repairs.cnn target="_self"><img class="
+167d: cnnVideoIcon" width="16" height="10
+<= Recv data, 1448 bytes (0x5a8)
+0000: " border="0" alt="" src="http://i.cdn.turner.com/cnn/.e/img/3.0/
+0040: global/icons/video_icon.gif"/></a>.</li>.<li> <a href=/video/?hp
+0080: t=hp_bn1#/video/us/2012/12/01/dnt-nc-lost-dog.wral target="_self
+00c0: ">Dog, owner reunited after 7 years</a>.&nbsp;<a href=/video/?hp
+0100: t=hp_bn1#/video/us/2012/12/01/dnt-nc-lost-dog.wral target="_self
+0140: "><img class="cnnVideoIcon" width="16" height="10" border="0" al
+0180: t="" src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/vi
+01c0: deo_icon.gif"/></a>.</li>.</ul>.</ul>.</div>.<div class="cnn_mtp
+0200: more"><a href="http://www.cnn.com/US?hpt=hp_bn1" class="cnn_mtpm
+0240: orebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif
+0280: " alt="More" border="0"/></a></div>.</div>.<div class="cnn_adspc
+02c0: 155x31">.</div>.</div>.<div class="cnn_sectbin2">.<div class="cn
+0300: n_sectbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a hre
+0340: f='http://www.cnn.com/world/?hpt=hp_bn2'>World</a></h4>.<div cla
+0380: ss="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul class=
+03c0: "cnn_bulletbin">.<ul class="cnn_bulletbin">.<li> <a href=http://
+0400: globalpublicsquare.blogs.cnn.com/2012/12/04/zakaria-get-facts-st
+0440: raight-about-middle-east-today/?hpt=hp_bn2 target="_self">Rememb
+0480: er the Mideast of the 1980s?</a>.</li>.<li> <a href=/video/?hpt=
+04c0: hp_bn2#/video/international/2012/12/04/syrian-base-under-siege-a
+0500: rwa-damon-pkg.cnn target="_self">Syrian rebels choke off base</a
+0540: >.&nbsp;<a href=/video/?hpt=hp_bn2#/video/international/2012/12/
+0580: 04/syrian-base-under-siege-arwa-damon-pk
+<= Recv data, 1448 bytes (0x5a8)
+0000: g.cnn target="_self"><img class="cnnVideoIcon" width="16" height
+0040: ="10" border="0" alt="" src="http://i.cdn.turner.com/cnn/.e/img/
+0080: 3.0/global/icons/video_icon.gif"/></a>.</li>.<li> <a href=http:/
+00c0: /security.blogs.cnn.com/2012/12/04/drones-a-sign-of-the-times/?h
+0100: pt=hp_bn2 target="_self">Drones: A sign of the times</a>.</li>.<
+0140: li> <a href=/2012/12/04/world/asia/philippines-typhoon/index.htm
+0180: l?hpt=hp_bn2 target="_self">Typhoon kills dozens, spurs landslid
+01c0: e</a>.</li>.<li> <a href=/2012/12/04/world/greenland-secrets-ice
+0200: /index.html?hpt=hp_bn2 target="_self">Uncovering Greenland's ice
+0240:  secrets</a>.</li>.<li> <a href=/2012/12/01/world/americas/beliz
+0280: e-mcafee-killing/index.html?hpt=hp_bn2 target="_self">Internet g
+02c0: uru on his life on the run</a>.</li>.<li> <a href=/2012/12/01/wo
+0300: rld/americas/mexico-president/index.html?hpt=hp_bn2 target="_sel
+0340: f">Mexico's new president</a>.</li>.<li> <a href=http://globalpu
+0380: blicsquare.blogs.cnn.com/2012/12/03/weekly-quiz-test-your-knowle
+03c0: dge-3/?hpt=hp_bn2 target="_self">Quiz: Who's getting a $16B stim
+0400: ulus?</a>.</li>.</ul>.</ul>.</div>.<div class="cnn_mtpmore"><a h
+0440: ref="http://www.cnn.com/world/?hpt=hp_bn2" class="cnn_mtpmorebtn
+0480: "><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" alt=
+04c0: "More" border="0"/></a></div>.</div>.<div class="cnn_adspc155x31
+0500: ">.</div>.</div>.<div class="cnn_sectbin3">.<div class="cnn_sect
+0540: bincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a href='htt
+0580: p://www.cnn.com/politics?hpt=hp_bn3'>Pol
+<= Recv data, 1448 bytes (0x5a8)
+0000: itics</a></h4>.<div class="cnn_clear"></div>.<div class="cnn_div
+0040: line"></div>.<ul class="cnn_bulletbin">.<ul class="cnn_bulletbin
+0080: ">.<li> <a href=/2012/12/04/politics/fiscal-cliff/index.html?hpt
+00c0: =hp_bn3 target="_self">What's old is new again in fiscal talks</
+0100: a>.</li>.<li> <a href=/video/?hpt=hp_bn3#/video/bestoftv/2012/12
+0140: /04/ac-kth-fiscal-cliff-blame.cnn target="_self">Fiscal cliff bl
+0180: ame leads nowhere</a>.&nbsp;<a href=/video/?hpt=hp_bn3#/video/be
+01c0: stoftv/2012/12/04/ac-kth-fiscal-cliff-blame.cnn target="_self"><
+0200: img class="cnnVideoIcon" width="16" height="10" border="0" alt="
+0240: " src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/video
+0280: _icon.gif"/></a>.</li>.<li> <a href=/2012/12/04/opinion/avlon-fi
+02c0: scal-cliff-deniers/index.html?hpt=hp_bn3 target="_self">Avlon: B
+0300: eware the fiscal cliff deniers</a>.</li>.<li> <a href=http://mon
+0340: ey.cnn.com/2012/12/04/news/economy/fiscal-cliff-obama-stimulus/i
+0380: ndex.html?hpt=hp_bn3 target="_self">Obama plan has $200B in stim
+03c0: ulus</a>.</li>.<li> <a href=http://politicalticker.blogs.cnn.com
+0400: /2012/12/04/rubio-and-ryan-in-political-spotlight/?hpt=hp_bn3 ta
+0440: rget="_self">Rubio, Ryan in political spotlight</a>.</li>.<li> <
+0480: a href=/2012/12/04/politics/2012-campaign-insight/index.html?hpt
+04c0: =hp_bn3 target="_self">Obama turnout stunned Romney camp</a>.</l
+0500: i>.<li> <a href=http://politicalticker.blogs.cnn.com/2012/12/04/
+0540: palin-apologizes-for-calling-some-republicans-wusses/?hpt=hp_bn3
+0580:  target="_self">Palin sorry for 'wusses'
+<= Recv data, 2896 bytes (0xb50)
+0000:  remark</a>.</li>.<li> <a href=/2012/12/03/world/meast/syria-civ
+0040: il-war/index.html?hpt=hp_bn3 target="_self">Obama to Syria: 'Wor
+0080: ld is watching'</a>.</li>.</ul>.</ul>.</div>.<div class="cnn_mtp
+00c0: more"><a href="http://www.cnn.com/politics?hpt=hp_bn3" class="cn
+0100: n_mtpmorebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1
+0140: px.gif" alt="More" border="0"/></a></div>.</div>.<div class="cnn
+0180: _adspc155x31">.</div>.</div>.<div class="cnn_sectbin4">.<div cla
+01c0: ss="cnn_sectbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4>
+0200: <a href='http://www.cnn.com/video?hpt=hp_bn4'>Video</a></h4>.<di
+0240: v class="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul c
+0280: lass="cnn_bulletbin">.<ul class="cnn_bulletbin">.<li>.<a href="/
+02c0: video/#/video/us/2012/12/04/nr-dan-simon-lafayette-california-si
+0300: nkhole.cnn?hpt=hp_bn4">See street ripped open by giant sinkhole<
+0340: /a>.<a href="/video/#/video/us/2012/12/04/nr-dan-simon-lafayette
+0380: -california-sinkhole.cnn?hpt=hp_bn4">.<img class="cnnVideoIcon" 
+03c0: width="16" height="10" border="0" alt="Video" src="http://i.cdn.
+0400: turner.com/cnn/.e/img/3.0/global/icons/video_icon.gif">.</a>.</l
+0440: i>.<li>.<a href="/video/#/video/living/2012/12/04/100-places-to-
+0480: eat-like-a-local.cnn?hpt=hp_bn4">There's more to life than BBQ!<
+04c0: /a>.<a href="/video/#/video/living/2012/12/04/100-places-to-eat-
+0500: like-a-local.cnn?hpt=hp_bn4">.<img class="cnnVideoIcon" width="1
+0540: 6" height="10" border="0" alt="Video" src="http://i.cdn.turner.c
+0580: om/cnn/.e/img/3.0/global/icons/video_icon.gif">.</a>.</li>.<li>.
+05c0: <a href="/video/#/video/bestoftv/2012/12/04/exp-easy-bake-gender
+0600: -equality.cnn?hpt=hp_bn4">Gender-neutral Toy Marketing</a>.<a hr
+0640: ef="/video/#/video/bestoftv/2012/12/04/exp-easy-bake-gender-equa
+0680: lity.cnn?hpt=hp_bn4">.<img class="cnnVideoIcon" width="16" heigh
+06c0: t="10" border="0" alt="Video" src="http://i.cdn.turner.com/cnn/.
+0700: e/img/3.0/global/icons/video_icon.gif">.</a>.</li>.<li>.<a href=
+0740: "/video/#/video/bestoftv/2012/12/04/idesjk-hala-baer-syria.cnn?h
+0780: pt=hp_bn4">Ex-CIA agent: Syria situation is dire</a>.<a href="/v
+07c0: ideo/#/video/bestoftv/2012/12/04/idesjk-hala-baer-syria.cnn?hpt=
+0800: hp_bn4">.<img class="cnnVideoIcon" width="16" height="10" border
+0840: ="0" alt="Video" src="http://i.cdn.turner.com/cnn/.e/img/3.0/glo
+0880: bal/icons/video_icon.gif">.</a>.</li>.<li>.<a href="/video/#/vid
+08c0: eo/showbiz/2012/12/04/sbt-the-buzz-today-12-4-12.hln?hpt=hp_bn4"
+0900: >Shakira's legal battle with ex</a>.<a href="/video/#/video/show
+0940: biz/2012/12/04/sbt-the-buzz-today-12-4-12.hln?hpt=hp_bn4">.<img 
+0980: class="cnnVideoIcon" width="16" height="10" border="0" alt="Vide
+09c0: o" src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/vide
+0a00: o_icon.gif">.</a>.</li>.<li>.<a href="/video/#/video/us/2012/12/
+0a40: 04/drew-addiction-counselor-dui-death.hln?hpt=hp_bn4">Addiction 
+0a80: counselor kills man in DUI </a>.<a href="/video/#/video/us/2012/
+0ac0: 12/04/drew-addiction-counselor-dui-death.hln?hpt=hp_bn4">.<img c
+0b00: lass="cnnVideoIcon" width="16" height="10" border="0" alt="Video
+0b40: " src="http://i.
+<= Recv data, 4344 bytes (0x10f8)
+0000: cdn.turner.com/cnn/.e/img/3.0/global/icons/video_icon.gif">.</a>
+0040: .</li>.<li>.<a href="/video/#/video/bestoftv/2012/12/04/pmt-osca
+0080: r-pistorius-role-model-olympian.cnn?hpt=hp_bn4">Paralympian supe
+00c0: rstar Oscar Pistorius</a>.<a href="/video/#/video/bestoftv/2012/
+0100: 12/04/pmt-oscar-pistorius-role-model-olympian.cnn?hpt=hp_bn4">.<
+0140: img class="cnnVideoIcon" width="16" height="10" border="0" alt="
+0180: Video" src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/icons/
+01c0: video_icon.gif">.</a>.</li>.</ul>.</ul>.</div>.<div class="cnn_m
+0200: tpmore"><a href="http://www.cnn.com/video?hpt=hp_bn4" class="cnn
+0240: _mtpmorebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1p
+0280: x.gif" alt="More" border="0"/></a></div>.</div>.<div class="cnn_
+02c0: adspc155x31">.</div>.</div>.<div class="cnn_clear"></div>.<div c
+0300: lass="cnn_shdcafooter"></div>.<div class="cnn_pad2top cnn_shdspc
+0340: "></div>.<div class="cnn_shdcaheader"></div>.<div class="cnn_sec
+0380: tbin1">.<div class="cnn_sectbincntnt_full">.<div class="cnn_sect
+03c0: bincntnt2">.<h4><a href='http://www.cnn.com/tech?hpt=hp_bn5'>Tec
+0400: h</a></h4>.<div class="cnn_clear"></div>.<div class="cnn_divline
+0440: "></div>.<ul class="cnn_bulletbin">.<ul class="cnn_bulletbin">.<
+0480: li> <a href=/2012/12/03/tech/innovation/fake-facebook-lottery-wi
+04c0: nner/index.html?hpt=hp_bn5 target="_self">Lottery 'winner' a Fac
+0500: ebook hoax</a>.</li>.<li> <a href=/2012/12/03/tech/mobile/sms-te
+0540: xt-message-20/index.html?hpt=hp_bn5 target="_self">OMG ... the t
+0580: ext message turns 20</a>.</li>.<li> <a href=/2012/11/29/tech/soc
+05c0: ial-media/un-tweet-typo/index.html?hpt=hp_bn5 target="_self">U.N
+0600: . makes big Twitter typo </a>.</li>.<li> <a href=/2012/11/29/tec
+0640: h/web/itunes11/index.html?hpt=hp_bn5 target="_self">iTunes11 fin
+0680: ally available for download</a>.</li>.<li> <a href=/2012/11/29/t
+06c0: ech/mobile/iphone-5-in-stock/index.html?hpt=hp_bn5 target="_self
+0700: ">Apple able to meet iPhone 5 demand</a>.</li>.<li> <a href=/201
+0740: 2/11/29/tech/innovation/apple-forstall-departure/index.html?hpt=
+0780: hp_bn5 target="_self">iPod creator: Forstall deserved firing</a>
+07c0: .</li>.<li> <a href=/2012/11/28/tech/web/bing-scroogled/index.ht
+0800: ml?hpt=hp_bn5 target="_self">Bing takes on Google over shopping<
+0840: /a>.</li>.</ul>.</ul>.</div>.<div class="cnn_mtpmore"><a href="h
+0880: ttp://www.cnn.com/tech?hpt=hp_bn5" class="cnn_mtpmorebtn"><img s
+08c0: rc="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" alt="More" b
+0900: order="0"/></a></div>.</div>.<div class="cnn_adspc155x31">.</div
+0940: >.</div>.<div class="cnn_sectbin2">.<div class="cnn_sectbincntnt
+0980: _full">.<div class="cnn_sectbincntnt2">.<h4><a href='http://mone
+09c0: y.cnn.com?hpt=hp_bn6'>Business</a></h4>.<div class="cnn_clear"><
+0a00: /div>.<div class="cnn_divline"></div>.<ul class="cnn_bulletbin">
+0a40: ....................................
+0a66: 
+0a68: 
+0a6a: 
+0a6c: .....<ul class="cnn_bulletbin"> .........<li>.....<a href="http:
+0aac: //money.cnn.com/2012/12/04/technology/netflix-disney/index.html?
+0aec: source=cnn_bin">Netflix inks Disney deal - for 2016</a>....</li>
+0b2c: ..............<li>.....<a href="http://money.cnn.com/2012/12/04/
+0b6c: technology/innovation/gmail-iphone/index.html?source=cnn_bin">Gm
+0bac: ail iPhone app is finally good </a>....</li>..............<li>..
+0bec: ...<a href="http://money.cnn.com/2012/12/04/investing/stocks-mar
+0c2c: kets/index.html?source=cnn_bin">Fiscal cliff  wrangling pressure
+0c6c: s stocks</a>....</li>..............<li>.....<a href="http://mone
+0cac: y.cnn.com/2012/12/04/news/economy/fiscal-cliff-obama-stimulus/in
+0cec: dex.html?source=cnn_bin">Obama's $200B in economic boosters</a>.
+0d2c: ...</li>..............<li>.....<a href="http://money.cnn.com/vid
+0d6c: eo/pf/2012/12/03/pf-hd-gift-cards.cnnmoney/index.html?source=cnn
+0dac: _bin">The 4-1-1 on gift cards</a>......<a href="http://money.cnn
+0dec: .com/video/pf/2012/12/03/pf-hd-gift-cards.cnnmoney/index.html?so
+0e2c: urce=cnn_bin">.......<img src="http://i.cdn.turner.com/cnn/.elem
+0e6c: ent/img/3.0/global/icons/video_icon.gif" alt="Video" border="0" 
+0eac: width="16" height="10" class="cnn_vidicon">......</a>....</li>..
+0eec: ............<li>.....<a href="http://money.cnn.com/gallery/pf/20
+0f2c: 12/12/04/jobs-tips/index.html?source=cnn_bin">Jobs that get the 
+0f6c: biggest tips</a>....</li>..............<li>.....<a href="http://
+0fac: money.cnn.com/video/technology/2012/12/03/ts-t-shirt-theft.cnnmo
+0fec: ney/index.html?source=cnn_bin">The Internet's art theft problem<
+102c: /a>......<a href="http://money.cnn.com/video/technology/2012/12/
+106c: 03/ts-t-shirt-theft.cnnmoney/index.html?source=cnn_bin">.......<
+10ac: img src="http://i.cdn.turner.com/cnn/.element/img/3.0/global/ico
+10ec: ns/video_ico
+<= Recv data, 13032 bytes (0x32e8)
+0000: n.gif" alt="Video" border="0" width="16" height="10" class="cnn_
+0040: vidicon">......</a>....</li>......</ul>...</ul>.</div>.<div clas
+0080: s="cnn_mtpmore"><a href="http://money.cnn.com?hpt=hp_bn6" class=
+00c0: "cnn_mtpmorebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.
+0100: 0/1px.gif" alt="More" border="0"/></a></div>.</div>.<div class="
+0140: cnn_adspc155x31">.</div>.</div>.<div class="cnn_sectbin3">.<div 
+0180: class="cnn_sectbincntnt">.<div class="cnn_sectbincntnt2">.<h4><a
+01c0:  href='http://www.cnn.com/opinion?hpt=hp_bn7'>Opinion</a></h4>.<
+0200: div class="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul
+0240:  class="cnn_bulletbin">.<ul class="cnn_bulletbin">.<li> <a href=
+0280: /2012/12/04/opinion/ghitis-homeless/index.html?hpt=hp_bn7 target
+02c0: ="_self">Shoes a start, but homeless need more</a>.</li>.<li> <a
+0300:  href=/2012/12/04/opinion/roberts-royal-pregnancy/index.html?hpt
+0340: =hp_bn7 target="_self">Kate's baby will reign -- some day</a>.</
+0380: li>.<li> <a href=/2012/12/04/opinion/helm-us-energy-climate-chan
+03c0: ge/index.html?hpt=hp_bn7 target="_self">U.S. energy bounty and c
+0400: limate change </a>.</li>.<li> <a href=/2012/12/04/opinion/kurtz-
+0440: baldwin-harass/index.html?hpt=hp_bn7 target="_self">Media, stop 
+0480: stalking Alec Baldwin</a>.</li>.<li> <a href=/2012/12/03/opinion
+04c0: /khan-afghan-women/index.html?hpt=hp_bn7 target="_self">We can't
+0500:  betray Afghan women</a>.</li>.<li> <a href=/2012/12/03/opinion/
+0540: brazile-grover-norquist/index.html?hpt=hp_bn7 target="_self">GOP
+0580: , shake off Norquist's grip </a>.</li>.<li> <a href=/2012/12/03/
+05c0: opinion/powell-football-manhood-suicide/index.html?hpt=hp_bn7 ta
+0600: rget="_self">Manhood, football and suicide</a>.</li>.</ul>.</ul>
+0640: .</div>.<div class="cnn_mtpmore"><a href="http://www.cnn.com/opi
+0680: nion?hpt=hp_bn7" class="cnn_mtpmorebtn"><img src="http://i.cdn.t
+06c0: urner.com/cnn/.e/img/3.0/1px.gif" alt="More" border="0"/></a></d
+0700: iv>.</div>.<div class="cnn_adspc155x31">.</div>.</div>.<div clas
+0740: s="cnn_sectbin4">.<div class="cnn_sectbincntnt_full">.<div class
+0780: ="cnn_sectbincntnt2">.<h4>Popular on Facebook</h4>.<div class="c
+07c0: nn_clear"></div>.<div class="cnn_divline"></div>.<ul class="cnn_
+0800: bulletbin">.<!-- element not processed, not of type title, bulle
+0840: tbins, or article -->.<!-- adTag should not be processed here --
+0880: >.<!-- subtype found: webtag -->.</ul>.<iframe src="//www.facebo
+08c0: ok.com/plugins/activity.php?site=www.cnn.com&amp;action=like&amp
+0900: ;width=210&amp;height=190&amp;header=false&amp;colorscheme=light
+0940: &amp;linktarget=_blank&amp;border_color=white&amp;font&amp;recom
+0980: mendations=true" scrolling="no" frameborder="0" style="border:no
+09c0: ne; overflow:hidden; width:210px; height:190px;" allowTransparen
+0a00: cy="true"></iframe>.</div>.</div>.<div class="cnn_adspc155x31">.
+0a40: </div>.</div>.<div class="cnn_clear"></div>.<div class="cnn_shdc
+0a80: afooter"></div>.<div class="cnn_pad2top cnn_shdspc"></div>.<div 
+0ac0: class="cnn_shdcaheader"></div>.<div class="cnn_sectbin1">.<div c
+0b00: lass="cnn_sectbincntnt">.<div class="cnn_sectbincntnt2">.<h4><a 
+0b40: href='http://www.cnn.com/showbiz?hpt=hp_bn9'>Entertainment</a></
+0b80: h4>.<div class="cnn_clear"></div>.<div class="cnn_divline"></div
+0bc0: >.<ul class="cnn_bulletbin">.<ul class="cnn_bulletbin">.<li> <a 
+0c00: href=http://marquee.blogs.cnn.com/2012/12/04/photo-ashton-kutche
+0c40: r-as-steve-jobs-in-jobs/?hpt=hp_bn9 target="_self">Photo: Kutche
+0c80: r as Steve Jobs.Photo: Ashton Kutcher as Steve Jobs in 'jOBS'</a
+0cc0: >.</li>.<li> <a href=/2012/12/04/showbiz/katt-williams-done-come
+0d00: dy/index.html?hpt=hp_bn9 target="_self">Williams 'kinda done' wi
+0d40: th comedy </a>.</li>.<li> <a href=/video/?hpt=hp_bn9#/video/show
+0d80: biz/2012/12/04/sbt-seven-year-curse-seal.hln target="_self">Cele
+0dc0: brities fall victim to 7-year curse</a>.&nbsp;<a href=/video/?hp
+0e00: t=hp_bn9#/video/showbiz/2012/12/04/sbt-seven-year-curse-seal.hln
+0e40:  target="_self"><img class="cnnVideoIcon" width="16" height="10"
+0e80:  border="0" alt="" src="http://i.cdn.turner.com/cnn/.e/img/3.0/g
+0ec0: lobal/icons/video_icon.gif"/></a>.</li>.<li> <a href=http://marq
+0f00: uee.blogs.cnn.com/2012/12/04/dmx-sings-rudolph-the-red-nosed-rei
+0f40: ndeer/?hpt=hp_bn9 target="_self">DMX sings a Christmas classic</
+0f80: a>.</li>.<li> <a href=/2012/12/03/showbiz/celebrity-news-gossip/
+0fc0: whitney-houston-book/index.html?hpt=hp_bn9 target="_self">New Wh
+1000: itney Houston book</a>.</li>.<li> <a href=http://marquee.blogs.c
+1040: nn.com/2012/12/03/report-hefner-harris-set-to-wed-again/?hpt=hp_
+1080: bn9 target="_self">Report: Hefner and Harris again set to wed</a
+10c0: >.</li>.<li> <a href=/2012/12/03/showbiz/tv/seth-macfarlane-ew/i
+1100: ndex.html?hpt=hp_bn9 target="_self">MacFarlane to guest on 'The 
+1140: Simpsons' </a>.</li>.</ul>.</ul>.</div>.<div class="cnn_mtpmore"
+1180: ><a href="http://www.cnn.com/showbiz?hpt=hp_bn9" class="cnn_mtpm
+11c0: orebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif
+1200: " alt="More" border="0"/></a></div>.</div>.<div class="cnn_adspc
+1240: 155x31">.</div>.</div>.<div class="cnn_sectbin2">.<div class="cn
+1280: n_sectbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a hre
+12c0: f='http://www.cnn.com/TRAVEL/?hpt=hp_bn10'>Travel</a></h4>.<div 
+1300: class="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul cla
+1340: ss="cnn_bulletbin">.<ul class="cnn_bulletbin">.<li> <a href=/201
+1380: 2/12/04/travel/istanbul-turkish-sweets/index.html?hpt=hp_bn10 ta
+13c0: rget="_self">A sweet tour of Istanbul</a>.</li>.<li> <a href=/20
+1400: 12/12/03/travel/5-real-life-wonderlands/index.html?hpt=hp_bn10 t
+1440: arget="_self">5 real-life wonderlands</a>.</li>.<li> <a href=/20
+1480: 12/11/30/travel/new-york-tourism-sandy/index.html?hpt=hp_bn10 ta
+14c0: rget="_self">NYC tourism strong despite Sandy</a>.</li>.<li> <a 
+1500: href=/2012/11/30/travel/train-adventures-lifetime/index.html?hpt
+1540: =hp_bn10 target="_self">7 train trips of a lifetime</a>.</li>.<l
+1580: i> <a href=/2012/11/29/travel/hotels-like-home-for-holidays/inde
+15c0: x.html?hpt=hp_bn10 target="_self">8 U.S. hotels that do the holi
+1600: days right</a>.</li>.<li> <a href=/2012/11/28/travel/best-new-cr
+1640: uise-ships/index.html?hpt=hp_bn10 target="_self">Best new cruise
+1680:  ships</a>.</li>.<li> <a href=/2011/09/21/travel/travel-photo-of
+16c0: -the-day/index.html?hpt=hp_bn10 target="_self">Today's photo: Ic
+1700: eland</a>.</li>.<li> <a href=/2012/11/26/travel/best-french-frie
+1740: s/index.html?hpt=hp_bn10 target="_self">Best french fries in the
+1780:  U.S.</a>.</li>.</ul>.</ul>.</div>.<div class="cnn_mtpmore"><a h
+17c0: ref="http://www.cnn.com/TRAVEL/?hpt=hp_bn10" class="cnn_mtpmoreb
+1800: tn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" al
+1840: t="More" border="0"/></a></div>.</div>.<div class="cnn_adspc155x
+1880: 31">.</div>.</div>.<div class="cnn_sectbin3">.<div class="cnn_se
+18c0: ctbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a href='h
+1900: ttp://www.cnn.com/LIVING/?hpt=hp_bn11'>Living</a></h4>.<div clas
+1940: s="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul class="
+1980: cnn_bulletbin">.<ul class="cnn_bulletbin">.<li> <a href=http://i
+19c0: report.cnn.com/docs/DOC-890337?hpt=hp_bn11 target="_self">Rough 
+1a00: pregnancy teaches life lesson</a>.</li>.<li> <a href=http://eato
+1a40: cracy.cnn.com/2012/12/03/canadian-recall-affects-trader-joes-fro
+1a80: zen-indian-meals/?hpt=hp_bn11 target="_self">Trader Joe's recall
+1ac0: s Indian meals</a>.</li>.<li> <a href=/2012/12/03/living/irpt-fi
+1b00: scal-cliff-story/index.html?hpt=hp_bn11 target="_self">Your take
+1b40: : How to fix the fiscal cliff</a>.</li>.<li> <a href=/2012/12/03
+1b80: /living/baby-boomer-friendship/index.html?hpt=hp_bn11 target="_s
+1bc0: elf">Lifelong friends good for your health</a>.</li>.<li> <a hre
+1c00: f=http://eatocracy.cnn.com/2012/12/03/weird-wacky-vending-machin
+1c40: e-cuisine/?hpt=ea_mid&hpt=hp_bn11 target="_self">Eating caviar f
+1c80: rom a vending machine</a>.</li>.<li> <a href=/2012/11/30/living/
+1cc0: native-american-fashion-appropriation/index.html?hpt=hp_bn11 tar
+1d00: get="_self">American Indians fight caricatures</a>.</li>.<li> <a
+1d40:  href=/2012/11/29/living/war-on-men/index.html?hpt=hp_bn11 targe
+1d80: t="_self">The mythical "war on men"</a>.</li>.<li> <a href=/2012
+1dc0: /11/29/living/women-turning-40/index.html?hpt=hp_bn11 target="_s
+1e00: elf">Don't freak out over turning 40!</a>.</li>.</ul>.</ul>.</di
+1e40: v>.<div class="cnn_mtpmore"><a href="http://www.cnn.com/LIVING/?
+1e80: hpt=hp_bn11" class="cnn_mtpmorebtn"><img src="http://i.cdn.turne
+1ec0: r.com/cnn/.e/img/3.0/1px.gif" alt="More" border="0"/></a></div>.
+1f00: </div>.<div class="cnn_adspc155x31">.</div>.</div>.<div class="c
+1f40: nn_sectbin4 cnn_adbygbin">.<!-- ADSPACE: homepage/main/adlinks.2
+1f80: 30x250 -->
+1f8c: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+1fcc: in&cnn_position=230x250_adlinks&cnn_rollup=homepage&page.allowco
+200c: mpete=no&params.styles=fs|CALLOUT -->
+2033: <div id="ad-825207" align="center" style="padding: 0; margin: 0;
+2073:  border: 0;"></div><script>cnnad_createAd("825207","http://ads.c
+20b3: nn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=230x250_a
+20f3: dlinks&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs
+2133: ","250","230");cnnad_registerSpace(825207,230,250);</script>.</d
+2173: iv>.<div class="cnn_clear"></div>.<div class="cnn_shdcafooter"><
+21b3: /div>.<div class="cnn_pad2top cnn_shdspc"></div>.<div class="cnn
+21f3: _shdcaheader"></div>.<div class="cnn_sectbin1">.<div class="cnn_
+2233: sectbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a href=
+2273: '/HEALTH/index.html?hpt=hp_bn12'>Health</a></h4>.<div class="cnn
+22b3: _clear"></div>.<div class="cnn_divline"></div>.<ul class="cnn_bu
+22f3: lletbin">.<ul class="cnn_bulletbin">.<li> <a href=http://thechar
+2333: t.blogs.cnn.com/2012/12/04/pesticides-in-tap-water-produce-linke
+2373: d-to-food-allergies/?hpt=hp_bn12 target="_self">Pesticides linke
+23b3: d to food allergies</a>.</li>.<li> <a href=http://thechart.blogs
+23f3: .cnn.com/2012/12/03/flu-season-ramping-up-early-experts-say/?hpt
+2433: =hp_bn12 target="_self">Flu season ramping up early</a>.</li>.<l
+2473: i> <a href=/video/?hpt=hp_bn12#/video/health/2012/12/04/exp-gupt
+24b3: a-and-brain-damage-and-football.cnn target="_self">Study on foot
+24f3: ball, brain damage</a>.&nbsp;<a href=/video/?hpt=hp_bn12#/video/
+2533: health/2012/12/04/exp-gupta-and-brain-damage-and-football.cnn ta
+2573: rget="_self"><img class="cnnVideoIcon" width="16" height="10" bo
+25b3: rder="0" alt="" src="http://i.cdn.turner.com/cnn/.e/img/3.0/glob
+25f3: al/icons/video_icon.gif"/></a>.</li>.<li> <a href=/2012/12/04/he
+2633: alth/jane-fonda-qa/index.html?hpt=hp_bn12 target="_self">6 quest
+2673: ions for Jane Fonda</a>.</li>.<li> <a href=/2012/12/04/health/ch
+26b3: ild-weight-loss-bond/index.html?hpt=hp_bn12 target="_self">Child
+26f3:  loses 65 lbs to fight obesity</a>.</li>.<li> <a href=/2012/12/0
+2733: 1/health/ecstasy-ptsd-1/index.html?hpt=hp_bn12 target="_self">Ec
+2773: stasy to treat PTSD: My story</a>.</li>.<li> <a href=/video/?hpt
+27b3: =hp_bn12#/video/bestoftv/2012/11/29/pkg-gupta-eat-bugs-save-plan
+27f3: et.cnn target="_self">Eating bugs to save the planet</a>.&nbsp;<
+2833: a href=/video/?hpt=hp_bn12#/video/bestoftv/2012/11/29/pkg-gupta-
+2873: eat-bugs-save-planet.cnn target="_self"><img class="cnnVideoIcon
+28b3: " width="16" height="10" border="0" alt="" src="http://i.cdn.tur
+28f3: ner.com/cnn/.e/img/3.0/global/icons/video_icon.gif"/></a>.</li>.
+2933: </ul>.</ul>.</div>.<div class="cnn_mtpmore"><a href="/HEALTH/ind
+2973: ex.html?hpt=hp_bn12" class="cnn_mtpmorebtn"><img src="http://i.c
+29b3: dn.turner.com/cnn/.e/img/3.0/1px.gif" alt="More" border="0"/></a
+29f3: ></div>.</div>.<div class="cnn_adspc155x31">.</div>.</div>.<div 
+2a33: class="cnn_sectbin2">.<div class="cnn_sectbincntnt">.<div class=
+2a73: "cnn_sectbincntnt2">.<h4><a href='http://www.cnn.com/SPECIALS/wo
+2ab3: rld/photography/index.html?hpt=hp_bn13'>Best photos</a></h4>.<di
+2af3: v class="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul c
+2b33: lass="cnn_bulletbin">.<li> <a href=http://cnnphotos.blogs.cnn.co
+2b73: m/2012/12/03/photographing-to-get-to-know-my-parents/?hpt=hp_bn1
+2bb3: 3 target="_self">Getting to know his parents</a>.</li>.<li> <a h
+2bf3: ref=/2012/11/29/worldsport/gallery/nfl-week-13/index.html?hpt=hp
+2c33: _bn13 target="_self">NFL Week 13: The best photos</a>.</li>.<li>
+2c73:  <a href=/2012/12/02/world/gallery/santa-sightings/index.html?hp
+2cb3: t=hp_bn13 target="_self">Santa sightings around the world</a>.</
+2cf3: li>.<li> <a href=http://cnnphotos.blogs.cnn.com/2012/11/28/the-l
+2d33: ast-execution-sites/?hpt=hp_bn13 target="_self">Last execution s
+2d73: ites.</a>.</li>.<li> <a href=/2012/11/27/asia/gallery/sikh-nanak
+2db3: -birthday/index.html?hpt=hp_bn13 target="_self">Happy 543rd, Sik
+2df3: h founder</a>.</li>.<li> <a href=/2012/11/23/world/gallery/egypt
+2e33: -protests/index.html?hpt=hp_bn13 target="_self">Egyptians protes
+2e73: t presidential powers</a>.</li>.<li> <a href=/2012/11/29/worldsp
+2eb3: ort/gallery/2012-sports-moments/index.html?hpt=hp_bn13 target="_
+2ef3: self">Amazing sports moments you missed</a>.</li>.</ul>.</div>.<
+2f33: div class="cnn_mtpmore"><a href="http://www.cnn.com/SPECIALS/wor
+2f73: ld/photography/index.html?hpt=hp_bn13" class="cnn_mtpmorebtn"><i
+2fb3: mg src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" alt="Mor
+2ff3: e" border="0"/></a></div>.</div>.<div class="cnn_adspc155x31">.<
+3033: /div>.</div>.<div class="cnn_sectbin3">.<div class="cnn_sectbinc
+3073: ntnt">.<div class="cnn_sectbincntnt2">.<h4><a href='http://sport
+30b3: sillustrated.cnn.com/?xid=cnnbin&hpt=hp_bn14'>Sports</a></h4>.<d
+30f3: iv class="cnn_clear"></div>.<div class="cnn_divline"></div>.<ul 
+3133: class="cnn_bulletbin">.<ul class="cnn_bulletbin">.<li><a href="h
+3173: ttp://sportsillustrated.cnn.com/2012/writers/stewart_mandel/12/0
+31b3: 4/bowl-rankings/index.html?xid=cnnbin">Ranking the bowls: best t
+31f3: o worst</a></li>.<li><a href="http://sportsillustrated.cnn.com/2
+3233: 012/writers/david_epstein/12/04/jovan-belcher/index.html?xid=cnn
+3273: bin">Belcher sent 'surreal' texts before murder</a></li>.<li><a 
+32b3: href="http://sportsillustrated.cnn.com/2012/writers/p
+<= Recv data, 4344 bytes (0x10f8)
+0000: eter_king/12/04/andrew-luck-robert-griffin-iii-russell-wilson/in
+0040: dex.html?xid=cnnbin">Behind the rise of three rookie QBs</a></li
+0080: >.<li><a href="http://sportsillustrated.cnn.com/2012/writers/don
+00c0: _banks/12/04/ravens-bears-playoffs/index.html?xid=cnnbin">Two NF
+0100: L playoff hopefuls in trouble?</a></li>.<li><a href="http://spor
+0140: tsillustrated.cnn.com/2012/magazine/sportsman/12/02/lebron-james
+0180: -2012-sportsman/index.html?xid=cnnbin">Sportsman of the Year: Le
+01c0: Bron James</a></li>.<li><a href="http://www.fannation.com/truth_
+0200: and_rumors/view/353816-dodgers-in-on-ra-dickey-trade-talks?xid=c
+0240: nnbin">Trade rumors swirl around star pitcher</a></li>.<li><a hr
+0280: ef="http://sportsillustrated.cnn.com/multimedia/photo_gallery/09
+02c0: 12/si.sportsman.of.the.year.covers/content.1.html?xid=cnnbin">Ph
+0300: otos: The history of SI's Sportsman</a></li>.</ul>...</ul>.</div
+0340: >.<div class="cnn_mtpmore"><a href="http://sportsillustrated.cnn
+0380: .com/?xid=cnnbin&hpt=hp_bn14" class="cnn_mtpmorebtn"><img src="h
+03c0: ttp://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" alt="More" border
+0400: ="0"/></a></div>.</div>.<div class="cnn_adspc155x31">.</div>.</d
+0440: iv>.<div class="cnn_sectbin4 cnn_quickvotebin cnn_zitemodulecont
+0480: nr">.<div class="cnn_sectbincntnt cnn_zitemodule"></div>.</div>.
+04c0: <div class="cnn_clear"></div>.<div class="cnn_shdcafooter"></div
+0500: >.<div class="cnn_pad2top cnn_shdspc"></div>.<div class="cnn_shd
+0540: caheader"></div>.<div class="cnn_sectbin1">.<div class="cnn_sect
+0580: bincntnt">.<div class="cnn_sectbincntnt2">.<h4><a href='http://w
+05c0: ww.hlntv.com/?hpt=hp_bn15'>HLNtv.com</a></h4>.<div class="cnn_cl
+0600: ear"></div>.<div class="cnn_divline"></div>.<ul class="cnn_bulle
+0640: tbin">.<ul class="cnn_bulletbin">.<li>.<a href="http://www.hlntv
+0680: .com/slideshow/2012/11/30/elf-shelf-ideas?hpt=hp_bn15">Awesome E
+06c0: lf on the Shelf ideas!</a>.</li>.<li>.<a href="http://www.hlntv.
+0700: com/slideshow/2012/12/03/christmas-holiday-weird-foods-red-velve
+0740: t-milk?hpt=hp_bn15">Looking for some offbeat holiday fare?</a>.<
+0780: /li>.<li>.<a href="http://www.hlntv.com/slideshow/2012/12/04/sta
+07c0: r-spaces-katherine-heigl-los-feliz?hpt=hp_bn15">Celeb mom leavin
+0800: g L.A. for good?</a>.</li>.<li>.<a href="http://www.hlntv.com/vi
+0840: deo/2012/12/04/flash-mob-napkin-cancer-patient?hpt=hp_bn15">Flas
+0880: h mob shows love for cancer patient</a>.<a href="http://www.hlnt
+08c0: v.com/video/2012/12/04/flash-mob-napkin-cancer-patient?hpt=hp_bn
+0900: 15"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/globa
+0940: l/icons/video_icon.gif" alt="Video" border="0" width="16" height
+0980: ="10" class="cnn_vidicon"></a>.</li>.<li>.<a href="http://www.hl
+09c0: ntv.com/video/2012/12/04/ambulance-booted?hpt=hp_bn15">Ambulance
+0a00:  booted during rescue?!</a>.<a href="http://www.hlntv.com/video/
+0a40: 2012/12/04/ambulance-booted?hpt=hp_bn15"><img src="http://i.cdn.
+0a80: turner.com/cnn/.element/img/3.0/global/icons/video_icon.gif" alt
+0ac0: ="Video" border="0" width="16" height="10" class="cnn_vidicon"><
+0b00: /a>.</li>.<li>.<a href="http://www.hlntv.com/article/2012/12/04/
+0b40: condam-condoms-college-sexual-health?hpt=hp_bn15">Get condoms de
+0b80: livered to your dorm!</a>.</li>.<li>.<a href="http://www.hlntv.c
+0bc0: om/video/2012/12/04/royal-baby-mysteries-answered?hpt=hp_bn15">R
+0c00: oyal baby mysteries answered!</a>.<a href="http://www.hlntv.com/
+0c40: video/2012/12/04/royal-baby-mysteries-answered?hpt=hp_bn15"><img
+0c80:  src="http://i.cdn.turner.com/cnn/.element/img/3.0/global/icons/
+0cc0: video_icon.gif" alt="Video" border="0" width="16" height="10" cl
+0d00: ass="cnn_vidicon"></a>.</li>.</ul>.</ul>.</div>.<div class="cnn_
+0d40: mtpmore"><a href="http://www.hlntv.com/?hpt=hp_bn15" class="cnn_
+0d80: mtpmorebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px
+0dc0: .gif" alt="More" border="0"/></a></div>.</div>.<div class="cnn_a
+0e00: dspc155x31">.</div>.</div>.<div class="cnn_sectbin2">.<div class
+0e40: ="cnn_sectbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a
+0e80:  href='http://www.time.com/time/?hpt=hp_bn16'>Time.com</a></h4>.
+0ec0: <div class="cnn_clear"></div>.<div class="cnn_divline"></div>.<u
+0f00: l class="cnn_bulletbin">.<li> <a href=http://business.time.com/2
+0f40: 012/12/04/birth-rate-plunges-during-recession/?hpt=hp_bn16 targe
+0f80: t="_blank">Birth rate plunges during recession</a>.</li>.<li> <a
+0fc0:  href=http://www.time.com/time/person-of-the-year/2012/?hpt=hp_b
+1000: n16 target="_blank">Who should be TIME's Person of the Year?</a>
+1040: .</li>.<li> <a href=http://entertainment.time.com/2012/12/03/new
+1080: -york-film-critics-a-perfect-score-for-zero-dark-thirty/?hpt=hp_
+10c0: bn16 target="_blank">Perfect score for 'Zero Dark Thirty
+<= Recv data, 14480 bytes (0x3890)
+0000: '</a>.</li>.<li> <a href=http://business.time.com/2012/12/03/is-
+0040: it-better-to-rent-or-to-buy/?hpt=hp_bn16 target="_blank">Is it b
+0080: etter to rent or buy?</a>.</li>.<li> <a href=http://techland.tim
+00c0: e.com/2012/12/04/ebay-now/?iid=tl-main-lead&hpt=hp_bn16 target="
+0100: _blank">Promise and pitfalls of same-day delivery</a>.</li>.<li>
+0140:  <a href=http://techland.time.com/2012/12/04/top-10-tech-lists/?
+0180: hpt=hp_bn16 target="_blank">Top 10 Everything of 2012</a>.</li>.
+01c0: <li> <a href=http://entertainment.time.com/2012/12/04/katie-holm
+0200: es-trapped-on-broadway/?hpt=hp_bn16 target="_blank">Katie Holmes
+0240:  trapped on Broadway</a>.</li>.</ul>.</div>.<div class="cnn_mtpm
+0280: ore"><a href="http://www.time.com/time/?hpt=hp_bn16" class="cnn_
+02c0: mtpmorebtn"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/1px
+0300: .gif" alt="More" border="0"/></a></div>.</div>.<div class="cnn_a
+0340: dspc155x31">.</div>.</div>.<div class="cnn_sectbin3">.<div class
+0380: ="cnn_sectbincntnt_full">.<div class="cnn_sectbincntnt2">.<h4><a
+03c0:  href='http://games.cnn.com/?hpt=hp_bn17'>Play CNN Games!</a></h
+0400: 4>.<div class="cnn_clear"></div>.<div class="cnn_divline"></div>
+0440: .<ul class="cnn_bulletbin">.<!-- element not processed, not of t
+0480: ype title, bulletbins, or article -->.<!-- adTag should not be p
+04c0: rocessed here -->.<!-- subtype found: webtag -->.</ul>.<a href="
+0500: http://games.cnn.com/?hpt=hp_bn17"><img src="http://i.cdn.turner
+0540: .com/cnn/.element/img/3.0/games/main_logo.png" width="220" heigh
+0580: t="84"/></a>.<br/><br/>.<ul class="cnn_bulletbin">.<li>.<a href=
+05c0: "http://games.cnn.com/games/mahjongg-dimensions/mahjongg-dimensi
+0600: ons.aspx?hpt=hp_bn17">Play Mahjongg Dimensions!</a>.</li><li>.<a
+0640:  href="http://games.cnn.com/games/tri-peaks-solitaire/tri-peaks-
+0680: solitaire.aspx?hpt=hp_bn17">Play Tri Peaks Solitaire!</a>.</li><
+06c0: li>.<a href="http://games.cnn.com/games/jigsaw-puzzle/jigsaw-puz
+0700: zle.aspx?hpt=hp_bn17">Play now: CNN Jigsaw!</a>.</li></ul>.</div
+0740: >.<div class="cnn_mtpmore"><a href="http://games.cnn.com/?hpt=hp
+0780: _bn17" class="cnn_mtpmorebtn"><img src="http://i.cdn.turner.com/
+07c0: cnn/.e/img/3.0/1px.gif" alt="More" border="0"/></a></div>.</div>
+0800: .<div class="cnn_adspc155x31">.</div>.</div>.<div class="cnn_sec
+0840: tbin4 cnn_sbhottopics cnn_quickvotebin">.<!-- expected target su
+0880: btype of quickVote or adTag, found: not found -->.<div class="cn
+08c0: n_sectbincntnt">.<h4>Quick vote</h4><div class="cnn_clear"></div
+0900: ><div class="cnn_divline"></div>.<!--/POLLSERVER/htmltemplates/q
+0940: uestions/inline_question.html-->.<script>var qvq_count=0;</scrip
+0980: t>.<div id="cnnQV_Content_63390">.<form action="http://polls.cnn
+09c0: .com/poll" id="qv_poll_63390" method="post" target="qv_iframe_63
+0a00: 390">.<input name="poll_id" type="hidden" value="63390"/>.<div c
+0a40: lass="cnn_qvbv3"><h5 id="cnnQV_quesTxT">Are we doing enough to h
+0a80: elp the homeless in the U.S.?</h5></div>.<div class="cnn_qvbv4">
+0ac0: .<ul>.<li><input id="cnnPollA1" name="question_1" type="radio" v
+0b00: alue="1"/> <label for="cnnPollA1" id="cnnPoll_Q1L1">Yes</label><
+0b40: /li>.<script>qvq_count++;</script>.<li><input id="cnnPollA2" nam
+0b80: e="question_1" type="radio" value="2"/> <label for="cnnPollA2" i
+0bc0: d="cnnPoll_Q1L2">No</label></li>.<script>qvq_count++;</script>.<
+0c00: /ul><div class="cnn_clear"></div>.</div>.<!-- /end Question 1 --
+0c40: >.<div class="cnn_qvbvote">.<div class="cnn_qvbv1"><a href="java
+0c80: script:qvSubmitVote_63390();" class="cnn_frmqvtbtn"><img src="ht
+0cc0: tp://i.cdn.turner.com/cnn/.e/img/3.0/1px.gif" border="0" height=
+0d00: "1" width="1"/></a></div>.<div class="cnn_qvbv2"><span>or </span
+0d40: ><a href="javascript:qvGetResults_63390();">view results</a></di
+0d80: v>.<div class="cnn_clear"></div>.</div>.</form>.</div>.<iframe f
+0dc0: rameborder="0" height="1" id="qv_iframe_63390" name="qv_iframe_6
+0e00: 3390" style="visibility:hidden;height:1px;border:0px" width="1">
+0e40: </iframe>.<script>.var qv_submitted_63390;.function qvSubmitVote
+0e80: _63390(){qv_submitted_63390=1;$('qv_poll_63390').submit();qvGetR
+0ec0: esults_63390();}.function qvGetResults_63390(){ .CSIManager.getI
+0f00: nstance().call('http:/\/www.cnn.com/POLLSERVER/results/63390.con
+0f40: tent.html','','cnnQV_Content_63390',cnn_qvBPHTML_63390,true);.}.
+0f80: function cnn_qvBPHTML_63390(obj,id,configObj){.var qvtemp_arr=[]
+0fc0: ;.for(i=1;i<=qvq_count;i++){qvtemp_arr[(i-1)]={'a_txt':$('cnnPol
+1000: l_Q1L'+i).innerHTML,'vote_c':parseInt(obj.poll_values[i].vote_co
+1040: unt),'vote_p':parseInt(obj.poll_values[i].vote_percent)};}.qvtem
+1080: p_arr.sort(cnn_qvCompRes);.return cnn_qvBResHTML(obj,qvtemp_arr,
+10c0: '63390');.}.function cnn_qvBResHTML(obj,qv_arr,poll_id){.var h='
+1100: <div class="cnn_qvbv14"><div class="cnn_qvbv16">';.h+='<h5>'+$('
+1140: cnnQV_quesTxT').innerHTML+'</h5>';.if(obj.related_story){h+='<di
+1180: v class="cnn_qvbv5"><a href="'+obj.related_story+'">Read Related
+11c0:  Articles</a></div>';}.h+='</div><div class="cnn_qvbv15">This is
+1200:  not a scientific poll</div></div><div class="cnn_qvbv6">';.for(
+1240: i=0;i<qv_arr.length;i++){.h+='<div class="cnn_qvbv7';.if(i==0){h
+1280: +=' cnn_qvbvactv';}.h+='"><div class="cnn_qvbv8">'+qv_arr[i].a_t
+12c0: xt+'</div><div class="cnn_qvbv9"><div style="';.if(qv_arr[i].vot
+1300: e_p>0){h+='width:'+qv_arr[i].vote_p+'px;';}.h+='"></div></div><d
+1340: iv class="cnn_qvbv10">'+qv_arr[i].vote_p+'%</div><div class="cnn
+1380: _qvbv11">'+qv_arr[i].vote_c+'</div><div class="cnn_clear"></div>
+13c0: </div>';.}.h+='<div class="cnn_qvbv12">Total votes: '+obj.total_
+1400: vote_count+'</div><div class="cnn_qvbv13">This is not a scientif
+1440: ic poll</div></div>';.return h;.}.function cnn_qvCompRes(a,b){re
+1480: turn b.vote_c-a.vote_c;}.</script>..</div>.<div class="cnn_clear
+14c0: "></div>.</div>.<div class="cnn_clear"></div>.<div class="cnn_sh
+1500: dcafooter"></div>.<div class="cnn_pad2top cnn_shdspc"></div>.</d
+1540: iv>.<div class="cnnfooterTemplateWrapper">.<div class="cnnFooter
+1580: Template">.<div class="header">.<span class="sponsor-entitlement
+15c0: "></span>.<h4 class="mainHeader"><a href="/video/?hpt=hp_tvvideo
+1600: ">TV & Video</a></h4>.</div>.<div class="content">.<div class="c
+1640: nn_column cnnNowPlaying">.<script type="text/html" id="nowplayin
+1680: gFooter-template">.<div data-bind="click:function(){document.loc
+16c0: ation=$data.link()+'?hpt=hp_tvvideo'}" class="cnn_column cnnNowP
+1700: laying">.<a class="tn">.<div class="nowPlaying thumbnail">.<img 
+1740: data-bind="attr:{src:thumbnail()}" class="thumb"/>.<span data-bi
+1780: nd="text:status()" class="onNow">On Now</span>.</div>.</a>.<div 
+17c0: id="infoBox">.<h4 data-bind="text:title(),click:function(){docum
+1800: ent.location=$data.link()+'?hpt=hp_tvvideo'}" class="headline"><
+1840: /h4>.<span data-bind="text:description126(),visible:(isTVE())" c
+1880: lass="description"></span>.</div>.<a data-bind="attr:{href: $dat
+18c0: a.link()+'?hpt=hp_tvvideo'}" class="cnn_hpftdomvmodlnks2"></a>.<
+1900: /div>.</script>.<span.class="cnn_widget".type="nowplaying".versi
+1940: on="1.0.2".channel="CNN".video="cvptve/cvpstream1".templates="".
+1980: data-bind="template: { name: 'nowplayingFooter-template'}"></spa
+19c0: n>.</div>.<div class="cnn_column moreVideos">.<ul class="cnnSite
+1a00: Menus">.<li><a href="http://cnnradio.cnn.com/?hpt=hp_tvvideo">CN
+1a40: N Radio</a></li>.<li><a href="http://www.hlntv.com/?hpt=hp_tvvid
+1a80: eo">HLN</a></li>.<li><a href="http://www.cnn.com/CNN/Programs/?h
+1ac0: pt=hp_tvvideo">Full Schedule</a></li>.<li class="cnnTVprograms">
+1b00: .<form class="tvPrograms">.<select onchange="if(this.options[sel
+1b40: ectedIndex].value!=''){location.href=this.options[selectedIndex]
+1b80: .value;}">.<option value="/Programs/?hpt=hp_tvvideo">TV Programs
+1bc0: .<option value="" disabled="disabled" class="disabledProgram">--
+1c00: --------------------------------------.<option value="/CNN/Progr
+1c40: ams/?hpt=hp_tvvideo">Today's schedule.<option value="" disabled=
+1c80: "disabled" class="disabledProgram">----- CNN Weekdays -----.<opt
+1cc0: ion value="http://outfront.blogs.cnn.com/?hpt=hp_tvvideo">Erin B
+1d00: urnett OutFront.<option value="http://ac360.blogs.cnn.com/?hpt=h
+1d40: p_tvvideo">Anderson Cooper 360.<option value="http://piersmorgan
+1d80: .blogs.cnn.com/?hpt=hp_tvvideo">Piers Morgan Tonight.<option val
+1dc0: ue="http://earlystart.blogs.cnn.com/?hpt=hp_tvvideo">Early Start
+1e00: .<option value="http://startingpoint.blogs.cnn.com/?hpt=hp_tvvid
+1e40: eo">Starting Point.<option value="http://newsroom.blogs.cnn.com/
+1e80: ?hpt=hp_tvvideo">CNN Newsroom.<option value="http://situationroo
+1ec0: m.blogs.cnn.com/?hpt=hp_tvvideo">The Situation Room.<option valu
+1f00: e="" disabled="disabled" class="disabledProgram">----- CNN Weeke
+1f40: nds -----.<option value="http://sanjayguptamd.blogs.cnn.com/?hpt
+1f80: =hp_tvvideo">Sanjay Gupta MD.<option value="http://yourbottomlin
+1fc0: e.blogs.cnn.com/?hpt=hp_tvvideo">Your Bottom Line.<option value=
+2000: "http://yourmoney.blogs.cnn.com/?hpt=hp_tvvideo">Your Money.<opt
+2040: ion value="http://sotu.blogs.cnn.com/?hpt=hp_tvvideo">State of t
+2080: he Union.<option value="http://globalpublicsquare.blogs.cnn.com/
+20c0: ?hpt=hp_tvvideo">Fareed Zakaria GPS.<option value="http://reliab
+2100: lesources.blogs.cnn.com/?hpt=hp_tvvideo">Reliable Sources.<optio
+2140: n value="http://whatsnext.blogs.cnn.com/category/the-next-list/?
+2180: hpt=hp_tvvideo">The Next List.<option value="" disabled="disable
+21c0: d" class="disabledProgram">----- Other CNN -----.<option value="
+2200: http://inamerica.blogs.cnn.com/?hpt=hp_tvvideo">In America.<opti
+2240: on value="/SPECIALS/cnn.heroes/?hpt=hp_tvvideo">CNN Heroes.<opti
+2280: on value="http://cnnpresents.blogs.cnn.com/?hpt=hp_tvvideo">CNN 
+22c0: Presents.<option value="http://cnnpresents.blogs.cnn.com/?hpt=hp
+2300: _tvvideo">Spec. Investigations Unit.<option value="/studentnews/
+2340: ?hpt=hp_tvvideo">CNN Student News.<option value="" disabled="dis
+2380: abled" class="disabledProgram">----- HLN -----.<option value="ht
+23c0: tp://www.hlntv.com/shows/morning-express-robin-meade/?hpt=hp_tvv
+2400: ideo">Morning Express with Robin Meade.<option value="/CNN/Progr
+2440: ams/prime.news/?hpt=hp_tvvideo">Prime News.<option value="http:/
+2480: /www.hlntv.com/shows/jane-velez-mitchell/?hpt=hp_tvvideo">Jane V
+24c0: elez-Mitchell.<option value="http://www.hlntv.com/shows/nancy-gr
+2500: ace/?hpt=hp_tvvideo">Nancy Grace.<option value="http://www.hlntv
+2540: .com/shows/dr-drew/?hpt=hp_tvvideo">Dr. Drew.<option value="http
+2580: ://www.hlntv.com/shows/clark-howard/?hpt=hp_tvvideo">Clark Howar
+25c0: d.<option value="/CNN/Programs/showbiz.tonight/?hpt=hp_tvvideo">
+2600: Showbiz Tonight.</select>.</form>.</li>.</ul>.<h4>Must Watch TV<
+2640: /h4>.<ol class="cnnMustWatchTv">.<li onclick="location.href='/vi
+2680: deo/?collection=STARTING_POINT&hpt=hp_tvvideo';"><a rel="externa
+26c0: l" href="/video/?collection=STARTING_POINT&hpt=hp_tvvideo"><img 
+2700: src="http://i.cdn.turner.com/cnn/.element/widget/hp_footer_dom/i
+2740: mages/soledad.png" alt="Soledad" /><span class="clipHeadline sho
+2780: w">Starting Point</span><br /><span class="time">7am ET / 4am PT
+27c0:  on CNN</span></a></li>.<li onclick="location.href='/video/?coll
+2800: ection=The_Situation_Room&hpt=hp_tvvideo';"><a rel="external" hr
+2840: ef="/video/?collection=The_Situation_Room&hpt=hp_tvvideo"><img s
+2880: rc="http://i.cdn.turner.com/cnn/.element/widget/hp_footer_dom/im
+28c0: ages/tsr.png" alt="The Situation Room" /><span class="clipHeadli
+2900: ne show">The Situation Room</span><br /><span class="time">4pm E
+2940: T / 1pm PT on CNN</span></a></li>.<li onclick="location.href='/v
+2980: ideo/?collection=Erin_Burnett_Out_Front&hpt=hp_tvvideo';"><a rel
+29c0: ="external" href="/video/?collection=Erin_Burnett_Out_Front&hpt=
+2a00: hp_tvvideo"><img src="http://i.cdn.turner.com/cnn/.element/widge
+2a40: t/hp_footer_dom/images/ebof.png" alt="Erin Burnett: OutFront" />
+2a80: <span class="clipHeadline show">Erin Burnett: OutFront</span><br
+2ac0:  /><span class="time">7pm ET / 4pm PT on CNN</span></a></li>.<li
+2b00:  onclick="location.href='/video/?collection=Anderson_Cooper_360&
+2b40: hpt=hp_tvvideo';"><a rel="external" href="/video/?collection=And
+2b80: erson_Cooper_360&hpt=hp_tvvideo"><img src="http://i.cdn.turner.c
+2bc0: om/cnn/.element/widget/hp_footer_dom/images/ac360.png" alt="AC 3
+2c00: 60" /><span class="clipHeadline show">AC 360</span><br /><span c
+2c40: lass="time">8pm ET/PT on CNN</span></a></li>.<li onclick="locati
+2c80: on.href='/video/?collection=Piers_Morgan&hpt=hp_tvvideo';"><a re
+2cc0: l="external" href="/video/?collection=Piers_Morgan&hpt=hp_tvvide
+2d00: o"><img src="http://i.cdn.turner.com/cnn/.element/widget/hp_foot
+2d40: er_dom/images/piers.png" alt="Piers Morgan Tonight" /><span clas
+2d80: s="clipHeadline show">Piers Morgan Tonight</span><br /><span cla
+2dc0: ss="time">9pm ET/PT on CNN</span></a></li>.</ol>.<ul class="cnnS
+2e00: iteMenus">.<li><a href="/video/?hpt=hp_tvvideo">View Collections
+2e40: </a></li>.</ul>.<h4>Trending Video</h4>.<script type="text/html"
+2e80:  id="homepageFooter-template">.<ol data-bind="foreach:videos().s
+2ec0: lice(0,5),visible:(videos().length>0)" class="cnnTrendingVideo">
+2f00: .<li data-bind="click:function(){document.location=($data.clickb
+2f40: ackUrl()+'&hpt=hp_tvvideo')},attr:{title:clickbackUrl}">.<img da
+2f80: ta-bind="attr:{src:thumbnail}"/>.<span data-bind="text:headline"
+2fc0:  class="clipHeadline"></span>.<span data-bind="text:formatTRT" c
+3000: lass="videoTRT"></span>.</li>.</ol>.</script>.<span.class="cnn_w
+3040: idget cnnMustWatchTv".type="videofeed".version="1.0.1".feed_name
+3080: ="Top Videos".feed_url="http://data.cnn.com/jsonp/video/mostpopu
+30c0: lar.json".templates="".data-bind="template: { name: 'homepageFoo
+3100: ter-template'}"></span>.</div>.</div>.</div>.</div>.<div id="fb-
+3140: root"></div>.<script>window.cnnWidgetBaseURI="http://z.cdn.turne
+3180: r.com/cnn/.element/widget";</script>.<script src="http://i.cdn.t
+31c0: urner.com/cnn/.e/widget/loader/1.0.0/load.min.js"></script>.<div
+3200:  align="center"> <div class="cnn_pad6top"></div> <div><div class
+3240: ='cnn_contentarea cnn_filterareabox'><div class='cnn_sdbx'><div 
+3280: class='cnn_sdbx1'><div class='cnn_sdbx2'><div class='cnn_sdbx3'>
+32c0: <div class='cnn_sdbx4'><div class='cnn_sdbx5'><div class='cnn_sd
+3300: bxcntnt'> <div class="cnn_contentarea cnn_filterareabox"><div cl
+3340: ass="cnn_sect300x100bx"> <script>cnnad_newTileIDGroup(['300x100_
+3380: bot1','300x100_bot2','300x100_bot3']);</script> <div class="cnn_
+33c0: adcntr300x100"> <div class="cnn_adspc300x100"> <div style="heigh
+3400: t:100px;"><!-- ADSPACE: homepage/main/bot1.300x100 -->
+3438: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+3478: in&cnn_position=300x100_bot1&cnn_rollup=homepage&page.allowcompe
+34b8: te=no&params.styles=fs|CALLOUT -->
+34dc: <div id="ad-384575" align="center" style="padding: 0; margin: 0;
+351c:  border: 0;"></div><script>cnnad_createAd("384575","http://ads.c
+355c: nn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x100_b
+359c: ot1&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs","
+35dc: 100","300");cnnad_registerSpace(384575,300,100);</script></div> 
+361c: <div class="cnn_adspctimg"><img src="http://i.cdn.turner.com/cnn
+365c: /.e/img/3.0/global/misc/advertisement.gif" alt="ADVERTISEMENT" b
+369c: order="0" height="5" width="58"/></div> </div> <div class="cnn_a
+36dc: dspc300x100 cnn_adspcmid"> <div style="height:100px;"><!-- ADSPA
+371c: CE: homepage/main/bot2.300x100 -->
+3740: 
+3742: 
+3744: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+3784: in&cnn_position=300x100_bot2&cnn_rollup=homepage&page.allowcompe
+37c4: te=no&params.styles=fs|CALLOUT -->
+37e8: <div id="ad-429723" align="center" style="padding: 0; margin: 0;
+3828:  border: 0;"></div>
+383d: <script type="text/javascript">
+385e: cnnad_createAd("429723","http://ads.cnn.com/html.n
+<= Recv data, 4344 bytes (0x10f8)
+0000: g/site=cnn&cnn_pagetype=main&cnn_position=300x100_bot2&cnn_rollu
+0040: p=homepage&page.allowcompete=no&params.styles=fs","100","300");
+0081: cnnad_registerSpace(429723,300,100);
+00a7: </script>
+00b2: 
+00b4: 
+00b6: 
+00b8: 
+00ba: 
+00bc: 
+00be: </div> <div class="cnn_adspctimg"><img src="http://i.cdn.turner.
+00fe: com/cnn/.e/img/3.0/global/misc/advertisement.gif" alt="ADVERTISE
+013e: MENT" border="0" height="5" width="58"/></div> </div> <div class
+017e: ="cnn_adspc300x100"> <div style="height:100px;"><!-- ADSPACE: ho
+01be: mepage/main/bot3.300x100 -->
+01dc: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+021c: in&cnn_position=300x100_bot3&cnn_rollup=homepage&page.allowcompe
+025c: te=no&params.styles=fs|CALLOUT -->
+0280: <div id="ad-201357" align="center" style="padding: 0; margin: 0;
+02c0:  border: 0;"></div><script>cnnad_createAd("201357","http://ads.c
+0300: nn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=300x100_b
+0340: ot3&cnn_rollup=homepage&page.allowcompete=no&params.styles=fs","
+0380: 100","300");cnnad_registerSpace(201357,300,100);</script></div> 
+03c0: <div class="cnn_adspctimg"><img src="http://i.cdn.turner.com/cnn
+0400: /.e/img/3.0/global/misc/advertisement.gif" alt="ADVERTISEMENT" b
+0440: order="0" height="5" width="58"/></div> </div><div class="cnn_cl
+0480: ear"></div> </div> </div></div> </div></div></div></div></div></
+04c0: div></div></div> <div id="cnn_ftrcntnt"><div class="clearfix" id
+0500: ="cnn_ftrcntntinner"> <div class="cnn_ftrdivl1"></div> <div id="
+0540: pmWeatherFooter" style="visibility:visible"><p><strong>Loading w
+0580: eather data...</strong></p></div> <div id="ftr-search"> <form ac
+05c0: tion="http://www.cnn.com/search/" method="get" onsubmit="return 
+0600: cnnSearch(this);"> <div class="ftr-search-datacntr"> <div class=
+0640: "ftr-search-tfield"><input id="ftr-search-box" maxlength="100" n
+0680: ame="query" size="12" type="text" value=""/></div> <div class="f
+06c0: tr-search-sicon"><input alt="Search" src="http://i.cdn.turner.co
+0700: m/cnn/.e/img/3.0/search/search_btn_footer.gif" type="image"/></d
+0740: iv> </div> <input id="cnnFtrSrchType" name="primaryType" type="h
+0780: idden" value="mixed"/> <input name="sortBy" type="hidden" value=
+07c0: "relevance"/> <input name="intl" type="hidden" value="false"/> <
+0800: div class="cnn_ftrggle"><img src="http://i.cdn.turner.com/cnn/.e
+0840: /img/3.0/global/footer/pngs/footer_google.png" alt="Powered by G
+0880: oogle" border="0" class="cnn_ie6png" height="13" width="88"/></d
+08c0: iv> </form> </div> <div class="cnn_clear"></div> <div class="cnn
+0900: _divline" style="background-color:#ebebeb;margin-top:3px"></div>
+0940:  <div class="cnn_ftrnvlnks"> <div><a href="/">Home</a> | <a href
+0980: ="/video/">Video</a> | <a href="/trends/">CNN Trends</a> | <a hr
+09c0: ef="/US/">U.S.</a> | <a href="/WORLD/">World</a> | <a href="/POL
+0a00: ITICS/">Politics</a> | <a href="/JUSTICE/">Justice</a> | <a href
+0a40: ="/SHOWBIZ/">Entertainment</a> | <a href="/TECH/">Tech</a> | <a 
+0a80: href="/HEALTH/">Health</a> | <a href="/LIVING/">Living</a> | <a 
+0ac0: href="/TRAVEL/">Travel</a> | <a href="/OPINION/">Opinion</a> | <
+0b00: a href="http://ireport.cnn.com/?cnn=yes">iReport</a> | <a href="
+0b40: http://money.cnn.com/?cnn=yes">Money</a> | <a href="http://sport
+0b80: sillustrated.cnn.com/?xid=cnnfoot">Sports</a></div> <div><a href
+0bc0: ="/tools/index.html">Tools &amp; widgets</a> | <a href="/service
+0c00: s/rss/">RSS</a> | <a href="/services/podcasting/">Podcasts</a> |
+0c40:  <a href="/exchange/blogs/index.html">Blogs</a> | <a href="/mobi
+0c80: le/">CNN mobile</a> | <a href="/profile/">My profile</a> | <a hr
+0cc0: ef="/profile/">E-mail alerts</a> | <a href="http://www.turnersto
+0d00: reonline.com/">CNN shop</a> | <a href="/sitemap/">Site map</a></
+0d40: div> </div> <div class="cnn_ftrdivl2"></div> <div class="cnn_ftr
+0d80: lnggcntr"> <div><a href="/espanol/" hreflang="es" title="CNN in 
+0dc0: Spanish">CNN en ESPA&Ntilde;OL</a> | <a href="http://www.cnnchil
+0e00: e.com" hreflang="es">CNN Chile</a> | <a href="http://www.cnnexpa
+0e40: nsion.com" hreflang="es">CNN Expansion</a> | <a href="http://ara
+0e80: bic.cnn.com/" hreflang="ar" title="CNN Arabic">&#1575;&#1604;&#1
+0ec0: 593;&#1585;&#1576;&#1610;&#1577;</a> | <a href="http://cnn.joins
+0f00: .com/" hreflang="ko" title="CNN Korean">&#54620;&#44397;&#50612;
+0f40: </a> | <a href="http://www.cnn.co.jp/" hreflang="ja" title="CNN 
+0f80: Japan">&#26085;&#26412;&#35486;</a> | <a href="http://www.cnntur
+0fc0: k.com/" hreflang="tr" title="CNN Turkey">T&uuml;rk&ccedil;e</a><
+1000: /div> <div><a href="/CNN/Programs/" title="CNN TV programming sc
+1040: hedule">CNN TV</a> | <a href="/HLN/">HLN</a> | <a href="http://t
+1080: ranscripts.cnn.com/TRANSCRIPTS/">Transcripts</a> | </div> </div>
+10c0:  <div class="cnn_ftrlgcpy"> <div><img src="http://i.cdn.
+<= Recv data, 3911 bytes (0xf47)
+0000: turner.com/cnn/.e/img/3.0/global/footer/pngs/footer_cnn_logo.png
+0040: " alt="CNN" border="0" class="cnn_ie6png" height="11" width="23"
+0080: />&copy; 2012 Cable News Network. <a href="http://www.turner.com
+00c0: /" class="cnn_ftrtbslink">Turner Broadcasting System, Inc.</a> A
+0100: ll Rights Reserved.</div> <div class="cnn_ftrlgcpy1"><a href="/i
+0140: nteractive_legal.html" rel="nofollow">Terms of service</a> | <a 
+0180: href="/privacy.html" rel="nofollow">Privacy guidelines</a> | <a 
+01c0: href="/services/ad.choices/" rel="nofollow">Ad choices</a><img s
+0200: rc="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/logo_ad_c
+0240: hoices_footer.png" alt="" border="0" class="cnn_ie6png" height="
+0280: 12" style="margin:0pt 0pt 0pt 4px;" width="12"/> | <a href="/ser
+02c0: vices/advertise/main.html" rel="nofollow">Advertise with us</a> 
+0300: | <a href="/about/" rel="nofollow">About us</a> | <a href="/feed
+0340: back/">Contact us</a> | <a href="http://www.turner.com/careers/"
+0380: >Work for us</a> | <a href="/help/" rel="help">Help</a></div> </
+03c0: div><div class="cnn_clear"></div> </div></div> </div> </div> <sc
+0400: ript src="http://z.cdn.turner.com/cnn/tmpl_asset/static/www_glob
+0440: al/789/js/globallib-min.js"></script> <script src="http://conten
+0480: t.dl-rms.com/rms/mother/5721/nodetag.js"></script> <script src="
+04c0: http://icompass.insightexpressai.com/97.js"></script> <script sr
+0500: c="http://ad.insightexpressai.com/adserver/adServer.aspx?publish
+0540: erID=97"></script> <script src="http://js.revsci.net/gateway/gw.
+0580: js?csid=A09801"></script> <script>cnnad_sendADMData();cnnad_ugsy
+05c0: nc();if(ms_isLoggedIn()){CNN_setCookie('CNN_member',true,854400,
+0600: '/',document.domain);}</script> <img src="http://i.cdn.turner.co
+0640: m/cnn/images/1.gif" alt="" height="1" id="TargetImage" name="Tar
+0680: getImage" onload="getAdHeadCookie(this)" width="1"/> <div id="cs
+06c0: imanagerdiv"><div id="csiIframeObjscsi2"><iframe style="visibili
+0700: ty:hidden;position:absolute;top:0px;left:-100px;" name="csiDataI
+0740: framecsi2" id="csiDataIframecsi2" src="http://svcs.cnn.com/weath
+0780: er/getForecast?time=24&amp;mode=json_html&amp;zipCode=30303&amp;
+07c0: locCode=&amp;celcius=false&amp;csiID=csi2" width="10" height="10
+0800: "></iframe></div></div> <div id="csimanagerdivdelayed"></div>.<!
+0840: --jsmd-->.<script src="http://z.cdn.turner.com/cnn/.e/js/libs/js
+0880: md-312.js"></script>..<script>.// This code is not really relate
+08c0: d to JSMD. It was simply a convenient place to add a quick hack 
+0900: to all pages that use this SSI..// removes a cookie that grows t
+0940: oo large and causes a 400 error.// CNN-17021 .try {..document.co
+0980: okie = "mrvPages=http://www.cnn.com; expires=Fri, 13-Apr-1970 00
+09c0: :00:00 GMT; path=/; domain=" + document.domain;.}.catch(e) {}.</
+0a00: script>.<script>.var jsmd=_jsmd.init(),pageURL=location.href.toL
+0a40: owerCase();.if (pageURL.indexOf("/.element/ssi/ads.iframes/")==-
+0a80: 1&&pageURL.indexOf("/doubleclick/dartiframe.html")==-1&&pageURL.
+0ac0: indexOf("/search/")==-1){.if (_jsmd.plugin.gQuery("refresh")){.j
+0b00: smd.trackMetrics("dynamic-autoRefresh","autorefresh","cnn-autore
+0b40: fresh");.} else if (_jsmd.plugin.gQuery("is_LR")){.} else if (cn
+0b80: n_metadata.template_type_content!="gallery"){.jsmd.send();.}.}.<
+0bc0: /script>.<!--/jsmd-->.<script>
+0be0: /*globals FOOTERTOOLS*/
+0bf9: $j(window).load(function () {
+0c18: 'use strict';
+0c27: FOOTERTOOLS.init();
+0c3c: });
+0c41: </script>.<!-- ADSPACE: homepage/bot.1x1 -->
+0c6f: <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn&cnn_pagetype=ma
+0caf: in&cnn_position=1x1_bot&cnn_rollup=homepage&page.allowcompete=no
+0cef: &params.styles=fs|CALLOUT -->
+0d0e: <div id="ad-638159" align="center" style="padding: 0; margin: 0;
+0d4e:  border: 0;"></div><script>cnnad_createAd("638159","http://ads.c
+0d8e: nn.com/html.ng/site=cnn&cnn_pagetype=main&cnn_position=1x1_bot&c
+0dce: nn_rollup=homepage&page.allowcompete=no&params.styles=fs","1","1
+0e0e: ");cnnad_registerSpace(638159,1,1);</script>.<script>
+0e45: $j(document).ready(function () {
+0e67: 'use strict';
+0e76: loadChartbeat("homepage", "");
+0e96: cnnzite_mod.init();
+0eab: });
+0eb0: </script>
+0ebb: <script>
+0ec5: /*globals MainLocalObj*/
+0edf: $j(window).load(function () {
+0efe: 'use strict';
+0f0d: MainLocalObj.init();
+0f23: });
+0f28: </script></body>.</html>
+0f42: 0
+0f45: 
+== Info: Connection #0 to host www.cnn.com left intact
+== Info: Closing connection #0

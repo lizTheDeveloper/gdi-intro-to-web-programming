@@ -82,7 +82,7 @@ request.addListener('data', function(chunk) {
     request.form += chunk.toString();
 });
                 </pre>
-                <pre class="speaker-notes" style="display:none"></pre>
+                <pre class="speaker-notes" style="display:none">Remember our chunks from the cURL request? That's what these are. They're pieces of the request body, just like they were chunks of the response body.</pre>
             </div>
             <div class="slide normal">
                 <header><h1>Class: http.ServerRequest</h1></header>
@@ -96,7 +96,14 @@ request.addListener('data', function(chunk) {
             </div>
             <div class="slide normal">
                 <header><h1>Processing Events</h1></header>
-                <p>Because the request</p>
+                <p>Because the request object sends us events after it's created, we'll have to handle events.</p>
+                <pre>
+ request.addListener('data', function(chunk) {
+    //handle a chunk of data, passed in as a buffer.
+    //Buffers are easily transformed to strings.
+    request.form += chunk.toString();
+});
+                </pre>
             </div>
 
         </div>

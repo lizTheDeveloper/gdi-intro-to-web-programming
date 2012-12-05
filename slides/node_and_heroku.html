@@ -1,7 +1,7 @@
     <!doctype html>
     <html>
     <head>
-        <title>Intro to Web Development</title>
+        <title>Node, Git and Heroku</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
@@ -72,7 +72,6 @@
 }
                         </pre>
                         <p>when you put an x in the place of any number, NPM assumes you will take any version number in that place.</p>
-                    	<img class="center" src="img/servers.png">
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
@@ -98,7 +97,7 @@
                 <div class="slide normal">
                     <header><h1>Git Init</h1></header>
                     <slide>
-                    	<p><pre class="code">git init</pre> creates a new git repository. Create a new folder, and move your exercises there. Call it "app" or something. Then, type <pre>git init</pre><p>
+                    	<p><code>git init</code> creates a new git repository. Create a new folder, and move your exercises there. Call it "app" or something. Then, type <pre>git init</pre><p>
                     	<p>When it creates a repository, it creates a .git file in the directory you are currently in. All of the directories underneath that directory, and all of the files can be tracked by this repository. But they aren't yet.</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none">list languages, describe them</pre>
@@ -107,9 +106,11 @@
                 <div class="slide normal">
                     <header><h1>Git Add</h1></header>
                     <slide>
-                        <p><pre>git add</pre> Adds files to your repository. It adds metadata to the .git file, and tells it "these files are tracked. Every time you do a commit, check these files against the last commit for changes".
+                        <p><code>git add</code> Adds files to your repository. It adds metadata to the .git file, and tells it "these files are tracked. Every time you do a commit, check these files against the last commit for changes".
                         </p>
-                        <p>If you just want to add every file in the repository recursively, simply type <pre>git add *</pre>, which means "git, add everything to this repository."</p>
+                        <p>If you just want to add every file in the repository recursively, simply type <pre>git add *</pre> which means "git, add everything to this repository."</p>
+                        <pre>git add intro.html</pre>
+                        is how you add an individual file.
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
@@ -117,7 +118,7 @@
                 <div class="slide normal">
                     <header><h1>.gitignore</h1></header>
                     <slide>
-                        <p><pre>.gitignore</pre> is one of those files that starts with a period in the top-level directory of your app. It tells the git repository which files to ignore. You want to put files in here that are going to be different between computers.</p>
+                        <p><code>.gitignore</code> is one of those files that starts with a period in the top-level directory of your app. It tells the git repository which files to ignore. You want to put files in here that are going to be different between computers.</p>
                         <p>Github has pre-filled .gitignore files, but for now we are just going to leave ours blank.</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
@@ -126,7 +127,7 @@
                 <div class="slide normal">
                     <header><h1>git commit</h1></header>
                     <slide>
-                    	<p>Commit is one of the commands you will use the most. After creating a repository with <pre>git init</pre>, you'll want to do an initial commit.</p>
+                    	<p>Commit is one of the commands you will use the most. After creating a repository with <code>git init</code>, you'll want to do an initial commit.</p>
                         <pre>git commit -am'initial commit'</pre>
                         <p>This commits all changes (if any), stamps them with your name, and attaches the message "initial commit". the -a part is "all", and the -m part is "message".</p>
                     </slide>

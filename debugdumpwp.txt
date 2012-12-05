@@ -1,0 +1,773 @@
+== Info: About to connect() to www.wikipedia.org port 80 (#0)
+== Info:   Trying 208.80.154.225... == Info: connected
+== Info: Connected to www.wikipedia.org (208.80.154.225) port 80 (#0)
+=> Send header, 172 bytes (0xac)
+0000: GET / HTTP/1.1
+0010: User-Agent: curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7
+0050:  NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2
+0084: Host: www.wikipedia.org
+009d: Accept: */*
+00aa: 
+== Info: HTTP 1.0, assume close after body
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.0 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Tue, 04 Dec 2012 23:00:12 GMT
+<= Recv header, 16 bytes (0x10)
+0000: Server: Apache
+<= Recv header, 33 bytes (0x21)
+0000: X-Content-Type-Options: nosniff
+<= Recv header, 58 bytes (0x3a)
+0000: Cache-Control: s-maxage=3600, must-revalidate, max-age=0
+<= Recv header, 45 bytes (0x2d)
+0000: Last-Modified: Mon, 3 Dec 2012 01:12:39 GMT
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 23 bytes (0x17)
+0000: Content-Length: 46388
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=utf-8
+<= Recv header, 39 bytes (0x27)
+0000: X-Cache: MISS from cp1019.eqiad.wmnet
+<= Recv header, 50 bytes (0x32)
+0000: X-Cache-Lookup: HIT from cp1019.eqiad.wmnet:3128
+<= Recv header, 8 bytes (0x8)
+0000: Age: 6
+<= Recv header, 38 bytes (0x26)
+0000: X-Cache: HIT from cp1012.eqiad.wmnet
+<= Recv header, 48 bytes (0x30)
+0000: X-Cache-Lookup: HIT from cp1012.eqiad.wmnet:80
+<= Recv header, 19 bytes (0x13)
+0000: Connection: close
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 12536 bytes (0x30f8)
+0000: <!DOCTYPE html>.<html lang="mul" dir="ltr">.<head>.<!-- Sysops: 
+0040: Please do not edit the main template directly; update /temp and 
+0080: synchronise. -->.<meta charset="utf-8">.<title>Wikipedia</title>
+00c0: .<meta name="title" content="Wikipedia">.<meta name="description
+0100: " content="Wikipedia, the free encyclopedia that anyone can edit
+0140: .">.<meta name="author" content="Wikimedia Foundation">.<meta na
+0180: me="copyright" content="Creative Commons Attribution-Share Alike
+01c0:  3.0 and GNU Free Documentation License">.<meta name="publisher"
+0200:  content="Wikimedia Foundation">.<meta name="language" content="
+0240: Many">.<meta name="robots" content="index, follow">.<!--[if lt I
+0280: E 7]><meta http-equiv="imagetoolbar" content="no"><![endif]-->.<
+02c0: meta name="viewport" content="initial-scale=1.0, user-scalable=y
+0300: es">.<link rel="apple-touch-icon" href="//en.wikipedia.org/apple
+0340: -touch-icon.png">.<link rel="shortcut icon" href="//en.wikipedia
+0380: .org/favicon.ico">.<link rel="copyright" href="//creativecommons
+03c0: .org/licenses/by-sa/3.0/">.<link rel="copyright" href="//www.gnu
+0400: .org/copyleft/fdl.html">.<link rel="license" href="//creativecom
+0440: mons.org/licenses/by-sa/3.0/">.<link rel="license" href="//www.g
+0480: nu.org/copyleft/fdl.html">.<link rel="stylesheet" href="//bits.w
+04c0: ikimedia.org/meta.wikimedia.org/load.php?debug=false&amp;lang=en
+0500: &amp;modules=ext.gadget.wm-portal&amp;only=styles&amp;skin=vecto
+0540: r&amp;*">.<!--TODO: separate into mobile specific stylesheet-->.
+0580: <style>./* mobile specific media queries */.@media all and (max-
+05c0: width:480px) {. .central-textlogo {.  line-height: normal;.  pad
+0600: ding: 0;.  margin: 0;.  height: 70px;.  text-align: left;.  padd
+0640: ing-left: 84px;.  position: relative;. }. .central-textlogo img 
+0680: {.  height: 35px;.  width: auto;.  margin-top: 22.5px;. }. .cent
+06c0: ral-featured {.  width: auto;.  height: auto;.  padding-top: 2em
+0700: ;.  text-align: left;.  font-size: 0.8em;.  margin-top: 4em;. }.
+0740:  .central-featured-logo {.  right: 0;.  left: 0.8em;.  top: -70p
+0780: x;.  margin-top: -4em;. }. .central-featured-logo-inner {.  left
+07c0: : auto;.  top: auto;. }. .central-featured-logo,. .central-featu
+0800: red-logo-inner img,. .central-featured-logo-inner {.  width: 70p
+0840: x;.  height: 70px;. }. .central-featured-lang {.  right: auto;. 
+0880:  top: auto;.  position: relative;.  left: auto;.  text-align: le
+08c0: ft;.  margin-left: 1em;.  display: block;.  float: left;.  width
+0900: : 40%;. }. .search-container {.  margin-top: 0;.  height: 6em;. 
+0940:  position: absolute;.  top: 5em;.  left: 0;.  right: 0;.  max-wi
+0980: dth: 100%;.  width: auto;.  padding: 0;.  text-align: left;. }. 
+09c0: .search-container label {.  display: none;. }. .search-form #sea
+0a00: rchInput {.  max-width: 40%;. }. .search-form #searchLanguage,. 
+0a40: .search-form .formBtn {.  max-width: 25%;.  vertical-align: midd
+0a80: le;. }. form fieldset {.  margin: 0;.  border-left: none;.  bord
+0ac0: er-right: none;. }. .search-form #searchInput {.  vertical-align
+0b00: :middle;. }. .language-search {.  display: none;. }. .bookshelf 
+0b40: {.  width: auto;.  left: auto;.  overflow: hidden;.  text-align:
+0b80:  left;. }. .bookshelf img {.  display: none;. }. .bookshelf img:
+0bc0: first-child {.  display: inline-block;. }. .langlist a {.  word-
+0c00: wrap: break-word;.  white-space: normal;. }. .langlist {.  font-
+0c40: size: 0.7em. }. .otherprojects-item {.  width: 50%;.  text-align
+0c80: : left;. }. .bookshelf-container,. .langlist {.  margin: 1em 1em
+0cc0:  0em 1em;.  text-align: left;.  width: auto;. }. .divider {.  cl
+0d00: ear: both;.  padding: 0.5em 1em 0 1em !important;. }.}.@media al
+0d40: l and (max-width:240px) {. .central-featured-lang,. .otherprojec
+0d80: ts-item {.  width: 100%;. }. .central-textlogo img {.  width: 10
+0dc0: 0px;.  height: auto;. }.}.</style>.</head>.<body id="www-wikiped
+0e00: ia-org">..<div class="central-textlogo">.<img src="//upload.wiki
+0e40: media.org/wikipedia/commons/thumb/b/bb/Wikipedia_wordmark.svg/17
+0e80: 4px-Wikipedia_wordmark.svg.png" width="174" height="30" alt="Wik
+0ec0: ipediA" title="Wikipedia" style="font-variant: small-caps;">.</d
+0f00: iv>..<!-- container div for the central logo and the links to th
+0f40: e largest language editions -->.<div class="central-featured">..
+0f80: <!-- logo -->.<div class="central-featured-logo">.<div class="ce
+0fc0: ntral-featured-logo-inner">.<img src="//upload.wikimedia.org/wik
+1000: ipedia/commons/6/63/Wikipedia-logo.png" width="200" height="200"
+1040:  alt="Wikipedia" title="Wikipedia">.</div>.</div>..<!-- Rankings
+1080:  from http://stats.wikimedia.org/EN/Sitemap.htm (data from 31 Ja
+10c0: nuary 2012) -->.<!-- #1. en.wikipedia.org - 10,606,651 views/hr 
+1100: -->.<div class="central-featured-lang lang1" lang="en">.<a class
+1140: ="link-box" href="//en.wikipedia.org/" title="English ... Wikipe
+1180: dia ... The Free Encyclopedia"><strong>English</strong><br>.<em>
+11c0: The&nbsp;Free&nbsp;Encyclopedia</em><br>.<small>4&nbsp;000&nbsp;
+1200: 000+&nbsp;articles</small></a>.</div>..<!-- #2. ja.wikipedia.org
+1240:  - 1,696,149 views/hr -->.<div class="central-featured-lang lang
+1280: 2" lang="ja">.<a class="link-box" href="//ja.wikipedia.org/" tit
+12c0: le="Nihongo ... Wikipedia ... ....................."><strong>...
+1300: ......</strong><br>.<em class="emNonItalicLang">................
+1340: .....</em><br>.<small>815&nbsp;000+&nbsp;......</small></a>.</di
+1380: v>..<!-- #3. es.wikipedia.org - 1,562,844 views/hr -->.<div clas
+13c0: s="central-featured-lang lang3" lang="es">.<a class="link-box" h
+1400: ref="//es.wikipedia.org/" title="Espa..ol ... Wikipedia ... La e
+1440: nciclopedia libre"><strong>Espa..ol</strong><br>.<em>La&nbsp;enc
+1480: iclopedia&nbsp;libre</em><br>.<small>900&nbsp;000+&nbsp;art..cul
+14c0: os</small></a>.</div>..<!-- #4. de.wikipedia.org - 1,463,866 vie
+1500: ws/hr -->.<div class="central-featured-lang lang4" lang="de">.<a
+1540:  class="link-box" href="//de.wikipedia.org/" title="Deutsch ... 
+1580: Wikipedia ... Die freie Enzyklop..die"><strong>Deutsch</strong><
+15c0: br>.<em>Die&nbsp;freie&nbsp;Enzyklop..die</em><br>.<small>1&nbsp
+1600: ;430&nbsp;000+&nbsp;Artikel</small></a>.</div>..<!-- #5. ru.wiki
+1640: pedia.org - 1,161,310 views/hr -->.<div class="central-featured-
+1680: lang lang5" lang="ru">.<a class="link-box" href="//ru.wikipedia.
+16c0: org/" title="Russkiy ... Wikipedia ... .................. ......
+1700: .................."><strong>..............</strong><br>.<em>....
+1740: ..............&nbsp;........................</em><br>.<small>875
+1780: &nbsp;000+&nbsp;............</small></a>.</div>..<!-- #6. fr.wik
+17c0: ipedia.org - 998,178 views/hr -->.<div class="central-featured-l
+1800: ang lang6" lang="fr">.<a class="link-box" href="//fr.wikipedia.o
+1840: rg/" title="Fran..ais ... Wikipedia ... L...encyclop..die libre"
+1880: ><strong>Fran..ais</strong><br>.<em>L...encyclop..die&nbsp;libre
+18c0: </em><br>.<small>1&nbsp;270&nbsp;000+&nbsp;articles</small></a>.
+1900: </div>..<!-- #7. it.wikipedia.org - 702,674 views/hr -->.<div cl
+1940: ass="central-featured-lang lang7" lang="it">.<a class="link-box"
+1980:  href="//it.wikipedia.org/" title="Italiano ... Wikipedia ... L.
+19c0: ..enciclopedia libera"><strong>Italiano</strong><br>.<em>L...enc
+1a00: iclopedia&nbsp;libera</em><br>.<small>939&nbsp;000+&nbsp;voci</s
+1a40: mall></a>.</div>..<!-- #8. pl.wikipedia.org - 603,154 views/hr -
+1a80: ->.<div class="central-featured-lang lang8" lang="pl">.<a class=
+1ac0: "link-box" href="//pl.wikipedia.org/" title="Polski ... Wikipedi
+1b00: a ... Wolna encyklopedia"><strong>Polski</strong><br>.<em>Wolna&
+1b40: nbsp;encyklopedia</em><br>.<small>908&nbsp;000+&nbsp;hase..</sma
+1b80: ll></a>.</div>..<!-- #9. pt.wikipedia.org - 451,780 views/hr -->
+1bc0: .<div class="central-featured-lang lang9" lang="pt">.<a class="l
+1c00: ink-box" href="//pt.wikipedia.org/" title="Portugu..s ... Wikipe
+1c40: dia ... A enciclop..dia livre"><strong>Portugu..s</strong><br>.<
+1c80: em>A&nbsp;enciclop..dia&nbsp;livre</em><br>.<small>742&nbsp;000+
+1cc0: &nbsp;artigos</small></a>.</div>..<!-- #10. zh.wikipedia.org - 3
+1d00: 10,940 views/hr -->.<div class="central-featured-lang lang10" la
+1d40: ng="zh">.<a class="link-box" id="zh_top10" href="//zh.wikipedia.
+1d80: org/" title="Zh..ngw..n ... Wikipedia ... ....................."
+1dc0: ><strong>......</strong><br>.<em id="zh_tag" class="emNonItalicL
+1e00: ang">.....................</em><br>.<small>500&nbsp;000+&nbsp;<s
+1e40: pan id="zh_art">......</span></small></a>.</div>..</div>..<!-- S
+1e80: earch form -->.<div class="search-container">..<h5>.<!-- 100,000
+1ec0: + content pages, sorted by pagecount (last updated 31 January 20
+1f00: 12) -->.<label for="searchInput">.<span lang="en">Search</span>&
+1f40: nbsp;....<span lang="de">Suchen</span>&nbsp;....<span lang="fr">
+1f80: Rechercher</span>&nbsp;....<span lang="nl">Zoeken</span>&nbsp;..
+1fc0: ..<span lang="it">Ricerca</span>&nbsp;....<span lang="pl">Szukaj
+2000: </span>&nbsp;....<span lang="es">Buscar</span>&nbsp;....<span la
+2040: ng="ru" title="Poisk">..........</span>&nbsp;....<span lang="ja"
+2080:  title="Kensaku">......</span>&nbsp;....<span lang="pt">Busca</s
+20c0: pan>&nbsp;....<span lang="sv">S..k</span>&nbsp;....<span lang="z
+2100: h" title="S..ux..n" id="zh_search">......</span>&nbsp;....<span 
+2140: lang="vi">T..m&nbsp;ki...m</span>&nbsp;....<span lang="uk" title
+2180: ="Po..uk">..........</span>&nbsp;....<span lang="ca">Cerca</span
+21c0: >&nbsp;....<span lang="nb">S..k</span>&nbsp;....<span lang="fi">
+2200: Haku</span>&nbsp;....<span lang="cs">Hled..n..</span>&nbsp;....<
+2240: span lang="hu">Keres..s</span>&nbsp;....<span lang="ko" title="C
+2280: hatgi">......</span>&nbsp;....<span lang="id">Cari</span>&nbsp;.
+22c0: ...<span lang="tr">Ara</span>&nbsp;....<bdi lang="fa" dir="rtl" 
+2300: title="Jostoju">..........</bdi>&nbsp;....<span lang="ro">C..uta
+2340: re</span>&nbsp;....<bdi lang="ar" dir="rtl" title="Ba...th">....
+2380: ..</bdi>&nbsp;....<span lang="sk">H..ada..</span>&nbsp;....<span
+23c0:  lang="da">S..g</span>&nbsp;....<span lang="eo">Ser..u</span>&nb
+2400: sp;....<span lang="sr" title="Pretraga">................</span>&
+2440: nbsp;....<span lang="lt">Paie..ka</span>&nbsp;....<span lang="sl
+2480: ">Poi....i</span>&nbsp;....<span lang="ms">Cari</span>&nbsp;....
+24c0: <bdi lang="he" dir="rtl" title="Khip..s">..........</bdi>&nbsp;.
+2500: ...<span lang="bg" title="Tarsene">..............</span>&nbsp;..
+2540: ..<span lang="kk" title="Izdew">..........</span>&nbsp;....<span
+2580:  lang="eu">Bilatu</span>&nbsp;....<span lang="vo">Suk</span>&nbs
+25c0: p;....<span lang="war">Bilnga</span>&nbsp;....<span lang="hr">Tr
+2600: a..i</span>&nbsp;....<span lang="hi" title="Khoj...">...........
+2640: ....</span>.</label>.</h5>..<form class="search-form" action="//
+2680: www.wikipedia.org/search-redirect.php">.<fieldset>..<!-- search-
+26c0: redirect.php is project-independent, requires a family -->.<inpu
+2700: t type="hidden" name="family" value="wikipedia">..<input id="sea
+2740: rchInput" name="search" type="search" size="20" autofocus="autof
+2780: ocus" accesskey="F">..<select id="searchLanguage" name="language
+27c0: ">.<!-- 100,000+ content pages, sorted by romanization (last upd
+2800: ated 31 January 2012) -->.<!-- keep in sync with langs in select
+2840: Language() in /js -->.<option value="ar" lang="ar">.............
+2880: .</option><!-- Al-..Arab..yah -->.<option value="bg" lang="bg">.
+28c0: .................</option><!-- Bulgarski -->.<option value="ca" 
+2900: lang="ca">Catal..</option>.<option value="cs" lang="cs">..esky</
+2940: option>.<option value="da" lang="da">Dansk</option>.<option valu
+2980: e="de" lang="de">Deutsch</option>.<option value="en" lang="en" s
+29c0: elected="selected">English</option>.<option value="es" lang="es"
+2a00: >Espa..ol</option>.<option value="eo" lang="eo">Esperanto</optio
+2a40: n>.<option value="eu" lang="eu">Euskara</option>.<option value="
+2a80: fa" lang="fa">..........</option><!-- F..rsi -->.<option value="
+2ac0: fr" lang="fr">Fran..ais</option>.<option value="ko" lang="ko">..
+2b00: .......</option><!-- Hangugeo -->.<option value="hi" lang="hi">.
+2b40: .................</option><!-- Hind.. -->.<option value="hr" lan
+2b80: g="hr">Hrvatski</option>.<option value="id" lang="id">Bahasa Ind
+2bc0: onesia</option>.<option value="it" lang="it">Italiano</option>.<
+2c00: option value="he" lang="he">..........</option><!-- ...Ivrit -->
+2c40: .<option value="lt" lang="lt">Lietuvi..</option>.<option value="
+2c80: hu" lang="hu">Magyar</option>.<option value="ms" lang="ms">Bahas
+2cc0: a Melayu</option>.<option value="nl" lang="nl">Nederlands</optio
+2d00: n>.<option value="ja" lang="ja">.........</option><!-- Nihongo -
+2d40: ->.<option value="no" lang="nb">Norsk (bokm..l)</option>.<option
+2d80:  value="pl" lang="pl">Polski</option>.<option value="pt" lang="p
+2dc0: t">Portugu..s</option>.<option value="kk" lang="kk">............
+2e00: .. / Qazaq..a / ..............</option>.<option value="ro" lang=
+2e40: "ro">Rom..n..</option>.<option value="ru" lang="ru">............
+2e80: ..</option><!-- Russkiy -->.<option value="sk" lang="sk">Sloven.
+2ec0: .ina</option>.<option value="sl" lang="sl">Sloven....ina</option
+2f00: >.<option value="sr" lang="sr">............ / Srpski</option>.<o
+2f40: ption value="fi" lang="fi">Suomi</option>.<option value="sv" lan
+2f80: g="sv">Svenska</option>.<option value="tr" lang="tr">T..rk..e</o
+2fc0: ption>.<option value="uk" lang="uk">....................</option
+3000: ><!-- Ukrayins...ka -->.<option value="vi" lang="vi">Ti...ng Vi.
+3040: ..t</option>.<option value="vo" lang="vo">Volap..k</option>.<opt
+3080: ion value="war" lang="war">Winaray</option>.<option value="zh" l
+30c0: ang="zh">......</option><!-- Zh..ngw..n -->.</select>..<
+<= Recv data, 16384 bytes (0x4000)
+0000: input class="formBtn" type="submit" value="  ...  " name="go">.<
+0040: input type="hidden" value="Go" name="go">..</fieldset>.</form>.<
+0080: /div>..<div class="divider" style="padding: 0 1%;"><hr></div>..<
+00c0: div class="search-container language-search">.<form action="//in
+0100: cubator.wikimedia.org/w/index.php" method="get" name="searchwiki
+0140: ">.<input type="hidden" name="title" value="Special:SearchWiki">
+0180: .<input type="hidden" name="uselang" value="en">.<input type="hi
+01c0: dden" name="searchproject" value="p">.<label for="langsearch-inp
+0200: ut">Find Wikipedia in a language:</label>.<input type="search" n
+0240: ame="searchlanguage" id="langsearch-input" value="">.<input clas
+0280: s="formBtn" type="submit" value="  ...  ">.</form>..</div>..<!--
+02c0:  Bookshelves -->.<div class="bookshelf-container">.<div class="b
+0300: ookshelf">.<img src="//upload.wikimedia.org/wikipedia/commons/b/
+0340: bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" title="
+0380: "><img src="//upload.wikimedia.org/wikipedia/commons/b/bd/Booksh
+03c0: elf-40x201_6.png" width="40" height="20" alt="" title=""><img sr
+0400: c="//upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x20
+0440: 1_6.png" width="40" height="20" alt="" title=""><img src="//uplo
+0480: ad.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" 
+04c0: width="40" height="20" alt="" title=""><img src="//upload.wikime
+0500: dia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" width="40
+0540: " height="20" alt="" title=""><img src="//upload.wikimedia.org/w
+0580: ikipedia/commons/b/bd/Bookshelf-40x201_6.png" width="40" height=
+05c0: "20" alt="" title=""><img src="//upload.wikimedia.org/wikipedia/
+0600: commons/b/bd/Bookshelf-40x201_6.png" width="40" height="20" alt=
+0640: "" title=""><img src="//upload.wikimedia.org/wikipedia/commons/b
+0680: /bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" title=
+06c0: ""><img src="//upload.wikimedia.org/wikipedia/commons/b/bd/Books
+0700: helf-40x201_6.png" width="40" height="20" alt="" title="">&nbsp;
+0740: <b>100&nbsp;000+</b>&nbsp;<img src="//upload.wikimedia.org/wikip
+0780: edia/commons/b/bd/Bookshelf-40x201_6.png" width="40" height="20"
+07c0:  alt="" title=""><img src="//upload.wikimedia.org/wikipedia/comm
+0800: ons/b/bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" t
+0840: itle=""><img src="//upload.wikimedia.org/wikipedia/commons/b/bd/
+0880: Bookshelf-40x201_6.png" width="40" height="20" alt="" title=""><
+08c0: img src="//upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf
+0900: -40x201_6.png" width="40" height="20" alt="" title=""><img src="
+0940: //upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6
+0980: .png" width="40" height="20" alt="" title=""><img src="//upload.
+09c0: wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" wid
+0a00: th="40" height="20" alt="" title=""><img src="//upload.wikimedia
+0a40: .org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" width="40" h
+0a80: eight="20" alt="" title=""><img src="//upload.wikimedia.org/wiki
+0ac0: pedia/commons/b/bd/Bookshelf-40x201_6.png" width="40" height="20
+0b00: " alt="" title=""><img src="//upload.wikimedia.org/wikipedia/com
+0b40: mons/b/bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" 
+0b80: title="">.</div>.</div>..<!-- 100,000+ content pages (last updat
+0bc0: ed 31 January 2012) -->.<div class="langlist langlist-large"><di
+0c00: v>.<a href="//ar.wikipedia.org/" lang="ar" title="Al-..Arab..yah
+0c40: "><bdi dir="rtl">..............</bdi></a>&nbsp;....<a href="//bg
+0c80: .wikipedia.org/" lang="bg" title="Bulgarski">..................<
+0cc0: /a>&nbsp;....<a href="//ca.wikipedia.org/" lang="ca">Catal..</a>
+0d00: &nbsp;....<a href="//cs.wikipedia.org/" lang="cs">..esky</a>&nbs
+0d40: p;....<a href="//da.wikipedia.org/" lang="da">Dansk</a>&nbsp;...
+0d80: .<a href="//de.wikipedia.org/" lang="de">Deutsch</a>&nbsp;....<a
+0dc0:  href="//et.wikipedia.org/" lang="et">Eesti</a>&nbsp;....<a href
+0e00: ="//en.wikipedia.org/" lang="en">English</a>&nbsp;....<a href="/
+0e40: /es.wikipedia.org/" lang="es">Espa..ol</a>&nbsp;....<a href="//e
+0e80: o.wikipedia.org/" lang="eo">Esperanto</a>&nbsp;....<a href="//eu
+0ec0: .wikipedia.org/" lang="eu">Euskara</a>&nbsp;....<a href="//fa.wi
+0f00: kipedia.org/" lang="fa" title="F..rsi"><bdi dir="rtl">..........
+0f40: </bdi></a>&nbsp;....<a href="//fr.wikipedia.org/" lang="fr">Fran
+0f80: ..ais</a>&nbsp;....<a href="//ko.wikipedia.org/" lang="ko" title
+0fc0: ="Hangugeo">.........</a>&nbsp;....<a href="//hi.wikipedia.org/"
+1000:  lang="hi" title="Hind..">..................</a>&nbsp;....<a hre
+1040: f="//hr.wikipedia.org/" lang="hr">Hrvatski</a>&nbsp;....<a href=
+1080: "//id.wikipedia.org/" lang="id">Bahasa Indonesia</a>&nbsp;....<a
+10c0:  href="//it.wikipedia.org/" lang="it">Italiano</a>&nbsp;....<a h
+1100: ref="//he.wikipedia.org/" lang="he" title="...Ivrit"><bdi dir="r
+1140: tl">..........</bdi></a>&nbsp;....<a href="//lt.wikipedia.org/" 
+1180: lang="lt">Lietuvi..</a>&nbsp;....<a href="//hu.wikipedia.org/" l
+11c0: ang="hu">Magyar</a>&nbsp;....<a href="//ms.wikipedia.org/" lang=
+1200: "ms">Bahasa Melayu</a>&nbsp;....<a href="//nl.wikipedia.org/" la
+1240: ng="nl">Nederlands</a>&nbsp;....<a href="//ja.wikipedia.org/" la
+1280: ng="ja" title="Nihongo">.........</a>&nbsp;....<a href="//no.wik
+12c0: ipedia.org/" lang="nb">Norsk (bokm..l)</a>&nbsp;....<a href="//p
+1300: l.wikipedia.org/" lang="pl">Polski</a>&nbsp;....<a href="//pt.wi
+1340: kipedia.org/" lang="pt">Portugu..s</a>&nbsp;....<a href="//kk.wi
+1380: kipedia.org/" lang="kk"><span lang="kk-Cyrl">..............</spa
+13c0: n> / <span lang="kk-Latn">Qazaq..a</span> / <bdi lang="kk-Arab" 
+1400: dir="rtl">..............</bdi></a>&nbsp;....<a href="//ro.wikipe
+1440: dia.org/" lang="ro">Rom..n..</a>&nbsp;....<a href="//ru.wikipedi
+1480: a.org/" lang="ru" title="Russkiy">..............</a>&nbsp;....<a
+14c0:  href="//sk.wikipedia.org/" lang="sk">Sloven..ina</a>&nbsp;....<
+1500: a href="//sl.wikipedia.org/" lang="sl">Sloven....ina</a>&nbsp;..
+1540: ..<a href="//sr.wikipedia.org/" lang="sr"><span lang="sr-Cyrl">.
+1580: ...........</span> / <span lang="sr-Latn">Srpski</span></a>&nbsp
+15c0: ;....<a href="//fi.wikipedia.org/" lang="fi">Suomi</a>&nbsp;....
+1600: <a href="//sv.wikipedia.org/" lang="sv">Svenska</a>&nbsp;....<a 
+1640: href="//tr.wikipedia.org/" lang="tr">T..rk..e</a>&nbsp;....<a hr
+1680: ef="//uk.wikipedia.org/" lang="uk" title="Ukrayins...ka">.......
+16c0: .............</a>&nbsp;....<a href="//vi.wikipedia.org/" lang="v
+1700: i">Ti...ng Vi...t</a>&nbsp;....<a href="//vo.wikipedia.org/" lan
+1740: g="vo">Volap..k</a>&nbsp;....<a href="//war.wikipedia.org/" lang
+1780: ="war">Winaray</a>&nbsp;....<a id="zh_wiki" href="//zh.wikipedia
+17c0: .org/" lang="zh" title="Zh..ngw..n">......</a>.</div></div>..<!-
+1800: - Bookshelves -->.<div class="bookshelf-container">.<div class="
+1840: bookshelf">.<img src="//upload.wikimedia.org/wikipedia/commons/b
+1880: /bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" title=
+18c0: ""><img src="//upload.wikimedia.org/wikipedia/commons/b/bd/Books
+1900: helf-40x201_6.png" width="40" height="20" alt="" title=""><img s
+1940: rc="//upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x2
+1980: 01_6.png" width="40" height="20" alt="" title=""><img src="//upl
+19c0: oad.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png"
+1a00:  width="40" height="20" alt="" title=""><img src="//upload.wikim
+1a40: edia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" width="4
+1a80: 0" height="20" alt="" title=""><img src="//upload.wikimedia.org/
+1ac0: wikipedia/commons/b/bd/Bookshelf-40x201_6.png" width="40" height
+1b00: ="20" alt="" title="">&nbsp;<b>10&nbsp;000+</b>&nbsp;<img src="/
+1b40: /upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.
+1b80: png" width="40" height="20" alt="" title=""><img src="//upload.w
+1bc0: ikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" widt
+1c00: h="40" height="20" alt="" title=""><img src="//upload.wikimedia.
+1c40: org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png" width="40" he
+1c80: ight="20" alt="" title=""><img src="//upload.wikimedia.org/wikip
+1cc0: edia/commons/b/bd/Bookshelf-40x201_6.png" width="40" height="20"
+1d00:  alt="" title=""><img src="//upload.wikimedia.org/wikipedia/comm
+1d40: ons/b/bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" t
+1d80: itle=""><img src="//upload.wikimedia.org/wikipedia/commons/b/bd/
+1dc0: Bookshelf-40x201_6.png" width="40" height="20" alt="" title="">.
+1e00: </div>.</div>..<!-- 10,000+ content pages (last updated 31 Janua
+1e40: ry 2012) -->.<div class="langlist langlist-large"><div>.<a href=
+1e80: "//af.wikipedia.org/" lang="af">Afrikaans</a>&nbsp;....<a href="
+1ec0: //als.wikipedia.org/" lang="gsw">Alemannisch</a>&nbsp;....<a hre
+1f00: f="//am.wikipedia.org/" lang="am" title="..mari......">.........
+1f40: ...</a>&nbsp;....<a href="//an.wikipedia.org/" lang="an">Aragon.
+1f80: .s</a>&nbsp;....<a href="//roa-rup.wikipedia.org/" lang="rup">Ar
+1fc0: m..neashce</a>&nbsp;....<a href="//ast.wikipedia.org/" lang="ast
+2000: ">Asturianu</a>&nbsp;....<a href="//ht.wikipedia.org/" lang="ht"
+2040: >Krey..l Ayisyen</a>&nbsp;....<a href="//az.wikipedia.org/" lang
+2080: ="az"><span lang="az-Latn">Az..rbaycan</span> / <bdi lang="az-Ar
+20c0: ab" dir="rtl">.................. ........</bdi></a>&nbsp;....<a 
+2100: href="//bn.wikipedia.org/" lang="bn" title="Bangla">............
+2140: ...</a>&nbsp;....<a href="//map-bms.wikipedia.org/" lang="map-x-
+2180: bms">Basa Banyumasan</a>&nbsp;....<a href="//ba.wikipedia.org/" 
+21c0: lang="ba" title="Ba..qortsa">..................</a>&nbsp;....<sp
+2200: an lang="be" title="Belaruskaya">.................... (<a href="
+2240: //be.wikipedia.org/" title="Akademichnaya">.....................
+2280: .</a>&nbsp;...&nbsp;<a href="//be-x-old.wikipedia.org/" title="T
+22c0: ara..kievica">................i....</a>)</span>&nbsp;....<a href
+2300: ="//bpy.wikipedia.org/" lang="bpy" title="Bishnupriya Manipuri">
+2340: ....................................... .....................</a
+2380: >&nbsp;....<a href="//bs.wikipedia.org/" lang="bs">Bosanski</a>&
+23c0: nbsp;....<a href="//br.wikipedia.org/" lang="br">Brezhoneg</a>&n
+2400: bsp;....<a href="//cv.wikipedia.org/" lang="cv" title="....va..l
+2440: a">..............</a>&nbsp;....<a href="//cy.wikipedia.org/" lan
+2480: g="cy">Cymraeg</a>&nbsp;....<a href="//el.wikipedia.org/" lang="
+24c0: el" title="Ell..nik..">................</a>&nbsp;....<a href="//
+2500: fy.wikipedia.org/" lang="fy">Frysk</a>&nbsp;....<a href="//ga.wi
+2540: kipedia.org/" lang="ga">Gaeilge</a>&nbsp;....<a href="//gl.wikip
+2580: edia.org/" lang="gl">Galego</a>&nbsp;....<a href="//gu.wikipedia
+25c0: .org/" lang="gu" title="Gujarati">.....................</a>&nbsp
+2600: ;....<a href="//hy.wikipedia.org/" lang="hy" title="Hayeren">...
+2640: ...........</a>&nbsp;....<a href="//io.wikipedia.org/" lang="io"
+2680: >Ido</a>&nbsp;....<a href="//ia.wikipedia.org/" lang="ia">Interl
+26c0: ingua</a>&nbsp;....<a href="//is.wikipedia.org/" lang="is">..sle
+2700: nska</a>&nbsp;....<a href="//jv.wikipedia.org/" lang="jv">Basa J
+2740: awa</a>&nbsp;....<a href="//kn.wikipedia.org/" lang="kn" title="
+2780: Kannada">...............</a>&nbsp;....<a href="//ka.wikipedia.or
+27c0: g/" lang="ka" title="Kartuli">.....................</a>&nbsp;...
+2800: .<a href="//ku.wikipedia.org/" lang="ku"><span lang="ku-Latn">Ku
+2840: rd..</span> / <bdi lang="ku-Arab" dir="rtl">..........</bdi></a>
+2880: &nbsp;....<a href="//ky.wikipedia.org/" lang="ky" title="Kyrgyz.
+28c0: .a">................</a>&nbsp;....<a href="//la.wikipedia.org/" 
+2900: lang="la">Latina</a>&nbsp;....<a href="//lv.wikipedia.org/" lang
+2940: ="lv">Latvie..u</a>&nbsp;....<a href="//lb.wikipedia.org/" lang=
+2980: "lb">L..tzebuergesch</a>&nbsp;....<a href="//lmo.wikipedia.org/"
+29c0:  lang="lmo">Lumbaart</a>&nbsp;....<a href="//mk.wikipedia.org/" 
+2a00: lang="mk" title="Makedonski">....................</a>&nbsp;....<
+2a40: a href="//mg.wikipedia.org/" lang="mg">Malagasy</a>&nbsp;....<a 
+2a80: href="//ml.wikipedia.org/" lang="ml" title="Malayalam">.........
+2ac0: .........</a>&nbsp;....<a href="//mr.wikipedia.org/" lang="mr" t
+2b00: itle="Marathi">...............</a>&nbsp;....<a href="//my.wikipe
+2b40: dia.org/" lang="my" title="Myanmarsar">.........................
+2b80: .....</a>&nbsp;....<a href="//new.wikipedia.org/" lang="new" tit
+2bc0: le="Nepal Bhasa">............... ............</a>&nbsp;....<a hr
+2c00: ef="//ne.wikipedia.org/" lang="ne" title="Nep..l..">............
+2c40: ......</a>&nbsp;....<a href="//nn.wikipedia.org/" lang="nn">Nors
+2c80: k (nynorsk)</a>&nbsp;....<a href="//nap.wikipedia.org/" lang="na
+2cc0: p">Nnapulitano</a>&nbsp;....<a href="//oc.wikipedia.org/" lang="
+2d00: oc">Occitan</a>&nbsp;....<a href="//uz.wikipedia.org/" lang="uz"
+2d40: >O...zbek</a>&nbsp;....<a href="//pms.wikipedia.org/" lang="pms"
+2d80: >Piemont..is</a>&nbsp;....<a href="//nds.wikipedia.org/" lang="n
+2dc0: ds">Plattd....tsch</a>&nbsp;....<a href="//qu.wikipedia.org/" la
+2e00: ng="qu">Runa Simi</a>&nbsp;....<a href="//pnb.wikipedia.org/" la
+2e40: ng="pnb" title="Sh..hmukh.. Pa..j..b.."><bdi dir="rtl">...... ..
+2e80: ...... ............</bdi></a>&nbsp;....<a href="//sco.wikipedia.
+2ec0: org/" lang="sco">Scots</a>&nbsp;....<a href="//sq.wikipedia.org/
+2f00: " lang="sq">Shqip</a>&nbsp;....<a href="//scn.wikipedia.org/" la
+2f40: ng="scn">Sicilianu</a>&nbsp;....<a href="//simple.wikipedia.org/
+2f80: " lang="en">Simple English</a>&nbsp;....<a href="//ceb.wikipedia
+2fc0: .org/" lang="ceb">Sinugboanon</a>&nbsp;....<a href="//sh.wikiped
+3000: ia.org/" lang="sh"><span lang="sh-Latn">Srpskohrvatski</span> / 
+3040: <span lang="sh-Cyrl">............................</span></a>&nbs
+3080: p;....<a href="//su.wikipedia.org/" lang="su">Basa Sunda</a>&nbs
+30c0: p;....<a href="//sw.wikipedia.org/" lang="sw">Kiswahili</a>&nbsp
+3100: ;....<a href="//tl.wikipedia.org/" lang="tl">Tagalog</a>&nbsp;..
+3140: ..<a href="//ta.wikipedia.org/" lang="ta" title="Tami...">......
+3180: .........</a>&nbsp;....<a href="//tt.wikipedia.org/" lang="tt"><
+31c0: span lang="tt-Cyrl">..............</span> / <span lang="tt-Latn"
+3200: >Tatar..a</span></a>&nbsp;....<a href="//te.wikipedia.org/" lang
+3240: ="te" title="Telugu">..................</a>&nbsp;....<a href="//
+3280: tg.wikipedia.org/" lang="tg" title="Tojik..">............</a>&nb
+32c0: sp;....<a href="//th.wikipedia.org/" lang="th" title="Thai">....
+3300: .....</a>&nbsp;....<a href="//bug.wikipedia.org/" lang="bug"><sp
+3340: an lang="bug-Bugi">...... ............</span> / <span lang="bug-
+3380: Latn">Basa Ugi</span></a>&nbsp;....<a href="//ur.wikipedia.org/"
+33c0:  lang="ur" title="Urdu"><bdi dir="rtl">........</bdi></a>&nbsp;.
+3400: ...<a href="//wa.wikipedia.org/" lang="wa">Walon</a>&nbsp;....<a
+3440:  href="//yo.wikipedia.org/" lang="yo">Yor..b..</a>&nbsp;....<a h
+3480: ref="//zh-yue.wikipedia.org/" lang="yue" title="Yuet6yue5">.....
+34c0: .</a>&nbsp;....<a href="//diq.wikipedia.org/" lang="diq">Zazaki<
+3500: /a>&nbsp;....<a href="//bat-smg.wikipedia.org/" lang="sgs">..ema
+3540: it....ka</a>.</div></div>..<!-- Bookshelves -->.<div class="book
+3580: shelf-container bookshelf-container-small">.<div class="bookshel
+35c0: f">.<img src="//upload.wikimedia.org/wikipedia/commons/b/bd/Book
+3600: shelf-40x201_6.png" width="40" height="20" alt="" title=""><img 
+3640: src="//upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x
+3680: 201_6.png" width="40" height="20" alt="" title=""><img src="//up
+36c0: load.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.png
+3700: " width="40" height="20" alt="" title="">&nbsp;<b>1&nbsp;000+</b
+3740: >&nbsp;<img src="//upload.wikimedia.org/wikipedia/commons/b/bd/B
+3780: ookshelf-40x201_6.png" width="40" height="20" alt="" title=""><i
+37c0: mg src="//upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-
+3800: 40x201_6.png" width="40" height="20" alt="" title=""><img src="/
+3840: /upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf-40x201_6.
+3880: png" width="40" height="20" alt="" title="">.</div>.</div>..<!--
+38c0:  1,000+ content pages (last updated 31 January 2012) -->.<div cl
+3900: ass="langlist">.<a href="//ace.wikipedia.org/" lang="ace">Bahsa 
+3940: Ac..h</a>&nbsp;....<a href="//frp.wikipedia.org/" lang="frp">Arp
+3980: itan</a>&nbsp;....<a href="//arc.wikipedia.org/" lang="arc" titl
+39c0: e="..t..r..y.."><bdi dir="rtl">............</bdi></a>&nbsp;....<
+3a00: a href="//gn.wikipedia.org/" lang="gn">Ava..e......</a>&nbsp;...
+3a40: .<a href="//av.wikipedia.org/" lang="av" title="Avar">........</
+3a80: a>&nbsp;....<a href="//ay.wikipedia.org/" lang="ay">Aymar Aru</a
+3ac0: >&nbsp;....<a href="//zh-min-nan.wikipedia.org/" lang="nan">B..n
+3b00: -l..m-g..</a>&nbsp;....<a href="//bjn.wikipedia.org/" lang="bjn"
+3b40: >Bahasa Banjar</a>&nbsp;....<a href="//bh.wikipedia.org/" lang="
+3b80: bh" title="Bh..japur..">.....................</a>&nbsp;....<a hr
+3bc0: ef="//bcl.wikipedia.org/" lang="bcl">Bikol Central</a>&nbsp;....
+3c00: <a href="//bar.wikipedia.org/" lang="bar">Boarisch</a>&nbsp;....
+3c40: <a href="//bo.wikipedia.org/" lang="bo" title="Bod Skad">.......
+3c80: ..............</a>&nbsp;....<a href="//cbk-zam.wikipedia.org/" l
+3cc0: ang="cbk-x-zam">Chavacano de Zamboanga</a>&nbsp;....<a href="//c
+3d00: o.wikipedia.org/" lang="co">Corsu</a>&nbsp;....<a href="//pdc.wi
+3d40: kipedia.org/" lang="pdc">Deitsch</a>&nbsp;....<a href="//dv.wiki
+3d80: pedia.org/" lang="dv" title="Dhivehi"><bdi dir="rtl">...........
+3dc0: .</bdi></a>&nbsp;....<a href="//nv.wikipedia.org/" lang="nv">Din
+3e00: .. Bizaad</a>&nbsp;....<a href="//ang.wikipedia.org/" lang="ang"
+3e40: >Eald Englisc</a>&nbsp;....<a href="//eml.wikipedia.org/" lang="
+3e80: roa-x-eml">Emigli..n...Rumagn..l</a>&nbsp;....<a href="//myv.wik
+3ec0: ipedia.org/" lang="myv" title="Erzjanj">............</a>&nbsp;..
+3f00: ..<a href="//ext.wikipedia.org/" lang="ext">Estreme..u</a>&nbsp;
+3f40: ....<a href="//hif.wikipedia.org/" lang="hif">Fiji Hindi</a>&nbs
+3f80: p;....<a href="//fo.wikipedia.org/" lang="fo">F..royskt</a>&nbsp
+3fc0: ;....<a href="//frr.wikipedia.org/" lang="frr">Frasch</a>&nbsp;.
+<= Recv data, 16384 bytes (0x4000)
+0000: ...<a href="//fur.wikipedia.org/" lang="fur">Furlan</a>&nbsp;...
+0040: .<a href="//gv.wikipedia.org/" lang="gv">Gaelg</a>&nbsp;....<a h
+0080: ref="//gag.wikipedia.org/" lang="gag">Gagauz</a>&nbsp;....<a hre
+00c0: f="//gd.wikipedia.org/" lang="gd">G..idhlig</a>&nbsp;....<a href
+0100: ="//gan.wikipedia.org/" lang="gan" title="G..ny..">......</a>&nb
+0140: sp;....<a href="//glk.wikipedia.org/" lang="glk" title="Gil..ki"
+0180: ><bdi dir="rtl">..........</bdi></a>&nbsp;....<a href="//hak.wik
+01c0: ipedia.org/" lang="hak"><span lang="hak-Latn">Hak-k..-fa</span> 
+0200: / <span lang="hak-Hani">.........</span></a>&nbsp;....<a href="/
+0240: /xal.wikipedia.org/" lang="xal" title="Hal..mg">............</a>
+0280: &nbsp;....<a href="//haw.wikipedia.org/" lang="haw">....lelo Haw
+02c0: ai..i</a>&nbsp;....<a href="//hsb.wikipedia.org/" lang="hsb">Hor
+0300: njoserbsce</a>&nbsp;....<a href="//ilo.wikipedia.org/" lang="ilo
+0340: ">Ilokano</a>&nbsp;....<a href="//ie.wikipedia.org/" lang="ie">I
+0380: nterlingue</a>&nbsp;....<a href="//os.wikipedia.org/" lang="os" 
+03c0: title="Iron ..vzag">........ ..........</a>&nbsp;....<a href="//
+0400: kl.wikipedia.org/" lang="kl">Kalaallisut</a>&nbsp;....<a href="/
+0440: /pam.wikipedia.org/" lang="pam">Kapampangan</a>&nbsp;....<a href
+0480: ="//csb.wikipedia.org/" lang="csb">Kasz..bsczi</a>&nbsp;....<a h
+04c0: ref="//kw.wikipedia.org/" lang="kw">Kernewek</a>&nbsp;....<a hre
+0500: f="//km.wikipedia.org/" lang="km" title="Ph..asa Khm..r">.......
+0540: ....................</a>&nbsp;....<a href="//rw.wikipedia.org/" 
+0580: lang="rw">Kinyarwanda</a>&nbsp;....<a href="//kv.wikipedia.org/"
+05c0:  lang="kv" title="Komi">........</a>&nbsp;....<a href="//mrj.wik
+0600: ipedia.org/" lang="mjr" title="Kyryk Mary">.......... ........</
+0640: a>&nbsp;....<a href="//lad.wikipedia.org/" lang="lad"><span lang
+0680: ="lad-Latn">Ladino</span> / <bdi lang="lad-Hebr" dir="rtl">.....
+06c0: .......</bdi></a>&nbsp;....<a href="//lbe.wikipedia.org/" lang="
+0700: lbe" title="Lak..u">..........</a>&nbsp;....<a href="//lij.wikip
+0740: edia.org/" lang="lij">Ligure</a>&nbsp;....<a href="//li.wikipedi
+0780: a.org/" lang="li">Limburgs</a>&nbsp;....<a href="//ln.wikipedia.
+07c0: org/" lang="ln">Ling..la</a>&nbsp;....<a href="//jbo.wikipedia.o
+0800: rg/" lang="jbo">lojban</a>&nbsp;...<!-- Don't capitalize this: t
+0840: his language has no title case. -->.<a href="//mt.wikipedia.org/
+0880: " lang="mt">Malti</a>&nbsp;....<a href="//zh-classical.wikipedia
+08c0: .org/" lang="lzh" title="Man4jin4 / W..ny..n">......</a>&nbsp;..
+0900: ..<a href="//mi.wikipedia.org/" lang="mi">M..ori</a>&nbsp;....<a
+0940:  href="//xmf.wikipedia.org/" lang="xmf" title="Margaluri">......
+0980: .....................</a>&nbsp;....<a href="//arz.wikipedia.org/
+09c0: " lang="arz" title="Ma...r.."><bdi dir="rtl">........</bdi></a>&
+0a00: nbsp;...<!-- (teh other one ;) -->.<a href="//mzn.wikipedia.org/
+0a40: " lang="mzn"><bdi lang="mzn-Arab" dir="rtl">................</bd
+0a80: i> / <span lang="mzn-Latn">M..zeruni</span></a>&nbsp;...<!-- wat
+0ac0: ch the behaviour of this pair re rtl vs ltr -->.<a href="//mdf.w
+0b00: ikipedia.org/" lang="mdf" title="Mok..enj">..............</a>&nb
+0b40: sp;....<a href="//mn.wikipedia.org/" lang="mn" title="Mongol">..
+0b80: ..........</a>&nbsp;....<a href="//nah.wikipedia.org/" lang="nah
+0bc0: ">N..huatlaht..lli</a>&nbsp;....<a href="//nds-nl.wikipedia.org/
+0c00: " lang="nds-nl">Nedersaksisch</a>&nbsp;....<a href="//nrm.wikipe
+0c40: dia.org/" lang="roa-x-nrm">Nouormand</a>&nbsp;....<a href="//nov
+0c80: .wikipedia.org/" lang="nov">Novial</a>&nbsp;....<a href="//ce.wi
+0cc0: kipedia.org/" lang="ce" title="Nox..iyn">..............</a>&nbsp
+0d00: ;....<a href="//mhr.wikipedia.org/" lang="mhr" title="Olyk Marij
+0d40: ">........ ..........</a>&nbsp;....<a href="//or.wikipedia.org/"
+0d80:  lang="or" title="O...i..">...............</a>&nbsp;....<a href=
+0dc0: "//as.wikipedia.org/" lang="as" title="..x..miya">..............
+0e00: .......</a>&nbsp;....<a href="//pi.wikipedia.org/" lang="pi" tit
+0e40: le="P.....i">............</a>&nbsp;....<a href="//pag.wikipedia.
+0e80: org/" lang="pag">Pangasin..n</a>&nbsp;....<a href="//pa.wikipedi
+0ec0: a.org/" lang="pa" title="Pa..j..b.."><span lang="pa">...........
+0f00: .......</span> / <bdi lang="pa-Arab" dir="rtl">............</bdi
+0f40: ></a>&nbsp;....<a href="//pap.wikipedia.org/" lang="pap">Papiame
+0f80: ntu</a>&nbsp;....<a href="//ps.wikipedia.org/" lang="ps" title="
+0fc0: Pa..to"><bdi dir="rtl">........</bdi></a>&nbsp;....<a href="//ko
+1000: i.wikipedia.org/" lang="koi" title="Perem Komi">.......... .....
+1040: ...</a>&nbsp;....<a href="//pfl.wikipedia.org/" lang="pfl">Pf..l
+1080: zisch</a>&nbsp;....<a href="//pcd.wikipedia.org/" lang="pcd">Pic
+10c0: ard</a>&nbsp;....<a href="//krc.wikipedia.org/" lang="krc" title
+1100: ="Qara..ay...Malqar">.................................</a>&nbsp;
+1140: ....<a href="//crh.wikipedia.org/" lang="crh">Q..r..mtatarca</a>
+1180: &nbsp;....<a href="//ksh.wikipedia.org/" lang="ksh">Ripoarisch</
+11c0: a>&nbsp;....<a href="//rm.wikipedia.org/" lang="rm">Rumantsch</a
+1200: >&nbsp;....<a href="//rue.wikipedia.org/" lang="rue" title="Rusi
+1240: n...skyj Yazyk">.................... ........</a>&nbsp;....<a hr
+1280: ef="//sa.wikipedia.org/" lang="sa" title="Sa...sk...tam">.......
+12c0: ....................</a>&nbsp;....<a href="//se.wikipedia.org/" 
+1300: lang="se">S..megiella</a>&nbsp;....<a href="//sc.wikipedia.org/"
+1340:  lang="sc">Sardu</a>&nbsp;....<a href="//sah.wikipedia.org/" lan
+1380: g="sah" title="Saxa Tyla">........ ........</a>&nbsp;....<a href
+13c0: ="//stq.wikipedia.org/" lang="stq">Seeltersk</a>&nbsp;....<a hre
+1400: f="//si.wikipedia.org/" lang="si" title="Si...hala">............
+1440: ...</a>&nbsp;....<a href="//szl.wikipedia.org/" lang="szl">..l..
+1480: nski</a>&nbsp;....<a href="//so.wikipedia.org/" lang="so">Af Soo
+14c0: maali</a>&nbsp;....<a href="//ckb.wikipedia.org/" lang="ckb" tit
+1500: le="Soran.."><bdi dir="rtl">..........</bdi></a>&nbsp;....<a hre
+1540: f="//kab.wikipedia.org/" lang="kab">Taqbaylit</a>&nbsp;....<a hr
+1580: ef="//roa-tara.wikipedia.org/" lang="roa">Tarand..ne</a>&nbsp;..
+15c0: ..<a href="//tpi.wikipedia.org/" lang="tpi">Tok Pisin</a>&nbsp;.
+1600: ...<a href="//to.wikipedia.org/" lang="to">Lea faka-Tonga</a>&nb
+1640: sp;....<a href="//tk.wikipedia.org/" lang="tk">T..rkmen</a>&nbsp
+1680: ;....<a href="//udm.wikipedia.org/" lang="udm" title="Udmurt">..
+16c0: ..........</a>&nbsp;....<a href="//ug.wikipedia.org/" lang="ug">
+1700: <span lang="ug-Latn">Uyghur</span> / <bdi lang="ug-Arab" dir="rt
+1740: l">................</bdi></a>&nbsp;....<a href="//vec.wikipedia.
+1780: org/" lang="vec">V..neto</a>&nbsp;....<a href="//fiu-vro.wikiped
+17c0: ia.org/" lang="vro">V..ro</a>&nbsp;....<a href="//vls.wikipedia.
+1800: org/" lang="vls">West-Vlams</a>&nbsp;....<a href="//wo.wikipedia
+1840: .org/" lang="wo">Wolof</a>&nbsp;....<a href="//wuu.wikipedia.org
+1880: /" lang="wuu" title="W.. Y..">......</a>&nbsp;....<a href="//yi.
+18c0: wikipedia.org/" lang="yi" title="Yidi.."><bdi dir="rtl">........
+1900: ....</bdi></a>&nbsp;....<a href="//zea.wikipedia.org/" lang="zea
+1940: ">Ze..uws</a>.</div>..<!-- Bookshelves -->.<div class="bookshelf
+1980: -container bookshelf-container-small">.<div class="bookshelf">.<
+19c0: img src="//upload.wikimedia.org/wikipedia/commons/b/bd/Bookshelf
+1a00: -40x201_6.png" width="40" height="20" alt="" title="">&nbsp;<b>1
+1a40: 00+</b>&nbsp;<img src="//upload.wikimedia.org/wikipedia/commons/
+1a80: b/bd/Bookshelf-40x201_6.png" width="40" height="20" alt="" title
+1ac0: ="">.</div>.</div>..<!-- 100+ content pages (data from 31 Januar
+1b00: y 2012) -->.<div class="langlist langlist-tiny">.<a href="//kbd.
+1b40: wikipedia.org/" lang="kbd" title="Adighabze">................</a
+1b80: >&nbsp;....<a href="//ak.wikipedia.org/" lang="ak">Akan</a>&nbsp
+1bc0: ;....<a href="//ab.wikipedia.org/" lang="ab" title="A...sua">...
+1c00: .......</a>&nbsp;....<a href="//bm.wikipedia.org/" lang="bm">Bam
+1c40: anankan</a>&nbsp;....<a href="//bi.wikipedia.org/" lang="bi">Bis
+1c80: lama</a>&nbsp;....<a href="//bxr.wikipedia.org/" lang="bxr" titl
+1cc0: e="Buryad">............</a>&nbsp;....<a href="//ch.wikipedia.org
+1d00: /" lang="ch">Chamoru</a>&nbsp;....<a href="//ny.wikipedia.org/" 
+1d40: lang="ny">Chichewa</a>&nbsp;....<a href="//za.wikipedia.org/" la
+1d80: ng="za">Cuengh</a>&nbsp;....<a href="//dsb.wikipedia.org/" lang=
+1dc0: "dsb">Dolnoserbski</a>&nbsp;....<a href="//ee.wikipedia.org/" la
+1e00: ng="ee">E..egbe</a>&nbsp;....<a href="//ff.wikipedia.org/" lang=
+1e40: "ff">Fulfulde</a>&nbsp;....<a href="//ki.wikipedia.org/" lang="k
+1e80: i">G..k..y..</a>&nbsp;....<a href="//got.wikipedia.org/" lang="g
+1ec0: ot" title="Gutisk">........................</a>&nbsp;....<a href
+1f00: ="//ha.wikipedia.org/" lang="ha"><span lang="ha-Latn">Hausa</spa
+1f40: n> / <bdi lang="ha-Arab" dir="rtl">..............</bdi></a>&nbsp
+1f80: ;....<a href="//ig.wikipedia.org/" lang="ig">Igbo</a>&nbsp;....<
+1fc0: a href="//iu.wikipedia.org/" lang="iu" title="Inuktitut"><span l
+2000: ang="iu-Cans">..................</span> / <span lang="iu-Latn">I
+2040: nuktitut</span></a>&nbsp;....<a href="//ik.wikipedia.org/" lang=
+2080: "ik">I..upiak</a>&nbsp;....<a href="//ks.wikipedia.org/" lang="k
+20c0: s" title="Kashmiri"><span lang="ks-Deva">.....................</
+2100: span> / <bdi lang="ks-Arab" dir="rtl">............</bdi></a>&nbs
+2140: p;....<a href="//kg.wikipedia.org/" lang="kg">Kongo</a>&nbsp;...
+2180: .<a href="//lo.wikipedia.org/" lang="lo" title="Phaasaa Laao">..
+21c0: ...................</a>&nbsp;....<a href="//ltg.wikipedia.org/" 
+2200: lang="ltg">Latga..u</a>&nbsp;....<a href="//lez.wikipedia.org/" 
+2240: lang="lez" title="Lezgi">..........</a>&nbsp;....<a href="//lg.w
+2280: ikipedia.org/" lang="lg">Luganda</a>&nbsp;....<a href="//cdo.wik
+22c0: ipedia.org/" lang="cdo">M..ng-d....ng-ng.....</a>&nbsp;....<a hr
+2300: ef="//mwl.wikipedia.org/" lang="mwl">Mirand..s</a>&nbsp;....<a h
+2340: ref="//mo.wikipedia.org/" lang="ro-Cyrl" title="Moldoveneasc..">
+2380: ........................</a>&nbsp;....<a href="//fj.wikipedia.or
+23c0: g/" lang="fj">Na Vosa Vaka-Viti</a>&nbsp;....<a href="//na.wikip
+2400: edia.org/" lang="na">Dorerin&nbsp;Naoero</a>&nbsp;....<a href="/
+2440: /cr.wikipedia.org/" lang="cr"><span lang="cr-Latn">N..hiyaw..win
+2480: </span> / <span lang="cr-Cans">.....................</span></a>&
+24c0: nbsp;....<a href="//pih.wikipedia.org/" lang="pih">Norfuk / Pitk
+2500: ern</a>&nbsp;....<a href="//om.wikipedia.org/" lang="om">Afaan O
+2540: romoo</a>&nbsp;....<a href="//pnt.wikipedia.org/" lang="pnt" tit
+2580: le="Pontiak..">................</a>&nbsp;....<a href="//kaa.wiki
+25c0: pedia.org/" lang="kaa">Qaraqalpaqsha</a>&nbsp;....<a href="//dz.
+2600: wikipedia.org/" lang="dz" title="Rdzong-Kha">..................<
+2640: /a>&nbsp;....<a href="//rmy.wikipedia.org/" lang="rmy"><span lan
+2680: g="rmy-Latn">Romani</span> / <span lang="rmy-Deva">.............
+26c0: .....</span></a>&nbsp;....<a href="//rn.wikipedia.org/" lang="rn
+2700: ">Kirundi</a>&nbsp;....<a href="//sm.wikipedia.org/" lang="sm">G
+2740: agana S..moa</a>&nbsp;....<a href="//sg.wikipedia.org/" lang="sg
+2780: ">S..ng..</a>&nbsp;....<a href="//st.wikipedia.org/" lang="st">S
+27c0: esotho</a>&nbsp;....<a href="//nso.wikipedia.org/" lang="nso">Se
+2800: sotho sa Leboa</a>&nbsp;....<a href="//tn.wikipedia.org/" lang="
+2840: tn">Setswana</a>&nbsp;....<a href="//sn.wikipedia.org/" lang="sn
+2880: ">ChiShona</a>&nbsp;....<a href="//sd.wikipedia.org/" lang="sd" 
+28c0: title="Sindh.."><bdi dir="rtl">........</bdi></a>&nbsp;....<a hr
+2900: ef="//cu.wikipedia.org/" lang="cu" title="Slov..n..sk.."><span l
+2940: ang="cu-Cyrl">......................</span> / <span lang="cu-Gla
+2980: g">..............................</span></a>&nbsp;....<a href="/
+29c0: /ss.wikipedia.org/" lang="ss">SiSwati</a>&nbsp;....<a href="//sr
+2a00: n.wikipedia.org/" lang="srn">Sranantongo</a>&nbsp;....<a href="/
+2a40: /ty.wikipedia.org/" lang="ty">Reo Tahiti</a>&nbsp;....<a href="/
+2a80: /tet.wikipedia.org/" lang="tet">Tetun</a>&nbsp;....<a href="//ti
+2ac0: .wikipedia.org/" lang="ti" title="Tigri......">............</a>&
+2b00: nbsp;....<a href="//chr.wikipedia.org/" lang="chr" title="Tsalag
+2b40: i">.........</a>&nbsp;....<a href="//tum.wikipedia.org/" lang="t
+2b80: um">chiTumbuka</a>&nbsp;....<a href="//ts.wikipedia.org/" lang="
+2bc0: ts">Xitsonga</a>&nbsp;....<a href="//chy.wikipedia.org/" lang="c
+2c00: hy">Ts..hesen..stsestotse</a>&nbsp;....<a href="//ve.wikipedia.o
+2c40: rg/" lang="ve">Tshiven...a</a>&nbsp;....<a href="//tw.wikipedia.
+2c80: org/" lang="tw">Twi</a>&nbsp;....<a href="//vep.wikipedia.org/" 
+2cc0: lang="vep">Veps..n kel...</a>&nbsp;....<a href="//xh.wikipedia.o
+2d00: rg/" lang="xh">isiXhosa</a>&nbsp;....<a href="//zu.wikipedia.org
+2d40: /" lang="zu">isiZulu</a>.</div>..<!-- Other languages -->.<div c
+2d80: lass="langlist langlist-other">.<!-- (keeping strong-element for
+2dc0:  non-css agents) -->.<strong>.<a href="//meta.wikimedia.org/wiki
+2e00: /List_of_Wikipedias" lang="en">Other languages</a>&nbsp;....<a h
+2e40: ref="//de.wikipedia.org/wiki/Wikipedia:Sprachen" lang="de">Weite
+2e80: re Sprachen</a>&nbsp;....<a href="//meta.wikimedia.org/wiki/List
+2ec0: e_des_Wikip%C3%A9dias" lang="fr">Autres langues</a>&nbsp;....<a 
+2f00: href="//pl.wikipedia.org/wiki/Wikipedia:Lista_wersji_j%C4%99zyko
+2f40: wych" lang="pl">Kompletna lista j..zyk..w</a>&nbsp;....<a href="
+2f80: //ja.wikipedia.org/wiki/Wikipedia:%E5%A4%9A%E8%A8%80%E8%AA%9E%E3
+2fc0: %83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A8%E3%
+3000: 81%97%E3%81%A6%E3%81%AE%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%8
+3040: 3%87%E3%82%A3%E3%82%A2" lang="ja">............</a>&nbsp;....<a h
+3080: ref="//meta.wikimedia.org/wiki/Lista_de_Wikipedias" lang="es">Ot
+30c0: ros idiomas</a>&nbsp;....<a href="//zh.wikipedia.org/wiki/Wikipe
+3100: dia:%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E8%AF%AD%E8%A8%80%E5%88
+3140: %97%E8%A1%A8" lang="zh" id="zh_others">............</a>&nbsp;...
+3180: .<a href="//ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF
+31c0: %D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%92" lang="ru">............ ..
+3200: ........</a>&nbsp;....<a href="//eo.wikipedia.org/wiki/Vikipedio
+3240: :Internacia_Vikipedio" lang="eo">Aliaj lingvoj</a>&nbsp;....<a h
+3280: ref="//meta.wikimedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3
+32c0: %BC%EC%9D%98_%EB%AA%A9%EB%A1%9D" lang="ko">...... ......</a>&nbs
+3300: p;....<a href="//vi.wikipedia.org/wiki/Wikipedia:Phi%C3%AAn_b%E1
+3340: %BA%A3n_ng%C3%B4n_ng%E1%BB%AF" lang="vi">Ng..n ng... kh..c</a>.<
+3380: /strong>.</div>..<div class="divider" style="padding: 0 1%;"><hr
+33c0: ></div>..<!-- Other projects -->.<div class="otherprojects">..<d
+3400: iv class="otherprojects-item">.<div style="margin-top: 12px;">&n
+3440: bsp;&nbsp;<a href="//www.wiktionary.org/" title="Wiktionary"><im
+3480: g src="//upload.wikimedia.org/wikipedia/commons/4/4a/Wiktionary-
+34c0: logo-en-35px.png" width="35" height="38" alt="Wiktionary" title=
+3500: "Wiktionary"></a>&nbsp;<a href="//www.wiktionary.org/" title="Wi
+3540: ktionary">Wiktionary</a>.</div>.</div>..<div class="otherproject
+3580: s-item">.<div style="margin-top: 19px;">&nbsp;&nbsp;<a href="//w
+35c0: ww.wikinews.org/" title="Wikinews"><img src="//upload.wikimedia.
+3600: org/wikipedia/commons/thumb/8/8a/Wikinews-logo.png/35px-Wikinews
+3640: -logo.png" width="35" height="18" alt="Wikinews" title="Wikinews
+3680: "></a>&nbsp;<a href="//www.wikinews.org/" title="Wikinews">Wikin
+36c0: ews</a>.</div>.</div>..<div class="otherprojects-item">.<div sty
+3700: le="margin-top: 10px;">&nbsp;&nbsp;<a href="//www.wikiquote.org/
+3740: " title="Wikiquote"><img src="//upload.wikimedia.org/wikipedia/c
+3780: ommons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png
+37c0: " width="35" height="41" alt="Wikiquote" title="Wikiquote"></a>&
+3800: nbsp;<a href="//www.wikiquote.org/" title="Wikiquote">Wikiquote<
+3840: /a>.</div>.</div>..<div class="otherprojects-item">.<div style="
+3880: margin-top: 11px;">&nbsp;&nbsp;<a href="//www.wikibooks.org/" ti
+38c0: tle="Wikibooks"><img src="//upload.wikimedia.org/wikipedia/commo
+3900: ns/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png" wi
+3940: dth="35" height="35" alt="Wikibooks" title="Wikibooks"></a>&nbsp
+3980: ;<a href="//www.wikibooks.org/" title="Wikibooks">Wikibooks</a>.
+39c0: </div>.</div>..<div class="otherprojects-item">.<div style="marg
+3a00: in-top: 13px;">&nbsp;&nbsp;<a href="//species.wikimedia.org/" ti
+3a40: tle="Wikispecies, a free directory of life!"><img src="//upload.
+3a80: wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/
+3ac0: 35px-Wikispecies-logo.svg.png" width="35" height="41" alt="Wikis
+3b00: pecies" title="Wikispecies, a free directory of life!"></a>&nbsp
+3b40: ;<a href="//species.wikimedia.org/" title="Wikispecies, a free d
+3b80: irectory of life!">Wikispecies</a>.</div>.</div>..<div class="ot
+3bc0: herprojects-item">.<div style="margin-top: 10px;">&nbsp;&nbsp;<a
+3c00:  href="//www.wikisource.org/" title="Wikisource"><img src="//upl
+3c40: oad.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.s
+3c80: vg/35px-Wikisource-logo.svg.png" width="35" height="37" alt="Wik
+3cc0: isource" title="Wikisource"></a>&nbsp;<a href="//www.wikisource.
+3d00: org/" title="Wikisource">Wikisource</a>.</div>.</div>..<div clas
+3d40: s="otherprojects-item">.<div style="margin-top: 22px;">&nbsp;&nb
+3d80: sp;<a href="//www.wikiversity.org/" title="Wikiversity"><img src
+3dc0: ="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversit
+3e00: y-logo.svg/35px-Wikiversity-logo.svg.png" width="35" height="28"
+3e40:  alt="Wikiversity" title="Wikiversity"></a>&nbsp;<a href="//www.
+3e80: wikiversity.org/" title="Wikiversity">Wikiversity</a>.</div>.</d
+3ec0: iv>..<div class="otherprojects-item">.<div style="margin-top: 7p
+3f00: x;">&nbsp;&nbsp;<a href="//commons.wikimedia.org/" title="Wikime
+3f40: dia Commons ... Free media repository"><img src="//upload.wikime
+3f80: dia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/35px-Commo
+3fc0: ns-logo.svg.png" width="35" height="47" alt="Wikimedia Commons" 
+<= Recv data, 1084 bytes (0x43c)
+0000: title="Wikimedia Commons ... Free media repository"></a>&nbsp;<a
+0040:  href="//commons.wikimedia.org/" title="Wikimedia Commons ... Fr
+0080: ee media repository">Commons</a>.</div>.</div>..<div class="othe
+00c0: rprojects-item">.<div style="margin-top: 13px;">&nbsp;&nbsp;<a h
+0100: ref="//meta.wikimedia.org/" title="Wikimedia project coordinatio
+0140: n"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/7/75
+0180: /Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.
+01c0: png" width="35" height="35" alt="Meta-Wiki" title="Wikimedia pro
+0200: ject coordination"></a>&nbsp;<a href="//meta.wikimedia.org/" tit
+0240: le="Wikimedia project coordination">Meta-Wiki</a>.</div>.</div>.
+0280: .</div>..<!-- Site info -->.<div class="wm-site-info">.<a href="
+02c0: //wikimediafoundation.org/" title="A Wikimedia Project"><img src
+0300: ="//bits.wikimedia.org/images/wikimedia-button.png" width="88" h
+0340: eight="31" alt="Wikimedia" title="A Wikimedia Project"></a>.</di
+0380: v>..<script src="//bits.wikimedia.org/meta.wikimedia.org/load.ph
+03c0: p?debug=false&amp;lang=en&amp;modules=ext.gadget.wm-portal&amp;o
+0400: nly=scripts&amp;skin=vector&amp;*"></script>.</body>.</html>
+== Info: Closing connection #0

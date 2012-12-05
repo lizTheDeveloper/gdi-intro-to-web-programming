@@ -13,6 +13,9 @@ var footer ='</body>';
 
 //The server herself.
 http.createServer(function (request,response) {
+    //We're going to begin by adding things to the request object.
+
+
     //Parse querystring, since we have the entire thing immediately.
     request.querystring = url.parse(request.url, true).query;  //return an object from a querystring with raw name-value pairs.
 
@@ -45,6 +48,7 @@ http.createServer(function (request,response) {
 
     });
 
+    //This event is emitted when the connection is closed.
     request.addListener('close', function() {
         //Checking for an edge case, in this case, we didn't get the entire message.
         if (!request.ended) {

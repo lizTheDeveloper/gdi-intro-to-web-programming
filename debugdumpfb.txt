@@ -1,0 +1,28 @@
+== Info: About to connect() to www.facebook.com port 80 (#0)
+== Info:   Trying 173.252.101.20... == Info: connected
+== Info: Connected to www.facebook.com (173.252.101.20) port 80 (#0)
+=> Send header, 171 bytes (0xab)
+0000: GET / HTTP/1.1
+0010: User-Agent: curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7
+0050:  NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2
+0084: Host: www.facebook.com
+009c: Accept: */*
+00a9: 
+<= Recv header, 20 bytes (0x14)
+0000: HTTP/1.1 302 Found
+<= Recv header, 37 bytes (0x25)
+0000: Location: https://www.facebook.com/
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=utf-8
+<= Recv header, 58 bytes (0x3a)
+0000: X-FB-Debug: eNd0xNnPOTRdPTzsbTayYWu2pK9ZsJ2T1wMGi5IZB8s=
+<= Recv header, 37 bytes (0x25)
+0000: Date: Tue, 04 Dec 2012 22:26:14 GMT
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 19 bytes (0x13)
+0000: Content-Length: 0
+<= Recv header, 2 bytes (0x2)
+0000: 
+== Info: Connection #0 to host www.facebook.com left intact
+== Info: Closing connection #0

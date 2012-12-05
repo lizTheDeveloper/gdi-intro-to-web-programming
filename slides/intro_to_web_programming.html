@@ -220,6 +220,22 @@ console.log('Server running at http://127.0.0.1:8124/');
                     </slide>
                     <pre class="speaker-notes" style="display:none">http://ortizonline.com/publications/tcpipsuitetutorial.htm</pre>
                 </div>
+                
+                <div class="slide normal">
+                    <header><h1>Requests</h1></header>
+                    <slide>
+                        <img src="../img/phone_peter.JPG">
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
+                </div>
+                
+                <div class="slide normal">
+                    <header><h1>Requests</h1></header>
+                    <slide>
+                        <img src="../img/phone_server.JPG">
+                    </slide>
+                    <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
+                </div>
 
                 <div class="slide normal">
                     <header><h1>Requests</h1></header>
@@ -231,7 +247,7 @@ Host: www.example.com
 
 
                     	</pre>
-                    	<p>The last two lines are blank on purpose. The server has to send two blank lines (/r/n /r/n) in order to signal that the request has completed.</p>
+                    	<p>The last two lines are blank on purpose. The client has to send two blank lines (/r/n /r/n) in order to signal that the request has completed.</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
                 </div>
@@ -266,7 +282,10 @@ Host: www.example.com
                     <header><h1>GET vs POST</h1></header>
                     <slide>
                     	<p>GET is an HTTP Verb that we use to request information. We may optionally pass a "QueryString" with our GET request (or with post requests) in order to send data that we're OK with the user potentially modifying.</p>
-                    	<p>POST is another Verb that we use in order to send a response body with - usually data from a form. The user can't directly modify this data but as you've seen, you can modify the page, so you can get any kind of data from a post. Because the data isn't URL encoded, it is usually easier.</p>
+                        <pre>
+http://www.example.com/index.html?search=spiderman&familymode=on&user=liz
+                        </pre>
+                    	<p>POST is another Verb that we use in order to send a response body with - usually data from a form. The user can't directly modify this data but as you've seen, you can modify the page, so you can get any kind of data from a post.</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
@@ -276,9 +295,13 @@ Host: www.example.com
                     <slide>
                     	<p>In node, the "path" is sent along with the request. This path helps us know what the user was trying to access.</p>
                     	<p>A server can "listen" on a path, but it is better to parse the URL and then respond.</p>
-                    	<code>
-                    		http.createServer
-                    	</code>
+                    	<pre>
+root = '/';
+a_directory = '/slides';
+a_file = '/intro.html'
+a_directory_and_a_file = '/slides/intro_to_web_programming.html';
+
+                    	</pre>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
@@ -287,6 +310,13 @@ Host: www.example.com
                     <header><h1>Responses</h1></header>
                     <slide>
                         <p>Responses are what we'll be constructing to send to the requestor. They contain a Body and a collection of Response Headers.</p>
+                        <pre>
+HTTP/1.1 200 OK
+Date: Tue, 04 Dec 2012 06:02:17 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+                        </pre>
                         <p>There are many response headers, which we'll go over as we need them. A full listing can be found <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Responses">here.</a></p>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
@@ -306,11 +336,32 @@ Host: www.example.com
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
+                
+                <div class="slide normal">
+                    <header><h1>Responses</h1></header>
+                    <slide>
+                        <p>A response body is what your browser displays to you. It's often composed of HTML, but it can be an image, some CSS or JSON.</p>
+                        <pre>
+&lt;= Recv data, 13416 bytes (0x3468)
+0000: 35ef
+0006: &lt;!doctype html&gt;&lt;html itemscope="itemscope" itemtype="http://sche
+0046: ma.org/WebPage"&gt;&lt;head&gt;&lt;meta content="Search the world's informat
+0086: ion, including webpages, images, videos and more. Google has man
+00c6: y special features to help you find exactly what you're looking 
+0106: for." name="description"&gt;&lt;meta content="noodp" name="robots"&gt;&lt;me
+                        </pre>
+                        <p>And so on.</p>
+                    </slide>
+                    <pre class="speaker-notes" style="display:none"></pre>
+                </div>
 
                 <div class="slide normal">
-                    <header><h1>Exercise Time!</h1></header>
+                    <header><h1>Try This!</h1></header>
                     <slide>
-
+                    <p>In cloud9IDE or Terminal on your Mac, paste the following command. Then, open up debugdump.txt</p>
+                        <pre>
+curl --trace-ascii debugdump.txt http://www.google.com/
+                        </pre>
                     </slide>
                     <pre class="speaker-notes" style="display:none">Set up several routes, interpret a request. Bonus, log each time a user comes to the page</pre>
                 </div>
