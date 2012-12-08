@@ -37,10 +37,108 @@
             <div class="slide normal">
                 <header><h1>Remember that bit about having to do everything yourself?</h1></header>
                 <section class="content">
+                    <a href="npmjs.org"><img src="./img/npm.png"></a>
+                </section>
+                <pre class="speaker-notes" style="display:none">
                     <p>Turns out I'm full of garbage. By taking a quick peek at NPM, we can see that there are many other node.js developers who have taken care of many of the tricky bits for us.</p>
+                </pre>
+            </div>
 
+            <div class="slide normal">
+                <header><h1>Package.json</h1></header>
+                <section class="content">
+                    <pre>
+{
+  "name": "gdi-node-intro",
+  "version": "0.0.<strong>2</strong>",
+  <strong>"dependencies": {
+    "handlebars": "1.0.x",
+  },</strong>
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
+                    </pre>
+                    <p>Upon adding some dependancies to your project, you can "install" your own app by using <code>npm install</code></p>
+                </section>
+                <pre class="speaker-notes" style="display:none">Remember our package.json file? This is integral to a node app. It tells node what the dependancies
+                    of your project are, and several other configuation options.
+                    One of the things about dependancies is
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1><code>npm install</code></h1></header>
+                <section class="content">
+                    <pre>
+icyfenix@gsi-node-intro:~/331581 (master) $ npm install
+npm http GET https://registry.npmjs.org/handlebars
+npm http 200 https://registry.npmjs.org/handlebars
+npm http GET https://registry.npmjs.org/handlebars/-/handlebars-1.0.7.tgz
+npm http 200 https://registry.npmjs.org/handlebars/-/handlebars-1.0.7.tgz
+npm http GET https://registry.npmjs.org/optimist
+npm http GET https://registry.npmjs.org/uglify-js
+npm http 200 https://registry.npmjs.org/optimist
+npm http GET https://registry.npmjs.org/optimist/-/optimist-0.3.5.tgz
+npm http 200 https://registry.npmjs.org/uglify-js
+npm http GET https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+npm http 200 https://registry.npmjs.org/optimist/-/optimist-0.3.5.tgz
+npm http 200 https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+npm http GET https://registry.npmjs.org/wordwrap
+npm http 200 https://registry.npmjs.org/wordwrap
+npm http GET https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz
+handlebars@1.0.7 node_modules/handlebars
+├── optimist@0.3.5 (wordwrap@0.0.2)
+└── uglify-js@1.2.6
+                    </pre>
+                    <p>An install command installs dependencies recursively.</p>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1><code>require();</code></h1></header>
+                <section class="content">
+                <p>These are modules.</p>
+                    <pre>
+var http = require('http'),
+    url = require('url'),
+    fs = require('fs'),
+    qs = require('querystring');
+                    </pre>
+                    <p>But you can now use the modules you've included in your dependancies, so check the docs for the actual module name.</p>
+                    <pre>
+var handlebars = require('handlebars'); //returns methods attached to 'export'
+                    </pre>
+                </section>
+            </div>
+
+            <div class="slide normal">
+                <header><h1><code>exports</code> Object</h1></header>
+                <section class="content">
+                <p><code>require()</code> returns a reference to the exports object, with methods from the module attached.</p>
+                <pre>
+var circle = require('./circle.js');
+console.log('The area of a circle of radius 4 is '
+           + circle.area(4));
+</pre>
+<p>The actual file:</p>
+<pre>
+//Local to module, or 'private'
+var PI = Math.PI;
+//public function, part of the module.
+exports.area = function (r) {
+  return PI * r * r;
+};
+
+exports.circumference = function (r) {
+  return 2 * PI * r;
+};
+                </pre>
+                </section>
+                <pre class="speaker-notes" style="display:none">http://nodejs.org/api/modules.html</pre>
             </div>
 
         </div>

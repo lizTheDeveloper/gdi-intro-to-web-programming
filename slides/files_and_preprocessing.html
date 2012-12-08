@@ -54,11 +54,11 @@
                 <section class="content">
                     <p>In order for us to do anything useful, the user must send us data. We've mentioned before GET and POST, and you're familiar with the form tag, here with GET </p>
                     <pre style="border:3px dotted black;" class="prettyprint">
-                        <form method="GET" action="/thanks.html"></form>
+&lt;form method="GET" action="/thanks.html"&gt;</form>
                     </pre>
                     Or here with POST
                     <pre style="border:3px dotted black;" class="prettyprint">
-                        <form method="POST" action="/thanks.html"></form>
+&lt;form method="POST" action="/thanks.html"&gt;</form>
                     </pre>
                 </section>
                 <pre class="speaker-notes" style="display:none"></pre>
@@ -95,17 +95,32 @@ request.addListener('data', function(chunk) {
                 </ul>
             </div>
             <div class="slide normal">
-                <header><h1>Processing Events</h1></header>
-                <p>Because the request object sends us events after it's created, we'll have to handle events.</p>
+                <header><h1>Script Flow</h1></header>
+                <p>We don't want to start responding to the request until the form is done.</p>
                 <pre>
- request.addListener('data', function(chunk) {
-    //handle a chunk of data, passed in as a buffer.
-    //Buffers are easily transformed to strings.
-    request.form += chunk.toString();
+request.addListener('end', function() {
+    if (request.method == 'POST') {
+        request.form = qs.parse(request.form);
+    }
+    assembleDocument(request, function(document) {
+        document.headers = getHeaders(document);
+        response.writeHead(document.statusCode, document.headers);
+        response.end(document.body);
+    });
 });
                 </pre>
+                <p>We know when this event fires- at the end of the request. Thus, we can plan around it.</p>
             </div>
 
+            <div class="slide normal">
+                <header><h1>Async Processing</h1></header>
+                <p>The reason why we respond to events here is so that uploading of a form can happen asyncronously. This process can respond to many requests at once, and several people may be uploading forms at once.</p>
+            </div>
+
+            <div class="slide normal">
+                <header><h1 class="center"><a href="../excercises/email_gathering.html">Exercise Time!</a></h1></header>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
         </div>
     </div>
 </body>
