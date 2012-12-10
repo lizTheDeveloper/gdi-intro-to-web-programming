@@ -21,6 +21,11 @@
                     $slide.find('pre:first').focus();
                 }
             });
+            $('body').keypress(function(event){
+               if (event.which === 110) {
+                   $('.speaker-notes').toggle();
+               }
+            });
         });
         </script>
     </head>
@@ -220,7 +225,7 @@ console.log('Server running at http://127.0.0.1:8124/');
                     </slide>
                     <pre class="speaker-notes" style="display:none">http://ortizonline.com/publications/tcpipsuitetutorial.htm</pre>
                 </div>
-                
+
                 <div class="slide normal">
                     <header><h1>Requests</h1></header>
                     <slide>
@@ -228,7 +233,7 @@ console.log('Server running at http://127.0.0.1:8124/');
                     </slide>
                     <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
                 </div>
-                
+
                 <div class="slide normal">
                     <header><h1>Requests</h1></header>
                     <slide>
@@ -336,7 +341,7 @@ Content-Type: text/html; charset=ISO-8859-1
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
-                
+
                 <div class="slide normal">
                     <header><h1>Responses</h1></header>
                     <slide>
@@ -347,7 +352,7 @@ Content-Type: text/html; charset=ISO-8859-1
 0006: &lt;!doctype html&gt;&lt;html itemscope="itemscope" itemtype="http://sche
 0046: ma.org/WebPage"&gt;&lt;head&gt;&lt;meta content="Search the world's informat
 0086: ion, including webpages, images, videos and more. Google has man
-00c6: y special features to help you find exactly what you're looking 
+00c6: y special features to help you find exactly what you're looking
 0106: for." name="description"&gt;&lt;meta content="noodp" name="robots"&gt;&lt;me
                         </pre>
                         <p>And so on.</p>

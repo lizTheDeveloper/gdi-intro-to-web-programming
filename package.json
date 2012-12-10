@@ -2,7 +2,7 @@
   "name": "gdi-node-intro",
   "version": "0.0.1",
   "dependencies": {
-      "handlebars": "1.0.x"
+      "underscore": "1.4.x"
   },
   "engines": {
     "node": "0.8.x",

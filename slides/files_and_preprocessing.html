@@ -21,6 +21,11 @@
                     $slide.find('pre:first').focus();
                 }
             });
+            $('body').keypress(function(event){
+               if (event.which === 110) {
+                   $('.speaker-notes').toggle();
+               }
+            });
         });
         </script>
     </head>

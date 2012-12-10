@@ -1,0 +1,84 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>Templates with Underscore.js</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/fathom.js"></script>
+        <script src="../js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+            $('body').keypress(function(event){
+               if (event.which === 110) {
+                   $('.speaker-notes').toggle();
+               }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+
+            <div class="slide normal">
+                <h1 class="center">Templates with Underscore.js</h1>
+                <h2 class="center">(secretly a tutorial on how to use modules)</h2>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>A little bit of background</h1></header>
+                <section class="content">
+                <br><br>
+                    <p>Underscore.js is a utility belt for JavaScript.</p>
+                    <p><a href="http://underscorejs.org/">It's very well documented.</a></p>
+                    <p>It's also one of the best examples of the kind of code that needs to be shared.</p>
+                    <p>Made by DocumentCloud - same people who make Backbone.js.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Just kidding.</h1></header>
+                <section class="content">
+                    <br><br><br>
+                    <a href="http://www.npmjs.org"><img src="../img/npm.png" class='center'></a>
+                </section>
+                <pre class="speaker-notes" style="display:none">
+                    <p>Turns out I'm full of garbage. By taking a quick peek at NPM, we can see that there are many other node.js developers who have taken care of many of the tricky bits for us.</p>
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>NPM handles several classes of module</h1></header>
+                <section class="content">
+                    <ul>
+                        <li>Entire Frameworks</li>
+                        <li>API Libraries</li>
+                        <li>Functionality Libraries</li>
+                        <li>Resuable code for common problems.</li>
+                    </ul>
+                    <br><br>
+                    <p>Let's take a brief tour...</p>
+                </section>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
