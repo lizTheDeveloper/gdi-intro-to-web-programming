@@ -14,9 +14,9 @@
 
         <h3>Example Code</h3>
         <ul>
-            <li><a>Basic Server - Listens for request events and responds.</a></li>
-            <li><a>Event Emitter - Deals with event emitters and listeners.</a></li>
-            <li><a>Async Programming Example - Handles reading files, although it has a race condition set up initially.</a></li>
+            <li><a href="../examples/basic_server.js">Basic Server - Listens for request events and responds.</a></li>
+            <li><a href="../examples/event_emitters.js">Event Emitter - Deals with event emitters and listeners.</a></li>
+            <li><a href="../examples/async_programming.js">Async Programming Example - Handles reading files, although it has a race condition set up initially.</a></li>
         </ul>
 
     	<h3>A Basic File Server</h3>
@@ -32,6 +32,7 @@
             <li>Bonus : Handle the favicon requested by most browsers - use favicon.cc to generate your own.</li>
             <li><strong>Bonus:</strong> Check the file type. If it's text(txt), HTML(htm, html), CSS(css) or JavaScript(js), return it with the proper content type. If it's something else, return stats about the file and then a link to optionally download it.</li>
         </ul>
+        <button id="showSolution1" onclick="showSolution(1);">Show Solution</button>
         <pre id="solution1" style="display:none;">
 var http = require('http'),
     fs = require('fs'),

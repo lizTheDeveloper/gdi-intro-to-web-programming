@@ -7,7 +7,7 @@ var http = require('http'),
     qs = require('querystring');
 
 //HTML elements to be assembled
-var header ='<!doctype html><html><head><title>My Preprocessed App</title></head><body><div class="header"><h1>My Preprocessed Header</h1>';
+var header ='<!doctype html><html><head><title>My app</title></head><body><div class="header"><h1>Title</h1>';
 var aForm = '<form method="POST" action="/form">First Name:<input name="first_name"><br>Last Name:<input name="last_name"><button type="submit">Submit</button></form>';
 var goBack ='<a href="/">Go Back Home</a>';
 var footer ='</body>';
