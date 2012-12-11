@@ -3,6 +3,7 @@
 var http = require('http'),
     url = require('url'),
     fs = require('fs'),
+    path = require('path'),
     qs = require('querystring');
 
 //HTML elements to be assembled
@@ -124,7 +125,7 @@ function getType(document) {
     //only if the status code is 200 do we need to really find out what we're serving up.
     var type = 'text/plain';
     if (document.statusCode == 200) {
-        switch (parseExt(document.path)) {
+        switch (path.extname(document.path)) {
 
             case 'html':
                 type = 'text/html';
@@ -153,13 +154,4 @@ function getType(document) {
         }
     }
     return type;
-}
-
-//This function is very nieve, it just grabs the last dot and returns what's after it.
-function parseExt(path) {
-    var dot = path.lastIndexOf('.');
-    var ext = path.substring(dot + 1);
-    //if it's a raw path, assume HTML
-    if (dot == -1) { ext = 'html' }
-    return ext;
 }

@@ -53,10 +53,22 @@
             </div>
 
             <div class="slide normal">
-                <header><h1>Just kidding.</h1></header>
+                <header><h1>Using Templates</h1></header>
                 <section class="content">
-                    <br><br><br>
-                    <a href="http://www.npmjs.org"><img src="../img/npm.png" class='center'></a>
+                    <pre>
+var _ = require('underscore');
+
+var compiled = _.template("hello: <%= name %>");
+compiled({name : 'moe'});
+=> "hello: moe"
+                    </pre>
+                    <p>Or...</p>
+                    <pre>
+var _ = require('underscore');
+
+var compiled = _.template("Goodbye, <%= name %>",{name : 'Joe'});
+=> "Goodbye, Joe"
+                    </pre>
                 </section>
                 <pre class="speaker-notes" style="display:none">
                     <p>Turns out I'm full of garbage. By taking a quick peek at NPM, we can see that there are many other node.js developers who have taken care of many of the tricky bits for us.</p>
