@@ -1,33 +1,109 @@
 var http = require('http'),
+    url = require('url'),
     fs = require('fs'),
-    url = require('url');
+    path = require('path'),
+    qs = require('querystring');
+
 
 http.createServer(function (request,response) {
 
-    var path = url.parse(request.url).pathname;
-    path = '.' + path;
-	getFile(path, function(err, body) {
-        response.writeHead(body.statusCode, {
-        'Content-Length': body.length,
-        'Content-Type': 'text/html' })
-        response.end(body.body, 'utf-8');
-	});
+    request.querystring = url.parse(request.url, true).query;
+
+
+    request.addListener('data', function(chunk) {
+        request.form += chunk.toString();
+    });
+
+    request.addListener('end', function() {
+
+        if (request.method == 'POST') {
+            request.form = qs.parse(request.form);
+        }
+        request.ended = true;
+        assembleDocument(request, function(document) {
+            document.headers = getHeaders(document);
+            response.writeHead(document.statusCode, document.headers);
+            response.end(document.body);
+        });
+
+    });
+
+    request.addListener('close', function() {
+        if (!request.ended) {
+            request.terminated = true;
+            return;
+        }
+    });
+
 }).listen(process.env.PORT);
 
 
-function getFile(path, callback) {
-    var response = {};
-    fs.readFile(path, function(err, data) {
+//this will return a document object with a body and some headers.
+function assembleDocument(request, callback) {
+    var document = {};
+    document.path = '/app' + url.parse(request.url).pathname;
+    console.log(document.path);
+    if (request.terminated){
+        document.statusCode = 500;
+        document.body = http.STATUS_CODES[500];
+        callback(document);
+    }
+
+    document.readFile = true;
+    fs.readFile('.' + document.path, function(err, data) {
         if (err) {
-            response.statusCode = 500;
-            response.body = 'There was an error getting the requested file: ' + err;
-            response.length = response.body.length;
-            console.log(err);
+            document.statusCode = 500;
+            document.body += http.STATUS_CODES[500] + '<br>There was an error getting the requested file: ' + err;
         } else {
-            response.statusCode = 200;
-            response.body = data.toString();
-            response.length = response.body.length;
+            document.statusCode = 200;
+            document.body = data.toString();
         }
-        callback(err, response);
+        callback(document);
+        return;
     });
+
+}
+
+function getHeaders(document) {
+    var headers = {
+        'Content-Length' : document.body.length,
+        'Content-Type' : getType(document)
+    };
+    return headers;
+}
+
+function getType(document) {
+    //only if the status code is 200 do we need to really find out what we're serving up.
+    var type = 'text/plain';
+    console.log(document.statusCode == 200);
+    if (document.statusCode == 200) {
+        switch (path.extname(document.path)) {
+            case '.html':
+                type = 'text/html';
+                break;
+            case '.js':
+                type = 'text/javascript';
+                break;
+            case '.css':
+                type = 'text/css';
+                break;
+            case '.png':
+                type = 'image/png';
+                break;
+            case '.jpg':
+            case '.jpeg':
+                type = 'image/jpeg';
+                break;
+            case '.gif':
+                type = 'image/gif';
+                break;
+            case '.ico':
+                type = 'image/x-icon';
+                break;
+            default:
+            break;
+        }
+    }
+    console.log(type);
+    return type;
 }
