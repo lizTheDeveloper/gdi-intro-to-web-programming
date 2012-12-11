@@ -1,0 +1,97 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>How-to: This course</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/fathom.js"></script>
+        <script src="../js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+            $('body').keypress(function(event){
+               if (event.which === 110) {
+                   $('.speaker-notes').toggle();
+               }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+
+            <div class="slide normal">
+                <h1 class="center">Welcome! Intro to GDI, how to enjoy this class!</h1>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>What you need</h1></header>
+                <section class="content">
+                    <ul>
+                        <li>A laptop.</li>
+                        <li>A <a href="http://www.github.com">Github</a> account</li>
+                        <li>A <a href="http://www.heroku.com">Heroku</a> account</li>
+                        <li>A <a href="http://www.c9.io">Cloud9IDE</a> account</li>
+                        <li>A place to take notes ouside of these - please use a text editor, not a word processor.(Sublime Text, not MSWord.)</li>
+                        <li>A friend to sit next to.</li>
+                    </ul>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>GDI</h1></header>
+                <section class="content">
+                <ul>
+                    <li>GDI is for women, by women.</li>
+                    <li>If you identify as female, you're welcome.</li>
+                    <li>We structure our classes to how women learn, so they are more specific.</li>
+                    <li>We are open to all skill levels, but we group similar skill levels together.</li>
+                </ul>
+                </section>
+                <pre class="speaker-notes" style="display:none">
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Pair Programming</h1></header>
+                <section class="content">
+                    <p>Humans are visual thinkers.</p>
+                    <p>Women more than men.</p>
+                    <p>Solving problems together allows you to separate the problem from the language.</p>
+                    <p>It also helps spot errors faster.</p>
+                    <img src="../img/Pair-Programming-Mistakes.png">
+                </section>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Pair Programming - 101</h1></header>
+                <section class="content">
+                    <img src="../img/girlspairprogramming.jpeg" style="width:500px;" class="center">
+                    <ul>
+                        <li>One person should "drive" - type the code, move the mouse, etc.</li>
+                        <li>The other should tell the first person how they think the problem should be solved.</li>
+                    </ul>
+                </section>
+                <pre class="speaker-notes" style="display:none">
+                    Do an example in class.
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>

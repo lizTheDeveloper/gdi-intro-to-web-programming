@@ -1,0 +1,86 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>Further Info</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/fathom.js"></script>
+        <script src="../js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+            $('body').keypress(function(event){
+               if (event.which === 110) {
+                   $('.speaker-notes').toggle();
+               }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+
+            <div class="slide normal">
+                <h1 class="center">What else is there to know?</h1>
+                <h2 class="center">(SPOILERS: A lot.)</h2>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>What didn't we do?</h1></header>
+                <section class="content">
+                    <p>Our architecture isn't very object-oriented(harder to reuse code)</p>
+                    <p>Because it's not very object oriented, we didn't document anything.</p>
+                    <p>We should use "endpoints" that get data out of our database, instead of having view-specific code.</p>
+                    <p>No server-side validation! Holy crap!</p>
+                    <p>Lots of error handling we didn't do.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none">Most of these problems are on purpose - partly to give you something to work on, and partly because it was easier to understand a flow of functions than a fully object oriented architecture.</pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Things to add</h1></header>
+                <section class="content">
+                <ul>
+                    <li>Now that you have users, why not let them do something? Like, update a status?</li>
+                    <li>Add more information about your users - image uploaders, etc.</li>
+                    <li>Incorporate an API, like ADN or 500px</li>
+                </ul>
+                </section>
+                <pre class="speaker-notes" style="display:none">
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Things to Read</h1></header>
+                <section class="content">
+                    <ul>
+                        <li>Twelve Factor App  -  http://www.12factor.net/</li>
+                        <li>Node.js Docs(bedtime reading)  -  http://nodejs.org/api/</li>
+                        <li>The Celedon Cedar Stack(understand your architecture)  -  https://devcenter.heroku.com/articles/cedar</li>
+                        <li>DailyJS(Read it everyday.)  -  http://dailyjs.com/</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>

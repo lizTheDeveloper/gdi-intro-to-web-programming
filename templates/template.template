@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link type="text/javascript" href="js/bootstrap.js">
+    <title>Intro to Templates</title>
+</head>
+<body>
+
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <a class="brand" href="#">Intro to Templates</a>
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link"><%=name%></a>, Occupation: <a href="#" class="navbar-link"><%=occupation%></a>
+            </p>
+            <ul class="nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+                <li><a href="log_in.html">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <%= body %>
+    </div>
+</body>
