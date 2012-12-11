@@ -42,14 +42,14 @@ http.createServer(function (request,response) {
 function assembleDocument(request, callback) {
     var document = {};
     document.path = '/app' + url.parse(request.url).pathname;
-    console.log(document.path);
+    if (document.path == '/app/') {
+        document.path ='/app/index.html';
+    }
     if (request.terminated){
         document.statusCode = 500;
         document.body = http.STATUS_CODES[500];
         callback(document);
     }
-
-    document.readFile = true;
     fs.readFile('.' + document.path, function(err, data) {
         if (err) {
             document.statusCode = 500;
@@ -75,7 +75,6 @@ function getHeaders(document) {
 function getType(document) {
     //only if the status code is 200 do we need to really find out what we're serving up.
     var type = 'text/plain';
-    console.log(document.statusCode == 200);
     if (document.statusCode == 200) {
         switch (path.extname(document.path)) {
             case '.html':
@@ -104,6 +103,5 @@ function getType(document) {
             break;
         }
     }
-    console.log(type);
     return type;
 }
