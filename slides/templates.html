@@ -53,6 +53,28 @@
             </div>
 
             <div class="slide normal">
+                <header><h1>Using Underscore</h1></header>
+                <section class="content">
+                <p>After you install underscore...</p>
+                    <pre>
+var _ = require('underscore');
+                    </pre>
+                    <p>Because _ is a valid character, we use it by itself. Now we have access to some _ namespaced methods.</p>
+                    <pre>
+_.each([1, 2, 3], alert);
+
+var stooges = [{name : 'moe', age : 40}, {name : 'larry', age : 50}, {name : 'curly', age : 60}];
+_.pluck(stooges, 'name');
+=> ["moe", "larry", "curly"]
+
+_(3).times(function(n){ genie.grantWishNumber(n); });
+
+_.escape('Curly, Larry & Moe');
+                    </pre>
+                </section>
+            </div>
+
+            <div class="slide normal">
                 <header><h1>Using Templates</h1></header>
                 <section class="content">
                     <pre>
