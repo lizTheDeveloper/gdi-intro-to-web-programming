@@ -5,8 +5,21 @@ var _ = require('../node_modules/underscore'),
 
 //console.log(process.env);
 var data = {name:"Ada Lovelace", occupation:"First programmer ever!"};
-compileTemplate('./examples/template.template','./examples/body.template', data, function(path) {
-    console.log("Read and write complete! File written to:" + path);
+
+fs.readdir("templates", function(err, filesAndDirs) {
+    console.log("Reading Directory..");
+    var files = _.filter(filesAndDirs, function(item) {return item.indexOf(item, ".") != -1 });
+    console.log('Files gotten...');
+    console.log(files);
+    for (var i = 0; i < files.length; i++) {
+        console.log("iteration" + i + " of loop");
+        console.log(typeof files[i]);
+        if (typeof files[i] === 'string' && files[i] != "template.template") {
+           compileTemplate('./templates/template.template','./templates/' + files[i], data, function(path) {
+                console.log("Read and write complete! File written to:" + path);
+            });
+        }
+    }
 });
 
 //Container and Body should both be paths, we'll us using readfile.
