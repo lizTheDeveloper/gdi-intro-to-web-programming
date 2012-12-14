@@ -1,0 +1,198 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>Data and State</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/presentation.css" />
+        <link rel="stylesheet" type="text/css" href="../css/prettify.css" />
+        <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/fathom.js"></script>
+        <script src="../js/prettify.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('pre').addClass('prettyprint').attr('tabIndex', 0);
+            prettyPrint();
+
+            var fathom = $('#presentation').fathom({
+                onActivateSlide: function() {
+                    var $slide = $(this);
+                    $slide.find('pre:first').focus();
+                }
+            });
+            $('body').keypress(function(event){
+               if (event.which === 110) {
+                   $('.speaker-notes').toggle();
+               }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="presentation">
+            <div id="presentation-counter"></div>
+            <div id="slides">
+
+            <div class="slide normal">
+                <h1 class="center">Data and State</h1>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Storing Data</h1></header>
+                <section class="content">
+                    <img src="../img/database.png" class="center" style="width:500px">
+                </section>
+                <pre class="speaker-notes" style="display:none">
+                    <p>Obviously, we don't store our data in text files. It's hard to do easily, and it's hard to get out. Let's explore Databases.</p>
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>MongoDB</h1></header>
+                <section class="content">
+                    <p>First, let's install. Run the command <code>npm install mongodb</code> in your Cloud9IDE terminal. Then, add it to your dependencies.</p>
+                    <pre>
+  "dependencies": {
+      "underscore": "1.4.x",
+      "mongodb": "1.2.x"
+  },
+                    </pre>
+                    <p>Then, require the module.</p>
+                    <pre>
+var mongodb = require('mongodb');
+                    </pre>
+                    <p>Next, let's add it as an add-on with Heroku!</p>
+                </section>
+                <pre class="speaker-notes" style="display:none">
+                    <p></p>
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Add-Ons with Heroku</h1></header>
+                <section class="content">
+                    <div>
+                        <p>Add ons with Heroku need to be either added with the Heroku Toolbelt, or at heroku.com.</p>
+                        <p>Because you can't install command line tools on Cloud9IDE, we'll have to either install the Heroku Toolbelt on your mac with Terminal, or have you use the web interface with Windows.</p>
+                        <p>If you are on a mac, open a terminal and run: <code>wget -qO- https://toolbelt.heroku.com/install.sh | sh </code> then head over to https://toolbelt.heroku.com/ and follow the login prompt.</p>
+                        <p>Then, take a break for a moment.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Add-Ons with Heroku - Why?</h1></header>
+                <section class="content">
+                    <p></p>
+                </section>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Running DB Scripts</h1></header>
+                <section class="content">
+                    <p>Node isn't just for web programming. You can execute javascript directly to perform one time tasks, like our template script.</p>
+                    <pre>
+
+                    </pre>
+                </section>
+                <pre class="speaker-notes" style="display:none">
+
+                </pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1><code>npm install</code></h1></header>
+                <section class="content">
+                    <pre>
+icyfenix@gsi-node-intro:~/331581 (master) $ npm install
+npm http GET https://registry.npmjs.org/handlebars
+npm http 200 https://registry.npmjs.org/handlebars
+npm http GET https://registry.npmjs.org/handlebars/-/handlebars-1.0.7.tgz
+npm http 200 https://registry.npmjs.org/handlebars/-/handlebars-1.0.7.tgz
+npm http GET https://registry.npmjs.org/optimist
+npm http GET https://registry.npmjs.org/uglify-js
+npm http 200 https://registry.npmjs.org/optimist
+npm http GET https://registry.npmjs.org/optimist/-/optimist-0.3.5.tgz
+npm http 200 https://registry.npmjs.org/uglify-js
+npm http GET https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+npm http 200 https://registry.npmjs.org/optimist/-/optimist-0.3.5.tgz
+npm http 200 https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+npm http GET https://registry.npmjs.org/wordwrap
+npm http 200 https://registry.npmjs.org/wordwrap
+npm http GET https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz
+npm http 200 https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz
+handlebars@1.0.7 node_modules/handlebars
+├── optimist@0.3.5 (wordwrap@0.0.2)
+└── uglify-js@1.2.6
+                    </pre>
+                    <p>An install command installs dependencies recursively.</p>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1><code>npm install</code></h1></header>
+                <section class="content">
+                    <p>You can also install modules by specifying their name after <code>npm install</code></p>
+                    <pre>
+npm install (with no args in a package dir)
+npm install &lt;tarball file&gt;
+npm install &lt;tarball url&gt;
+npm install &lt;folder&gt;
+npm install &lt;name&gt; [--save|--save-dev|--save-optional]
+npm install &lt;name&gt;@&lt;tag&gt;
+npm install &lt;name&gt;@&lt;version&gt;
+npm install &lt;name&gt;@&lt;version range&gt;
+npm install &lt;name&gt;@&lt;version range&gt;
+                    </pre>
+                </section>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Using modules with <code>require();</code></h1></header>
+                <section class="content">
+                <p>These are modules.</p>
+                    <pre>
+var http = require('http'),
+    url = require('url'),
+    fs = require('fs'),
+    qs = require('querystring');
+                    </pre>
+                    <p>But you can now use the modules you've included in your dependancies, so check the docs for the actual module name.</p>
+                    <pre>
+var _ = require('underscore'); //returns methods attached to 'export'.
+                    </pre>
+                </section>
+            </div>
+
+            <div class="slide normal">
+                <header><h1><code>exports</code> Object</h1></header>
+                <section class="content">
+                <p><code>require()</code> returns a reference to the exports object, with methods from the module attached.</p>
+                <pre>
+var circle = require('./circle.js');
+console.log('The area of a circle of radius 4 is '
+           + circle.area(4));
+</pre>
+<p>The actual file:</p>
+<pre>
+//Local to module, or 'private'
+var PI = Math.PI;
+//public function, part of the module.
+exports.area = function (r) {
+  return PI * r * r;
+};
+
+exports.circumference = function (r) {
+  return 2 * PI * r;
+};
+                </pre>
+                </section>
+                <pre class="speaker-notes" style="display:none">http://nodejs.org/api/modules.html</pre>
+            </div>
+
+        </div>
+    </div>
+</body>
