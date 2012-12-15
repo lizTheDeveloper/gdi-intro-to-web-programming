@@ -10,7 +10,7 @@ The course should cover the following:
  Introduction to web programming, how data moves around, what HTTP is
  * Intro to Web Programming
  * Beginning Node.js
- * Excercises
+ * Exercises
  * Node, Git & Heroku
 
 ## Section 2
@@ -19,7 +19,7 @@ The course should cover the following:
  * Preprocessing and Forms
  * Forms, Events
  * Modules
- * Excercises
+ * Exercises
 
 ## Section 3
 
