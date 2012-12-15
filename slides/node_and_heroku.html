@@ -34,7 +34,7 @@
             <div id="presentation-counter"></div>
             <div id="slides">
                 <div class="slide normal">
-                    <h1 class="center">Node, Git and Heroku</h1>
+                    <h1 class="center">Node, Git and Heroku<br>(get ready for lots of text)</h1>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
 
@@ -195,11 +195,16 @@ git push remote_name branch_name
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
-                <div>
+                <div class="slide normal">
                     <header><h1>Heroku Config</h1></header>
                     <section class="content">
                         <slide>
                             <p>On Heroku, resource locations are stored as environment variables, ensuring strict separation of config from code.</p>
+                            
+                            <pre>
+console.log(process.env);
+                            </pre>
+                            <p>We can get ahold of the environment we're in with this variable.</p>
                         </slide>
                     </section>
                 </div>
