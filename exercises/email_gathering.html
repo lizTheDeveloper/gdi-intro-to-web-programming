@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link type="text/javascript" href="js/bootstrap.js">
+    <title>Exercise set 2</title>
+</head>
+<body>
+    <div class="container">
+    	<h1>Exercise set 2</h1>
+
+    	<p class="lead">Two exercises to help you gather data from forms, and assemble documents. Be sure to check out the examples.</p>
+
+        <h3>Example Code</h3>
+        <ul>
+
+            <li><a href="../examples/preprocessing_server.js">Preprocessing Server - assembles a document body from several pieces.</a></li>
+            <li><a href="../examples/form_handler.js">Form Handler - listens for form data, assembles it into something you can handle.</a></li>
+            <li><a href="../examples/async_programming.js">Async Programming - handles files, writes to a file and reads from a file asyncronously.</a></li>
+        </ul>
+
+    	<h3>Email Sign-Up form</h3>
+        <p>In this exercise you'll be handling alpha sign-ups for your new webapp!</p>
+        <ul>
+            <li>Create a server (similar to the <a href="../examples/preprocessing_server.js">preprocessing server example</a>.)</li>
+            <li>Handle paths using url.parse().pathname to point to various files.</li>
+            <li>For the root path, you'll want to serve a page where users can submit a form with their Name, Email and any other information you wish to collect.</li>
+            <li>On the server, set up listeners for the 'data', 'end', and 'close' events. A good example of this is on the <a href="../examples/form_handler.js">form handler server.</a></li>
+            <li>Once you've collected the form, parse it with <a src="http://nodejs.org/api/url.html">the URL module</a>. Attach it to the request as an object.</li>
+            <li>After that, send the request to the path handler. Find out if the method was POST (request.method) and then process the form.</li>
+            <li>Write any form data to a .txt file, formatted in a human readable way. Make sure not to overwrite your file after a second submission!</li>
+            <li><strong>Bonus:</strong> Send a confirmation message to the screen stating the user's name, to let them know that you successfully recieved the form.</li>
+        </ul>
+        
+
+    <h3>Templates</h3>
+    <p>This server assembles several HTML files to make one webpage.</p>
+    <ul>
+        <li>Create a server like the first server, that has a function that handles paths.</li>
+        <li>For every request, read three files - header.html, footer.html and a body determined by the path.</li>
+        <li>Build your HTML document from the three HTML files and serve that as the response body.</li>
+    </ul>
+    </div>
+    <script>
+        function showSolution(num) {
+          if (confirm('You surrrrre?')) {
+            document.getElementById('solution' + num).style.display = 'block';
+          }
+        }
+    </script>
+</body>
+</html>
