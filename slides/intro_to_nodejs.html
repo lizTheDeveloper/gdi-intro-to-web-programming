@@ -69,7 +69,7 @@ sendFacebookUpdate("I just learned Asynchronous Programming!" function(response)
                     </pre>
 
                 </section>
-                <pre class="speaker-notes" style="display:none"></pre>
+                <pre class="speaker-notes" style="display:none">Note: in some of these examples, I will act like functions have already been implemented somewhere else.</pre>
             </div>
 
             <div class="slide normal">
@@ -78,7 +78,7 @@ sendFacebookUpdate("I just learned Asynchronous Programming!" function(response)
                     <p>Multitasking is something computers are good at - using spare milliseconds to do things.</p>
                     <p>It's something programmers are not always so great at - race conditions can be a problem.</p>
                 </section>
-                <pre class="speaker-notes" style="display:none">Demonstrate what might happen if I counted on twitter being done before facebook, etc.</pre>
+                <pre class="speaker-notes" style="display:none"><a href="../examples/async_programming.js">Demonstrate</a> what might happen if I counted on twitter being done before facebook, etc.</pre>
             </div>
 
             <div class="slide normal">
@@ -90,9 +90,35 @@ fs.rename('/tmp/hello', '/tmp/world', function (err) {
   if (err) throw err;
   console.log('renamed complete');
 });
+
+
 fs.stat('/tmp/world', function (err, stats) {
   if (err) throw err;
   console.log('stats: ' + JSON.stringify(stats));
+});
+                    </pre>
+                </section>
+                <pre class="speaker-notes" style="display:none"></pre>
+            </div>
+
+            <div class="slide normal">
+                <header><h1>Race Conditions!</h1></header>
+                <section class="content">
+                    <p>In asynchronous programming, you have to be careful with "Race Conditions".</p>
+                    <pre style="border:3px dotted black;" class="prettyprint">
+var fs = require('fs');
+var path = 'examples/exampleFile.txt';
+var newData = 'File Overwritten!';
+
+fs.readFile(path, function(err, data) {
+    console.log(err);
+    var file = data.toString();
+    console.log('I am done reading files! It looks like this: ' + file);
+});
+
+fs.writeFile(path, newData, 'utf8', function(err) {
+    console.log(err);
+    console.log('I have written ' + newData + ' to the file');
 });
                     </pre>
                 </section>
@@ -145,20 +171,6 @@ fightBadGuys('hacker skills', function(err, result) {
             </div>
 
             <div class="slide normal">
-                <header><h1>Node Conventions</h1></header>
-                <section class="content">
-                    <p>Node has many conventions - you can expect a library or module to have certain behaviors and spelling. Some of those are:</p>
-                    <ul>
-                        <li>Functions that have a callback that must return a result return err, response(if warranted) and then result.</li>
-                        <li>Classes start with a capital letter- as in events.EventEmitter. Methods are camelCase.</li>
-                        <li>Constants ARE_IN_ALL_CAPS and use underscores. Constants should not change.</li>
-                        <li>Many more...</li>
-                    </ul>
-                </section>
-                <pre class="speaker-notes" style="display:none">err, response</pre>
-            </div>
-
-            <div class="slide normal">
                 <header><h1>Callback Chaining</h1></header>
                 <section class="content">
                     <p>Callback chains are something that tends to happen when things have to happen synchronously in node.
@@ -172,30 +184,6 @@ one(function () {
             //the dreaded callback pyramid
         });
     });
-});
-                    </pre>
-                </section>
-                <pre class="speaker-notes" style="display:none"></pre>
-            </div>
-
-            <div class="slide normal">
-                <header><h1>Race Conditions!</h1></header>
-                <section class="content">
-                    <p>In asynchronous programming, you have to be careful with "Race Conditions".</p>
-                    <pre style="border:3px dotted black;" class="prettyprint">
-var fs = require('fs');
-var path = 'examples/exampleFile.txt';
-var newData = 'File Overwritten!';
-
-fs.readFile(path, function(err, data) {
-    console.log(err);
-    var file = data.toString();
-    console.log('I am done reading files! It looks like this: ' + file);
-});
-
-fs.writeFile(path, newData, 'utf8', function(err) {
-    console.log(err);
-    console.log('I have written ' + newData + ' to the file');
 });
                     </pre>
                 </section>
@@ -227,9 +215,10 @@ http.createServer(function(request, response){
     response.end('Hello World\n');
 }).listen(8124);
                     </pre>
+                    The following is not scoped properly, and so we can't be sure what's going to happen.
                     <pre>
 http.createServer(function(request, response){
-    console.log(user.name + 'has initiated a request'); //This might not be what you think!
+    console.log(user.name + 'has initiated a request');
     response.writeHead(200,{'Content-Type':'text/plain'});
     response.end('Hello World\n');
 }).listen(8124);
