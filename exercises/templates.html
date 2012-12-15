@@ -22,8 +22,14 @@
     	<h3>Sign-up and Log-in</h3>
         <p>In this exercise you'll be showing a user, logged in!</p>
         <ul>
-            <li></li>
-            <li></li>
+            <li>Using your previous exercise, we're going to look for a querystring to show the appropriate user.</li>
+            <li>Parse out the querystring, expect a parameter called 'user'.</li>
+            <li>Read your "signup" file, find that user. Use name as the key- unless you thought ahead and assigned an ID. Underscore has many functions that can help with that.</li>
+            <li>After you find the user, assemble a JavaScript Object with all the properties of the user.</li>
+            <li>Add <code><%=user.name%></code> and any other user data you collected to the template somewhere. I suggest the name goes in the header.</li>
+            <li>Use <code>_.template(page, user)</code> to compile the template and send it as the response.</li>
+            <li><strong>Mega Bonus:</strong> Use the node module <code><a href="https://npmjs.org/package/cookies">cookies</a></code> to save the user that's logged in, and use a cookie instead of a querystring.</li>
+            <li><strong>Ultra hyper bonus combo:</strong> Create another form that takes a user's id, and lets them set that cookie, so they can log in.</li>
         </ul>
 
 
