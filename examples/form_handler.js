@@ -59,7 +59,7 @@ http.createServer(function (request,response) {
         }
     });
 
-}).listen(process.env.PORT);
+}).listen(process.env.PORT || 5000);
 
 
 //this will return a document object with a body and some headers.
@@ -123,7 +123,7 @@ function getHeaders(document) {
 
 function getType(document) {
     //only if the status code is 200 do we need to really find out what we're serving up.
-    var type = 'text/plain';
+    var type = 'text/html';
     if (document.statusCode == 200) {
         switch (path.extname(document.path)) {
 

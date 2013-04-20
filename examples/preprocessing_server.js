@@ -19,7 +19,7 @@ http.createServer(function (request,response) {
     'Content-Length': body.length,
     'Content-Type': 'text/html' });
     response.end(body);
-}).listen(process.env.PORT);
+}).listen(process.env.PORT || 5000);
 
 function makeBody(path, querystring) {
     var body = header;
