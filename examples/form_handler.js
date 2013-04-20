@@ -15,7 +15,7 @@ var footer ='</body>';
 //The server herself.
 http.createServer(function (request,response) {
     //We're going to begin by adding things to the request object.
-
+    request.form = '';
 
     //Parse querystring, since we have the entire thing immediately.
     request.querystring = url.parse(request.url, true).query;  //return an object from a querystring with raw name-value pairs.
