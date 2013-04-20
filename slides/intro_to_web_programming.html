@@ -112,8 +112,10 @@
                         <p>While there are fewer mainstream client-side languages, scripting still happens on the client as well. The client-side scripting is part of the file that the server sends to the client.</p>
                         <ul>
                             <li>JavaScript</li>
+                            <li>CoffeeScript(which is just Javascript)</li>
                             <li>VBScript</li>
                             <li>TCL (which I have never even heard of)</li>
+                            <li>Dash (which is new)</li>
                         </ul>
                     </slide>
                     <pre class="speaker-notes" style="display:none">explain javascript on the client vs javascript on the server</pre>
@@ -168,7 +170,7 @@
                     <header><h1>Things you have to handle without a framework</h1></header>
                         <p>If you've done web programming before, you probably didn't have to handle your own:</p>
                         <ul>
-                            <li>Routes</li>
+                            <li>Routes(maybe)</li>
                             <li>Streams for multipart form data</li>
                             <li>Actual request events</li>
                             <li>Server-error handling</li>
@@ -191,6 +193,7 @@ response.end('Hello World\n');}).listen(8124);
 
 console.log('Server running at http://127.0.0.1:8124/');
                     	</pre>
+                        <p>Open a text file, call it server.js - paste this in.</p>
                     </slide>
                     <pre class="speaker-notes" style="display:none"></pre>
                 </div>
@@ -226,22 +229,6 @@ console.log('Server running at http://127.0.0.1:8124/');
                     	<p>80 is the default HTTP port. A further list of ports can be found <a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">here</a></p>
                     </slide>
                     <pre class="speaker-notes" style="display:none">http://ortizonline.com/publications/tcpipsuitetutorial.htm</pre>
-                </div>
-
-                <div class="slide normal">
-                    <header><h1>Requests</h1></header>
-                    <slide>
-                        <img src="../img/phone_peter.JPG">
-                    </slide>
-                    <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
-                </div>
-
-                <div class="slide normal">
-                    <header><h1>Requests</h1></header>
-                    <slide>
-                        <img src="../img/phone_server.JPG">
-                    </slide>
-                    <pre class="speaker-notes" style="display:none">explain /r/n and that there can be more HTTP headers than just the path.</pre>
                 </div>
 
                 <div class="slide normal">
@@ -288,13 +275,12 @@ Host: www.example.com
                 <div class="slide normal">
                     <header><h1>GET vs POST</h1></header>
                     <slide>
-                    	<p>GET is an HTTP Verb that we use to request information. We may optionally pass a "QueryString" with our GET request (or with post requests) in order to send data that we're OK with the user potentially modifying.</p>
-                        <pre>
-http://www.example.com/index.html?search=spiderman&familymode=on&user=liz
-                        </pre>
-                    	<p>POST is another Verb that we use in order to send a response body with - usually data from a form. The user can't directly modify this data but as you've seen, you can modify the page, so you can get any kind of data from a post.</p>
+                    	<img src="https://pbs.twimg.com/media/BITkDprCcAET_R8.jpg:large" width="900px">
                     </slide>
-                    <pre class="speaker-notes" style="display:none"></pre>
+                    <pre class="speaker-notes" style="display:none">
+GET is an HTTP Verb that we use to request information. We may optionally pass a "QueryString" with our GET request (or with post requests) in order to send data that we're OK with the user potentially modifying.
+POST is another Verb that we use in order to send a response body with - usually data from a form. The user can't directly modify this data but as you've seen, you can modify the page, so you can get any kind of data from a post.
+                    </pre>
                 </div>
 
                 <div class="slide normal">
