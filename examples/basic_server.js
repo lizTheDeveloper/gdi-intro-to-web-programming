@@ -30,7 +30,7 @@ http.createServer(function (request,response) {
 
 //Here we use process.env.PORT to access the port given to this process. This is an environment variable available to you that will give you the port that your
 //server is being hosted on.
-}).listen(process.env.PORT);
+}).listen(process.env.PORT || 5000);
 
 //Here we have a function with standard node.js convention - err and "result".
 //Err returns as undefined if there is no error, which is what is expected.
